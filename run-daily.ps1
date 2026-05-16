@@ -74,27 +74,33 @@ $ApifyJobs = @(
         Name    = "idealista"
         ActorId = "axlymxp~idealista-scraper"
         Input   = @{
-            startUrls = @(@{ url = "https://www.idealista.it/affitto-case/milano-milano/con-prezzo-fino_1500,metri-quadrati-minimi_75/" })
-            maxItems  = 100
-            country   = "it"
+            country      = "it"
+            locationName = "Milano"
+            propertyType = "homes"
+            operation    = "rent"
+            sort         = "asc"
+            order        = "price"
+            locale       = "it"
+            maxItems     = 50
         }
     }
 
-    @{
-        Name    = "subito"
-        ActorId = "ayrtondavoli97~propscout-scraper"
-        Input   = @{
-            searchUrl = "https://www.subito.it/annunci-lombardia/affitto/appartamenti/milano/?ps=&pe=1500"
-            maxItems  = 100
-        }
-    }
+    # Subito: l'actor propscout-scraper in test ha restituito annunci di tecnocasa in vendita,
+    # non affitti di subito. Disabilitato in attesa di trovare un actor migliore.
+    # @{
+    #     Name    = "subito"
+    #     ActorId = "ayrtondavoli97~propscout-scraper"
+    #     Input   = @{ searchUrl = "..."; maxItems = 100 }
+    # }
 
     @{
         Name    = "casa-it"
         ActorId = "stealth_mode~casa-property-search-scraper"
         Input   = @{
-            startUrl = "https://www.casa.it/affitto/residenziale/milano?priceMax=1500&sizeMin=75&rooms=3"
-            maxItems = 50
+            urls               = @("https://www.casa.it/affitto/residenziale/milano/")
+            max_items_per_url  = 50
+            ignore_url_failures = $true
+            proxy              = @{ useApifyProxy = $false }
         }
     }
 )
@@ -119,7 +125,7 @@ foreach ($job in $ApifyJobs) {
         $resp = Invoke-RestMethod -Uri $url -Method POST -ContentType "application/json" -Body $body -TimeoutSec 600 -ErrorAction Stop
         $items = @($resp)
 
-        # Apify può restituire un array di items oppure un singolo oggetto di errore.
+        # Apify puo' restituire un array di items oppure un singolo oggetto di errore.
         # Cerchiamo casi di errore (rate limit / permessi).
         $firstObj = $items | Select-Object -First 1
         if ($firstObj -and $firstObj.PSObject.Properties['message'] -and $items.Count -le 1) {
@@ -133,7 +139,7 @@ foreach ($job in $ApifyJobs) {
 
         # Salva il dataset
         $items | ConvertTo-Json -Depth 30 | Set-Content -Path $cacheFile -Encoding utf8
-        Write-Log ("[{0}] OK — {1} annunci salvati in {2}" -f $job.Name, $items.Count, $cacheFile)
+        Write-Log ("[{0}] OK - {1} annunci salvati in {2}" -f $job.Name, $items.Count, $cacheFile)
         $JobReport += [pscustomobject]@{ Job = $job.Name; Status = "ok"; Count = $items.Count; File = $cacheFile }
     }
     catch {
@@ -154,7 +160,7 @@ foreach ($job in $ApifyJobs) {
 Write-Log "=== Report Apify ==="
 $JobReport | ForEach-Object { Write-Log ("  {0,-15} {1}" -f $_.Job, ($_ | ConvertTo-Json -Compress)) }
 
-# --- Se nessun dato è stato raccolto in questa esecuzione, fermiamoci qui ---
+# --- Se nessun dato e' stato raccolto in questa esecuzione, fermiamoci qui ---
 $okJobs = $JobReport | Where-Object { $_.Status -in @("ok","cached") }
 if (-not $okJobs) {
     Write-Log "Nessun dataset raccolto. Stop senza invocare Claude."
