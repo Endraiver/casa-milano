@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-05-17T10:30:00",
-  "nota_infrastruttura": "Sandbox Anthropic blocca connessioni HTTP verso api.apify.com e verso tutti i portali immobiliari. Lo scraping Apify non è stato possibile. I dati sono stati raccolti tramite WebSearch (risultati Google) e analizzati sulle informazioni disponibili negli snippet di ricerca. Per ogni annuncio è indicata la limitazione.",
+  "last_run": "2026-05-17T14:00:00",
+  "nota_infrastruttura": "Sandbox Anthropic blocca connessioni HTTP verso api.apify.com e verso tutti i portali immobiliari. Lo scraping Apify non è stato possibile. I dati sono stati raccolti tramite WebSearch (risultati Google) e analizzati sulle informazioni disponibili negli snippet di ricerca. Per ogni annuncio è indicata la limitazione. Run 2026-05-17 14:00: Tentato accesso a Apify (bloccato da permessi account), curl diretto (HTTP 403), WebFetch (HTTP 403), WebSearch per snippet. Nessun nuovo annuncio recuperabile con dettagli sufficienti per i 7 filtri. Azione consigliata: configurare Apify con permessi approvati o richiedere accesso ai portali tramite VPN/proxy.",
   "annunci": [
     {
       "id": "zappyrent-via-lambrate-22589",
