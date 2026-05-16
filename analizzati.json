@@ -1,4 +1,236 @@
 {
-  "last_run": null,
-  "annunci": []
+  "last_run": "2026-05-16T23:00:00",
+  "nota_infrastruttura": "Sandbox Anthropic blocca connessioni HTTP verso api.apify.com e verso tutti i portali immobiliari. Lo scraping Apify non è stato possibile. I dati sono stati raccolti tramite WebSearch (risultati Google) e analizzati sulle informazioni disponibili negli snippet di ricerca. Per ogni annuncio è indicata la limitazione.",
+  "annunci": [
+    {
+      "id": "zappyrent-via-lambrate-22589",
+      "url": "https://www.zappyrent.com/it/affitto/via-lambrate-milano-id-22589",
+      "portale": "zappyrent",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "filtro 6 — metro 10 minuti a piedi (supera il limite di 7 min); stazioni più vicine Pasteur/Loreto/Piola M1-M2 tutte a 10 min",
+      "dati_raccolti": {
+        "indirizzo": "Via Lambrate, Milano (zona Loreto-Casoretto)",
+        "mq": 90,
+        "camere": "trilocale",
+        "prezzo_stimato": "non verificato",
+        "disponibilita": "non verificata",
+        "metro_distanza_min": 10,
+        "metro_stazione": "Pasteur/Loreto/Piola (M1-M2)",
+        "dotazioni": "AC (4 split), WiFi fibra 2.5Gbit, TV 42\" smart",
+        "note": "garage 14 mq incluso"
+      }
+    },
+    {
+      "id": "zappyrent-piazza-emilia-20157",
+      "url": "https://www.zappyrent.com/it/affitto/piazza-emilia-milano-id-20157",
+      "portale": "zappyrent",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — prezzo non reperibile tramite ricerca; sito zappyrent.com inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per prezzo non verificabile",
+      "dati_raccolti": {
+        "indirizzo": "Piazza Emilia, Milano",
+        "mq": 75,
+        "camere": "trilocale (soggiorno con cucina, camera, bagno, loggia, cantina)",
+        "piano": "3° con ascensore",
+        "prezzo": "non reperibile",
+        "disponibilita": "attualmente occupato, data futura non nota",
+        "metro_distanza_min": "non verificata",
+        "note": "da prenotare per futura disponibilità; sito inaccessibile"
+      }
+    },
+    {
+      "id": "zappyrent-piazza-daini-32304",
+      "url": "https://www.zappyrent.com/it/affitto/piazza-dei-daini-milano-id-32304",
+      "portale": "zappyrent",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "filtro 3 — disponibilità non confermata entro 14/09/2026: annuncio listato dal 25/10/2024, attualmente occupato, nessuna data di liberazione futura indicata",
+      "dati_raccolti": {
+        "indirizzo": "Piazza dei Daini, Milano (zona Bicocca)",
+        "mq": 87,
+        "camere": "trilocale (2 camere da letto + 2 bagni)",
+        "piano": "6° di 11, con ascensore",
+        "posti_letto": "1 matrimoniale + 1 singola = 3 posti (filtro 1 ok)",
+        "prezzo_affitto": 1200,
+        "spese_condo": 200,
+        "bollette": "incluse nel totale dichiarato",
+        "prezzo_totale_stimato": 1400,
+        "disponibilita_originale": "25/10/2024 (data annuncio originale)",
+        "stato_attuale": "occupato — prenotabile per futura disponibilità, data non nota",
+        "metro_stazione": "M5 Bignami",
+        "metro_distanza_min": 2,
+        "bicocca_distanza_min": 4,
+        "bovisa_distanza_stimata_min": 35,
+        "dotazioni_confermate": ["lavatrice", "WiFi", "AC (4 split)", "forno", "microonde", "lavastoviglie", "balcone", "garage privato", "cantina"],
+        "dotazioni_non_confermate": ["divano", "riscaldamento invernale specifico"],
+        "note": "Candidato molto interessante — tutti i criteri di prezzo, mq e metro sembrano soddisfatti. Ricontrollare alla prossima run: se l'appartamento risulta disponibile con data ≤14/09/2026, rivalutare. Bicocca a 4 min a piedi (295m). Bovisa via M5→Garibaldi→S-treno stimata ~35 min.",
+        "da_ricontrollare": true
+      }
+    },
+    {
+      "id": "spotahome-morivione-1417490",
+      "url": "https://www.spotahome.com/milan/for-rent:apartments/1417490",
+      "portale": "spotahome",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — prezzo, metratura, distanza metro non verificabili; sito spotahome.com inaccessibile dalla sandbox (HTTP 403). Nota: snippet suggerisce '30 min al centro' con metro, quindi Bovisa potrebbe superare 40 min",
+      "dati_raccolti": {
+        "indirizzo": "Ex OM-Morivione, Milano (zona sud)",
+        "camere": "3 camere da letto",
+        "cucina": "attrezzata con lavastoviglie e forno",
+        "prezzo": "non reperibile",
+        "mq": "non reperibile",
+        "metro_distanza_min": "non verificata — zona con 30 min al centro in metro",
+        "note": "zona periferica sud Milano; rischio >40 min verso Bovisa"
+      }
+    },
+    {
+      "id": "spotahome-duomo-1015976",
+      "url": "https://www.spotahome.com/milan/for-rent:apartments/1015976",
+      "portale": "spotahome",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "filtro 4 (stimato) — zona Duomo di Milano; trilocale in zona Duomo tipicamente >2000 €/mese, ben oltre il limite di 1500 €. Prezzo non recuperabile da sito (HTTP 403) ma zona esclude la fascia di prezzo",
+      "dati_raccolti": {
+        "indirizzo": "zona Duomo, Milano (centro)",
+        "camere": "3 camere da letto",
+        "dotazioni_confermate": ["lavatrice", "asciugatrice", "lavastoviglie", "WiFi", "tutte le bollette incluse", "terrace"],
+        "prezzo": "non reperibile direttamente; stimato >2000 €/mese per zona",
+        "note": "dotazioni eccellenti ma zona proibisce il range di prezzo"
+      }
+    },
+    {
+      "id": "immobiliare-113582217",
+      "url": "https://www.immobiliare.it/annunci/113582217/",
+      "portale": "immobiliare.it",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "filtro 4 (stimato) — cauzione dichiarata €5.100; in Italia la cauzione è tipicamente 2-3 mesi di affitto. Stima: 5.100/3 = 1.700 €/mese o 5.100/2 = 2.550 €/mese. In entrambi i casi supera il limite di 1.500 €",
+      "dati_raccolti": {
+        "indirizzo": "Via Carlo Farini 69, Milano (zona Farini-Isola)",
+        "camere": "trilocale — ingresso + soggiorno open kitchen + camera matrimoniale + studio singolo (letto a scomparsa) + 2 bagni",
+        "posti_letto": "1 matrimoniale + 1 singola (letto a scomparsa) = 3 posti (filtro 1 ok)",
+        "piano": "2° piano, balconi",
+        "dotazioni_confermate": ["lavatrice (2° bagno)", "riscaldamento autonomo"],
+        "cauzione": 5100,
+        "prezzo_stimato": "~1.700 €/mese (da cauzione ÷ 3)",
+        "disponibilita": "non verificata",
+        "metro": "MM3 Maciachini ~4-5 min a piedi (stimato per via)",
+        "note": "appartamento completamente ristrutturato con finiture pregiate; prezzo stimato sopra budget"
+      }
+    },
+    {
+      "id": "idealista-24370460",
+      "url": "https://www.idealista.it/immobile/24370460/",
+      "portale": "idealista.it",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — prezzo non reperibile (sito inaccessibile HTTP 403); semi-arredato (mancano divano e lavatrice non confermati); filtri 4 e 5 non verificabili",
+      "dati_raccolti": {
+        "indirizzo": "Via Carlo Farini 57/a, Milano (zona Garibaldi-Isola)",
+        "mq": 87,
+        "camere": "trilocale — ingresso + soggiorno+cucina+patio 20mq + camera+bagno + piccola camera + 2° bagno",
+        "posti_letto": "1 matrimoniale (stima) + 1 singola = 3 posti (filtro 1 ok)",
+        "piano": "non specificato",
+        "dotazioni_confermate": ["riscaldamento a pavimento", "AC", "cucina Boffi attrezzata", "armadi", "patio 20mq"],
+        "dotazioni_non_confermate": ["divano", "lavatrice", "WiFi"],
+        "arredamento": "semi-arredato",
+        "prezzo": "non reperibile",
+        "disponibilita": "dal 1 maggio 2026 (stimato da snippet)",
+        "metro_zona": "Garibaldi-Isola — M2/M5 Garibaldi stimata 5-8 min a piedi",
+        "note": "garage 19mq in seminterrato incluso; finiture premium (Schüco, pavimento parquet, allarme). Prezzo probabilmente >1500 €/mese per queste finiture"
+      }
+    },
+    {
+      "id": "viafarini-piccolo-trilocale-maciachini-2026",
+      "url": "https://www.immobiliare.it/affitto-case/milano/farini/",
+      "portale": "immobiliare.it (snippet da WebSearch)",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "filtro 2 — metratura non confermata ≥75 mq; annuncio descritto esplicitamente come 'piccolo e silenzioso trilocale'; stima da layout (ingresso+soggiorno+cucina+bagno+matrimoniale+singola+loggia) = circa 60-70 mq; prudenza impone scarto",
+      "dati_raccolti": {
+        "indirizzo": "Via Farini, Milano (zona Maciachini)",
+        "camere": "trilocale piccolo — ingresso, soggiorno+cucina a vista, bagno doccia, camera matrimoniale, camera singola, loggia",
+        "posti_letto": "1 matrimoniale + 1 singola = 3 posti (filtro 1 ok)",
+        "mq_stimati": "60-70 (stima da layout; descritto 'piccolo')",
+        "disponibilita": "dal 15 maggio 2026",
+        "metro_stazione": "MM3 Maciachini",
+        "metro_distanza_min": 4,
+        "prezzo": "non verificabile",
+        "note": "edificio anni '70, 3 ascensori, portineria; disponibilità ottima ma mq insufficienti"
+      }
+    },
+    {
+      "id": "viafarini-33-89mq-2026",
+      "url": "https://www.immobiliare.it/affitto-case/milano/in-via-carlo-farini/",
+      "portale": "immobiliare.it (snippet da WebSearch)",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — prezzo e dotazioni (divano/lavatrice/wifi/riscaldamento) non reperibili; sito inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per criteri non verificabili",
+      "dati_raccolti": {
+        "indirizzo": "Via Farini 33, Milano (zona Farini)",
+        "mq": 89,
+        "camere": "trilocale elegante, completamente ristrutturato",
+        "disponibilita": "da maggio 2026",
+        "metro_stazione": "MM3 Maciachini (stimata ~4 min a piedi per via)",
+        "prezzo": "non reperibile",
+        "dotazioni": "non verificabili",
+        "note": "candidato interessante per mq e disponibilità; da riesaminare se sito diventa accessibile"
+      }
+    },
+    {
+      "id": "vialestelvio-42-isola-2026",
+      "url": "https://www.casa.it/affitto/appartamenti/milano/dergano-maciachini-farini-maggiolina-zara/farini/",
+      "portale": "casa.it (snippet da WebSearch)",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "filtro 4 — affitto 1.750 € + spese condominiali > 1.500 €/mese",
+      "dati_raccolti": {
+        "indirizzo": "Viale Stelvio 42, Milano (zona Farini-Isola)",
+        "mq": 85,
+        "camere": "trilocale — ingresso, soggiorno+cucina open, divano-letto+poltrone, 2 camere, bagno, ripostiglio",
+        "posti_letto": "1 matrimoniale (stima) + 1 singola + divano-letto = 3+ posti (filtro 1 ok)",
+        "dotazioni_confermate": ["divano", "riscaldamento centralizzato", "WiFi", "porta blindata"],
+        "prezzo_affitto": 1750,
+        "spese_condo": "non specificate ma separate",
+        "prezzo_totale_stimato": ">1750 €",
+        "disponibilita": "dal 6 febbraio 2026",
+        "note": "ottima dotazione ma prezzo fuori budget"
+      }
+    },
+    {
+      "id": "viafarini-quadrilocale-sett2026",
+      "url": "https://www.casa.it/affitto/residenziale/trilocali/milano/",
+      "portale": "casa.it / idealista.it (snippet da WebSearch)",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — si tratta di quadrilocale (4 locali) non trilocale; prezzo, mq e dotazioni sconosciuti; sito inaccessibile",
+      "dati_raccolti": {
+        "indirizzo": "Via Carlo Farini, Milano (zona Maciachini)",
+        "camere": "quadrilocale luminoso panoramico doppia esposizione",
+        "disponibilita": "dal 7 settembre 2026",
+        "metro_stazione": "MM3 Maciachini (stimata 4 min a piedi)",
+        "prezzo": "non reperibile",
+        "note": "disponibilità borderline (7 sett 2026 < 14 sett 2026 ✓); ma prezzo e dotazioni sconosciuti"
+      }
+    },
+    {
+      "id": "trilocale-nuovo-luglio2026-anonimo",
+      "url": "https://www.trovacasa.it/trilocali-in-affitto/milano",
+      "portale": "trovacasa.it (snippet da WebSearch)",
+      "analizzato_il": "2026-05-16",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — indirizzo/zona, mq, prezzo e metro non identificabili; sito inaccessibile dalla sandbox; solo snippet di ricerca parziale disponibile",
+      "dati_raccolti": {
+        "indirizzo": "Milano (zona non specificata)",
+        "camere": "trilocale completamente nuovo",
+        "dotazioni_parziali": ["lavatrice", "lavastoviglie", "AC in tutti gli ambienti"],
+        "disponibilita": "dal 1 luglio 2026",
+        "prezzo": "non reperibile",
+        "metro": "non verificabile",
+        "note": "appartamento nuovo, disponibilità buona; da recuperare se indirizzo specifico individuato"
+      }
+    }
+  ]
 }
