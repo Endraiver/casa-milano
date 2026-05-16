@@ -70,40 +70,33 @@ $ApifyJobs = @(
         }
     }
 
-    # --- DA APPROVARE prima di abilitare (rimuovi il commento <# ... #> attorno al blocco) ---
-    <#
     @{
         Name    = "idealista"
         ActorId = "axlymxp~idealista-scraper"
         Input   = @{
             startUrls = @(@{ url = "https://www.idealista.it/affitto-case/milano-milano/con-prezzo-fino_1500,metri-quadrati-minimi_75/" })
-            maxItems  = 200
+            maxItems  = 100
             country   = "it"
         }
     }
-    #>
 
-    <#
     @{
         Name    = "subito"
         ActorId = "ayrtondavoli97~propscout-scraper"
         Input   = @{
             searchUrl = "https://www.subito.it/annunci-lombardia/affitto/appartamenti/milano/?ps=&pe=1500"
-            maxItems  = 200
+            maxItems  = 100
         }
     }
-    #>
 
-    <#
     @{
         Name    = "casa-it"
         ActorId = "stealth_mode~casa-property-search-scraper"
         Input   = @{
             startUrl = "https://www.casa.it/affitto/residenziale/milano?priceMax=1500&sizeMin=75&rooms=3"
-            maxItems = 200
+            maxItems = 50
         }
     }
-    #>
 )
 
 # --- Esecuzione attori ---
