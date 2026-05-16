@@ -1,27 +1,32 @@
 # run-daily.ps1
-# Esegue il workflow di ricerca appartamenti definito in CLAUDE.md
-# usando Claude Code in modalità non-interattiva (claude -p).
+# Ricerca giornaliera appartamenti Milano.
 #
-# Invocato da Windows Task Scheduler ogni mattina alle 09:00,
-# ma puoi anche lanciarlo a mano per testare: pwsh .\run-daily.ps1
+# Architettura ibrida:
+#   1. PowerShell chiama direttamente gli actor Apify (no sandbox di rete).
+#   2. I dataset grezzi vengono salvati in ./cache/<portale>-YYYY-MM-DD.json.
+#   3. Claude Code (--print) legge i cache files, applica i 7 filtri di CLAUDE.md,
+#      aggiorna analizzati.json + risultati.md e fa commit/push.
 #
-# Log: ogni run scrive in ./logs/run-YYYY-MM-DD_HHmm.log
+# Lancio manuale:
+#   powershell -ExecutionPolicy Bypass -File C:\Users\Antonio\casa-milano\run-daily.ps1
 
 $ErrorActionPreference = "Continue"
 
 $ProjectDir = "C:\Users\Antonio\casa-milano"
+$CacheDir   = Join-Path $ProjectDir "cache"
 $LogDir     = Join-Path $ProjectDir "logs"
-$ClaudeBin  = "C:\Users\Antonio\.local\bin\claude.cmd"
-
-# Fallback se il binario è invece "claude" senza estensione
+$ClaudeBin  = "C:\Users\Antonio\.local\bin\claude.exe"
 if (-not (Test-Path $ClaudeBin)) {
-    $ClaudeBin = "C:\Users\Antonio\.local\bin\claude"
+    foreach ($c in @("C:\Users\Antonio\.local\bin\claude.cmd","C:\Users\Antonio\.local\bin\claude")) {
+        if (Test-Path $c) { $ClaudeBin = $c; break }
+    }
 }
 
-# --- Setup ---
-if (-not (Test-Path $LogDir)) {
-    New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
+# --- Setup directory + log file ---
+foreach ($d in @($CacheDir, $LogDir)) {
+    if (-not (Test-Path $d)) { New-Item -ItemType Directory -Force -Path $d | Out-Null }
 }
+$DateStr   = Get-Date -Format "yyyy-MM-dd"
 $Timestamp = Get-Date -Format "yyyy-MM-dd_HHmm"
 $LogFile   = Join-Path $LogDir "run-$Timestamp.log"
 
@@ -33,60 +38,174 @@ function Write-Log($msg) {
 
 Set-Location $ProjectDir
 Write-Log "=== Avvio run casa-milano-daily ==="
-Write-Log "Working dir: $ProjectDir"
 
-# --- Verifica env var ---
+# --- Carica APIFY_API_TOKEN ---
 if (-not $env:APIFY_API_TOKEN) {
     $env:APIFY_API_TOKEN = [System.Environment]::GetEnvironmentVariable('APIFY_API_TOKEN', 'User')
 }
 if (-not $env:APIFY_API_TOKEN) {
-    Write-Log "ERRORE: APIFY_API_TOKEN non trovato. Setta con: setx APIFY_API_TOKEN <token>"
+    Write-Log "ERRORE: APIFY_API_TOKEN non trovato (setta con setx APIFY_API_TOKEN <token>)"
     exit 1
 }
-Write-Log ("APIFY_API_TOKEN: presente (lunghezza {0})" -f $env:APIFY_API_TOKEN.Length)
+Write-Log ("APIFY_API_TOKEN: presente (len={0})" -f $env:APIFY_API_TOKEN.Length)
 
-# --- Pull ultime modifiche da remote (idempotenza) ---
+# --- git pull per allinearsi alle modifiche manuali ---
 Write-Log "git pull origin main..."
 git pull origin main 2>&1 | ForEach-Object { Add-Content -Path $LogFile -Value $_ -Encoding utf8 }
 
-# --- Prompt per Claude ---
+# ===========================================================================
+#  CONFIG: lista degli attori Apify da chiamare.
+#  Per aggiungere un portale:
+#   1. Approva l'actor sul tuo account Apify (Try for free / Run actor)
+#   2. Decommenta o aggiungi un blocco qui sotto.
+#   3. Verifica che lo schema 'Input' corrisponda a quello richiesto dall'actor.
+# ===========================================================================
+$ApifyJobs = @(
+    @{
+        Name    = "immobiliare"
+        ActorId = "azzouzana~immobiliare-it-listing-page-scraper-by-search-url"
+        Input   = @{
+            startUrl = "https://www.immobiliare.it/affitto-case/milano/?prezzoMassimo=1500&superficieMinima=75&numeroLocali=3"
+            maxItems = 200
+        }
+    }
+
+    # --- DA APPROVARE prima di abilitare (rimuovi il commento <# ... #> attorno al blocco) ---
+    <#
+    @{
+        Name    = "idealista"
+        ActorId = "axlymxp~idealista-scraper"
+        Input   = @{
+            startUrls = @(@{ url = "https://www.idealista.it/affitto-case/milano-milano/con-prezzo-fino_1500,metri-quadrati-minimi_75/" })
+            maxItems  = 200
+            country   = "it"
+        }
+    }
+    #>
+
+    <#
+    @{
+        Name    = "subito"
+        ActorId = "ayrtondavoli97~propscout-scraper"
+        Input   = @{
+            searchUrl = "https://www.subito.it/annunci-lombardia/affitto/appartamenti/milano/?ps=&pe=1500"
+            maxItems  = 200
+        }
+    }
+    #>
+
+    <#
+    @{
+        Name    = "casa-it"
+        ActorId = "stealth_mode~casa-property-search-scraper"
+        Input   = @{
+            startUrl = "https://www.casa.it/affitto/residenziale/milano?priceMax=1500&sizeMin=75&rooms=3"
+            maxItems = 200
+        }
+    }
+    #>
+)
+
+# --- Esecuzione attori ---
+$JobReport = @()
+foreach ($job in $ApifyJobs) {
+    $cacheFile = Join-Path $CacheDir "$($job.Name)-$DateStr.json"
+
+    if (Test-Path $cacheFile) {
+        $sz = (Get-Item $cacheFile).Length
+        Write-Log ("[{0}] cache esistente ({1} byte), skip chiamata Apify." -f $job.Name, $sz)
+        $JobReport += [pscustomobject]@{ Job = $job.Name; Status = "cached"; File = $cacheFile }
+        continue
+    }
+
+    $body = $job.Input | ConvertTo-Json -Depth 10 -Compress
+    $url  = "https://api.apify.com/v2/acts/$($job.ActorId)/run-sync-get-dataset-items?token=$env:APIFY_API_TOKEN"
+    Write-Log ("[{0}] chiamo Apify actor {1}..." -f $job.Name, $job.ActorId)
+
+    try {
+        $resp = Invoke-RestMethod -Uri $url -Method POST -ContentType "application/json" -Body $body -TimeoutSec 600 -ErrorAction Stop
+        $items = @($resp)
+
+        # Apify può restituire un array di items oppure un singolo oggetto di errore.
+        # Cerchiamo casi di errore (rate limit / permessi).
+        $firstObj = $items | Select-Object -First 1
+        if ($firstObj -and $firstObj.PSObject.Properties['message'] -and $items.Count -le 1) {
+            $msgText = "$($firstObj.message)"
+            if ($msgText -match "Rate limit|permission|denied|not approved") {
+                Write-Log ("[{0}] errore Apify: {1}" -f $job.Name, $msgText)
+                $JobReport += [pscustomobject]@{ Job = $job.Name; Status = "error"; Detail = $msgText }
+                continue
+            }
+        }
+
+        # Salva il dataset
+        $items | ConvertTo-Json -Depth 30 | Set-Content -Path $cacheFile -Encoding utf8
+        Write-Log ("[{0}] OK — {1} annunci salvati in {2}" -f $job.Name, $items.Count, $cacheFile)
+        $JobReport += [pscustomobject]@{ Job = $job.Name; Status = "ok"; Count = $items.Count; File = $cacheFile }
+    }
+    catch {
+        $em = $_.Exception.Message
+        $body = $null
+        if ($_.Exception.Response) {
+            try {
+                $reader = New-Object System.IO.StreamReader($_.Exception.Response.GetResponseStream())
+                $body = $reader.ReadToEnd()
+            } catch {}
+        }
+        Write-Log ("[{0}] ECCEZIONE: {1}" -f $job.Name, $em)
+        if ($body) { Write-Log ("[{0}] body: {1}" -f $job.Name, ($body.Substring(0,[Math]::Min(300,$body.Length)))) }
+        $JobReport += [pscustomobject]@{ Job = $job.Name; Status = "exception"; Detail = $em }
+    }
+}
+
+Write-Log "=== Report Apify ==="
+$JobReport | ForEach-Object { Write-Log ("  {0,-15} {1}" -f $_.Job, ($_ | ConvertTo-Json -Compress)) }
+
+# --- Se nessun dato è stato raccolto in questa esecuzione, fermiamoci qui ---
+$okJobs = $JobReport | Where-Object { $_.Status -in @("ok","cached") }
+if (-not $okJobs) {
+    Write-Log "Nessun dataset raccolto. Stop senza invocare Claude."
+    exit 0
+}
+
+# --- Invoca Claude solo per il filtraggio ---
+$cacheFilesToday = (Get-ChildItem $CacheDir -Filter "*-$DateStr.json" -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName }) -join ", "
+
 $Prompt = @"
-Sei nella cartella casa-milano. Leggi CLAUDE.md ed esegui il workflow di ricerca appartamenti seguendo TUTTE le istruzioni che trovi lì.
+Sei nella cartella casa-milano. Hai a disposizione dataset Apify GIA' SCARICATI per oggi $DateStr in: $cacheFilesToday
 
-In sintesi:
-1. Carica analizzati.json (lista degli annunci già esaminati — NON rianalizzarli)
-2. Esegui scraping via Apify (token in `$env:APIFY_API_TOKEN`) sui portali elencati in CLAUDE.md
-3. Per ogni NUOVO annuncio applica i 7 filtri gerarchici IN ORDINE: appena uno fallisce → scarta, motiva, e passa al prossimo
-4. Aggiorna analizzati.json con OGNI annuncio esaminato (esito + motivo scarto)
-5. Aggiungi gli accettati a risultati.md (tabella + scheda dettagliata)
-6. Commit e push:
-     git add analizzati.json risultati.md
-     git commit -m "daily scan $(Get-Date -Format yyyy-MM-dd): N nuovi, M accettati"
+Compito: applica i 7 filtri gerarchici di CLAUDE.md a OGNI annuncio NUOVO (non gia' in analizzati.json) e aggiorna lo stato.
+
+Passi:
+1. Leggi CLAUDE.md per le regole.
+2. Leggi analizzati.json (lista annunci gia' esaminati, hanno campo id univoco).
+3. Per ogni file in cache/*-$DateStr.json, leggilo come lista di annunci. Per ciascun annuncio:
+   - Costruisci un id stabile (es. "immobiliare-<id-annuncio>" usando l'id presente nel dataset Apify).
+   - Se l'id e' gia' in analizzati.json, salta.
+   - Applica i filtri 1->7 IN ORDINE. Appena uno fallisce: aggiungi entry a analizzati.json con esito="scartato" e motivo_scarto, e passa al prossimo annuncio (NON valutare i filtri successivi).
+   - Se tutti i 7 filtri passano: aggiungi a analizzati.json esito="accettato" e aggiungi riga in risultati.md (tabella + scheda dettagliata).
+4. Per i filtri 6 (metro <=7min) e 7 (<40min Bicocca+Bovisa) usa WebFetch su Google Maps. Se la WebFetch e' bloccata, prova con Bash + curl + dangerouslyDisableSandbox=true verso https://www.google.com/maps/dir/?api=1&... Se proprio non riesci, scarta per prudenza (motivo: "tempi non verificabili").
+5. Ordina i risultati in risultati.md per score = prezzo_per_persona + minuti_universita_max * 8 (piu' basso = meglio).
+6. Commit + push:
+     git add analizzati.json risultati.md cache
+     git commit -m "daily scan $DateStr"
      git push origin main
-7. Stampa riassunto finale: N analizzati, N accettati, N scartati (per filtro)
+7. Stampa riassunto finale: N analizzati, N accettati, N scartati per filtro.
 
-Niente conferme, vai dritto. Rispetta la gerarchia rigida dei filtri.
+Niente conferme, vai dritto. Gerarchia rigida. Idempotenza (mai duplicati). Prudenza (se dato non verificabile, scarta).
 "@
 
-Write-Log "Invoco Claude Code (modalità non-interattiva)..."
-
-# --- Invoca claude -p ---
+Write-Log "Invoco Claude per il filtraggio..."
 try {
-    $output = & $ClaudeBin -p $Prompt --dangerously-skip-permissions 2>&1
-    foreach ($line in $output) {
-        Add-Content -Path $LogFile -Value $line -Encoding utf8
-    }
-    Write-Log "=== Run completata con exit code $LASTEXITCODE ==="
-}
-catch {
-    Write-Log ("ERRORE durante l'invocazione di claude: " + $_.Exception.Message)
-    exit 2
+    $out = & $ClaudeBin -p $Prompt --dangerously-skip-permissions 2>&1
+    foreach ($line in $out) { Add-Content -Path $LogFile -Value $line -Encoding utf8 }
+    Write-Log "Claude exit code: $LASTEXITCODE"
+} catch {
+    Write-Log ("Eccezione invocando Claude: " + $_.Exception.Message)
 }
 
-# --- Pulizia: tieni solo gli ultimi 30 log ---
-Get-ChildItem -Path $LogDir -Filter "run-*.log" |
-    Sort-Object LastWriteTime -Descending |
-    Select-Object -Skip 30 |
-    Remove-Item -Force -ErrorAction SilentlyContinue
+# --- Cleanup log vecchi (tieni ultimi 30 + cache > 7gg vecchi) ---
+Get-ChildItem $LogDir   -Filter "run-*.log"  | Sort-Object LastWriteTime -Descending | Select-Object -Skip 30 | Remove-Item -Force -ErrorAction SilentlyContinue
+Get-ChildItem $CacheDir -Filter "*.json"     | Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-7) } | Remove-Item -Force -ErrorAction SilentlyContinue
 
-Write-Log "Done."
+Write-Log "=== Run completata ==="
