@@ -17,7 +17,10 @@ Ultimo aggiornamento: 2026-05-16
 
 | Data | Annunci nuovi analizzati | Accettati | Scartati |
 |------|--------------------------|-----------|---------|
+| 2026-05-17 | 3 | 0 | 3 |
 | 2026-05-16 | 12 | 0 | 12 |
+
+**Nota run 2026-05-17**: Accesso ancora bloccato dalla sandbox. Apify richiede approvazione di permessi dell'account; i siti immobiliari restituiscono HTTP 403. WebSearch ha trovato 3 URL nuovi (Via Rezia, Via Garegnano, Piazza Filangieri) ma senza dati concreti nei snippet. Risultato: 3 annunci analizzati, 3 scartati (1 per disponibilità ottobre, 2 per dati insufficienti). **Workflow bloccato**: la sandbox impedisce l'accesso ai dati dettagliati degli annunci, rendendo impossibile applicare i 7 filtri. **Azione richiesta**: configurare Apify con permessi approvati oppure accesso diretto ai portali.
 
 **Nota run 2026-05-16**: Lo scraping via Apify non è stato possibile per restrizioni di rete della sandbox (api.apify.com e tutti i portali restituiscono HTTP 403). I dati sono stati raccolti tramite WebSearch (snippet Google). Per 12 annunci trovati, nessuno ha superato tutti i 7 filtri. Il candidato più interessante (ZappyRent Piazza dei Daini, Bicocca, 87 mq, 1.400 €, M5 Bignami 2 min, Bicocca 4 min a piedi) è stato scartato al filtro 3 per disponibilità incerta (occupato, nessuna data futura nota). **Da ricontrollare alla prossima run** quando il sito sarà accessibile o l'appartamento risulterà nuovamente disponibile.
 

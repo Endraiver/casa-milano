@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-16T23:00:00",
+  "last_run": "2026-05-17T10:30:00",
   "nota_infrastruttura": "Sandbox Anthropic blocca connessioni HTTP verso api.apify.com e verso tutti i portali immobiliari. Lo scraping Apify non è stato possibile. I dati sono stati raccolti tramite WebSearch (risultati Google) e analizzati sulle informazioni disponibili negli snippet di ricerca. Per ogni annuncio è indicata la limitazione.",
   "annunci": [
     {
@@ -230,6 +230,66 @@
         "prezzo": "non reperibile",
         "metro": "non verificabile",
         "note": "appartamento nuovo, disponibilità buona; da recuperare se indirizzo specifico individuato"
+      }
+    },
+    {
+      "id": "immobiliare-128809250",
+      "url": "https://www.immobiliare.it/annunci/128809250/",
+      "portale": "immobiliare.it",
+      "analizzato_il": "2026-05-17",
+      "esito": "scartato",
+      "motivo_scarto": "filtro 3 — disponibilità dal 15 ottobre 2026 > deadline 14 settembre 2026",
+      "dati_raccolti": {
+        "indirizzo": "Via Privata Rezia, Lodi/Romana, Milano",
+        "mq": 75,
+        "camere": "trilocale",
+        "posti_letto": "presumibilmente 2 matrimoniali (non confermati)",
+        "prezzo_affitto": 1100,
+        "spese_condo": 230,
+        "prezzo_totale": 1330,
+        "disponibilita": "15 ottobre 2026",
+        "piano": "1° con ascensore",
+        "metro_stazione": "M3 Lodi",
+        "metro_distanza_min": 10,
+        "dotazioni_confermate": ["riscaldamento centralizzato"],
+        "dotazioni_non_confermate": ["divano", "WiFi", "lavatrice", "AC"],
+        "note": "affitto entro budget ma disponibilità oltre scadenza; massimo 2 persone"
+      }
+    },
+    {
+      "id": "zappyrent-via-garegnano-33983",
+      "url": "https://www.zappyrent.com/it/affitto/via-garegnano-milano-id-33983",
+      "portale": "zappyrent",
+      "analizzato_il": "2026-05-17",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — prezzo, metratura, dotazioni, disponibilità e distanza metro non reperibili; sito zappyrent.com inaccessibile dalla sandbox (HTTP 403)",
+      "dati_raccolti": {
+        "indirizzo": "Via Garegnano, Milano",
+        "zona": "non specificata",
+        "mq": "non reperibile",
+        "camere": "trilocale",
+        "prezzo": "non reperibile",
+        "disponibilita": "non verificata",
+        "metro": "non verificabile",
+        "note": "candidato potenziale; da recuperare quando sito diventa accessibile"
+      }
+    },
+    {
+      "id": "zappyrent-piazza-filangieri-35270",
+      "url": "https://www.zappyrent.com/it/affitto/piazza-gaetano-filangieri-milano-id-35270",
+      "portale": "zappyrent",
+      "analizzato_il": "2026-05-17",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — prezzo, metratura, dotazioni, disponibilità e distanza metro non reperibili; sito zappyrent.com inaccessibile dalla sandbox (HTTP 403)",
+      "dati_raccolti": {
+        "indirizzo": "Piazza Gaetano Filangieri, Milano",
+        "zona": "Magenta/San Vittore",
+        "mq": "non reperibile",
+        "camere": "trilocale",
+        "prezzo": "non reperibile",
+        "disponibilita": "non verificata",
+        "metro": "non verificabile",
+        "note": "candidato potenziale; da recuperare quando sito diventa accessibile"
       }
     }
   ]
