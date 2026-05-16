@@ -17,9 +17,15 @@ Ultimo aggiornamento: 2026-05-16
 
 | Data | Annunci nuovi analizzati | Accettati | Scartati |
 |------|--------------------------|-----------|---------|
+| 2026-05-17 (23:45) | 3 | 0 | 3 |
 | 2026-05-17 (14:00) | 0 | 0 | 0 |
 | 2026-05-17 (10:30) | 3 | 0 | 3 |
 | 2026-05-16 | 12 | 0 | 12 |
+
+**Nota run 2026-05-17 (23:45)**: WebSearch ha trovato 3 annunci nuovi (Via Simone d'Orsenigo, Piazza Aspromonte 51/43). Risultato: 3 annunci analizzati, 3 scartati:
+  - immobiliare-115657565 (Via Simone d'Orsenigo, 90 mq, 01/09/2026) — scartato per **dati insufficienti** (prezzo non reperibile)
+  - casa-49534568 (Piazza Aspromonte 51, 80 mq, €1.300) — scartato per **dati insufficienti** (disponibilità non specificata; candidato interessante se disponibile ≤14/09/2026)
+  - immobiliare-112663923 (Piazza Aspromonte 43, 90 mq, €1.600) — scartato per **filtro 4** (prezzo €1.600 > €1.500)
 
 **Nota run 2026-05-17 (10:30)**: Accesso bloccato dalla sandbox. Apify richiede approvazione di permessi dell'account; i siti immobiliari restituiscono HTTP 403. WebSearch ha trovato 3 URL nuovi (Via Rezia, Via Garegnano, Piazza Filangieri) ma senza dati concreti nei snippet. Risultato: 3 annunci analizzati, 3 scartati (1 per disponibilità ottobre, 2 per dati insufficienti). 
 

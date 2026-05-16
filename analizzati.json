@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-05-17T14:00:00",
-  "nota_infrastruttura": "Sandbox Anthropic blocca connessioni HTTP verso api.apify.com e verso tutti i portali immobiliari. Lo scraping Apify non è stato possibile. I dati sono stati raccolti tramite WebSearch (risultati Google) e analizzati sulle informazioni disponibili negli snippet di ricerca. Per ogni annuncio è indicata la limitazione. Run 2026-05-17 14:00: Tentato accesso a Apify (bloccato da permessi account), curl diretto (HTTP 403), WebFetch (HTTP 403), WebSearch per snippet. Nessun nuovo annuncio recuperabile con dettagli sufficienti per i 7 filtri. Azione consigliata: configurare Apify con permessi approvati o richiedere accesso ai portali tramite VPN/proxy.",
+  "last_run": "2026-05-17T23:45:00",
+  "nota_infrastruttura": "Sandbox Anthropic blocca connessioni HTTP verso api.apify.com e verso tutti i portali immobiliari. Lo scraping Apify non è stato possibile. I dati sono stati raccolti tramite WebSearch (risultati Google) e analizzati sulle informazioni disponibili negli snippet di ricerca. Per ogni annuncio è indicata la limitazione. Run 2026-05-17 14:00: Tentato accesso a Apify (bloccato da permessi account), curl diretto (HTTP 403), WebFetch (HTTP 403), WebSearch per snippet. Run 2026-05-17 23:45: Nuovi annunci trovati via WebSearch (Via Simone d'Orsenigo, Piazza Aspromonte 51/43), ma dati insufficienti (prezzo/disponibilità/dotazioni). Azione consigliata: configurare Apify con permessi approvati o richiedere accesso ai portali tramite VPN/proxy.",
   "annunci": [
     {
       "id": "zappyrent-via-lambrate-22589",
@@ -290,6 +290,69 @@
         "disponibilita": "non verificata",
         "metro": "non verificabile",
         "note": "candidato potenziale; da recuperare quando sito diventa accessibile"
+      }
+    },
+    {
+      "id": "immobiliare-115657565",
+      "url": "https://www.immobiliare.it/annunci/115657565/",
+      "portale": "immobiliare.it",
+      "analizzato_il": "2026-05-17",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — prezzo non reperibile da WebSearch/WebFetch (sito inaccessibile HTTP 403); filtro 4 non verificabile",
+      "dati_raccolti": {
+        "indirizzo": "Via Simone d'Orsenigo 18, Cadore, Milano (zona Lodi)",
+        "mq": 90,
+        "camere": "trilocale",
+        "piano": "1° con ascensore",
+        "posti_letto": "presumibilmente 3 (stima da trilocale: 1 matrimoniale + 1 singola)",
+        "prezzo": "non reperibile",
+        "disponibilita": "01/09/2026 ✓",
+        "metro_stazione": "non specificata negli snippet",
+        "metro_distanza_min": "non verificabile",
+        "dotazioni": "non verificabili",
+        "note": "metratura e disponibilità buone, ma prezzo sconosciuto blocca l'analisi"
+      }
+    },
+    {
+      "id": "casa-49534568",
+      "url": "https://www.casa.it/immobili/49534568/",
+      "portale": "casa.it",
+      "analizzato_il": "2026-05-17",
+      "esito": "scartato",
+      "motivo_scarto": "dati insufficienti — disponibilità non specificata negli snippet; filtro 3 non verificabile",
+      "dati_raccolti": {
+        "indirizzo": "Piazza Aspromonte 51, Milano (zona Loreto/Città Studi)",
+        "mq": 80,
+        "camere": "trilocale — 2 camere (presumibilmente 1 matrimoniale + 1 singola = 3 posti)",
+        "prezzo_totale": 1300,
+        "prezzo_incluso": "€1.300/mese (snippet suggerisce tutto incluso)",
+        "disponibilita": "non specificata negli snippet",
+        "metro_stazione": "Loreto (M1/M2) — a pochi minuti",
+        "metro_distanza_min": "stimato 5-8 min a piedi",
+        "dotazioni_confermate": ["lavatrice", "AC"],
+        "dotazioni_non_confermate": ["divano", "WiFi", "riscaldamento"],
+        "note": "prezzo e metratura ottimi, ma disponibilità non verificabile; candidato interessante se disponibile entro 14/09/2026"
+      }
+    },
+    {
+      "id": "immobiliare-112663923",
+      "url": "https://www.immobiliare.it/en/annunci/112663923/",
+      "portale": "immobiliare.it",
+      "analizzato_il": "2026-05-17",
+      "esito": "scartato",
+      "motivo_scarto": "filtro 4 — prezzo €1.600 (incluso condominio e riscaldamento) > budget massimo €1.500",
+      "dati_raccolti": {
+        "indirizzo": "Piazza Aspromonte 43, Milano (zona Loreto/Città Studi)",
+        "mq": 90,
+        "camere": "trilocale",
+        "prezzo_totale": 1600,
+        "prezzo_incluso": "€1.600/mese (include condominio, acqua, riscaldamento centralizzato)",
+        "disponibilita": "~agosto 2026 (da snippet)",
+        "metro_stazione": "Loreto (M1/M2)",
+        "metro_distanza_min": "stimato 5-8 min a piedi",
+        "dotazioni_confermate": ["riscaldamento centralizzato"],
+        "dotazioni_non_confermate": ["divano", "lavatrice", "WiFi"],
+        "note": "metratura e zona ottimi, ma prezzo supera il budget di €100/mese"
       }
     }
   ]
