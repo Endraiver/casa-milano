@@ -61,47 +61,45 @@ git pull origin main 2>&1 | ForEach-Object { Add-Content -Path $LogFile -Value $
 #   3. Verifica che lo schema 'Input' corrisponda a quello richiesto dall'actor.
 # ===========================================================================
 $ApifyJobs = @(
-    # Immobiliare URL #1: tutta Milano con filtro prezzo allargato.
+    # Immobiliare: una sola call con maxItems alto (il free tier ha rate-limit
+    # per-attore di 30 min, quindi 2 call back-to-back sullo stesso actor falliscono).
+    # URL semplice: tutto Milano sotto 1500 EUR, Claude filtra a valle per metratura/locali.
     # Costo: $1 per 1.000 risultati.
     @{
         Name    = "immobiliare"
         ActorId = "azzouzana~immobiliare-it-listing-page-scraper-by-search-url"
         Input   = @{
-            startUrl = "https://www.immobiliare.it/affitto-case/milano/?prezzoMassimo=1700"
-            maxItems = 150
+            startUrl = "https://www.immobiliare.it/affitto-case/milano/?prezzoMassimo=1500&numeroLocali=3"
+            maxItems = 250
         }
     }
 
-    # Immobiliare URL #2: zona Bicocca-Niguarda (corridoio nord vicino alle universita').
-    # Stesso attore, secondo call mirato per non perdere annunci della zona target.
-    @{
-        Name    = "immobiliare-nord"
-        ActorId = "azzouzana~immobiliare-it-listing-page-scraper-by-search-url"
-        Input   = @{
-            startUrl = "https://www.immobiliare.it/affitto-case/milano/bicocca-niguarda/?prezzoMassimo=1700"
-            maxItems = 80
-        }
-    }
-
-    # Idealista URL-based (igolaizola). Da APPROVARE su Apify prima di abilitare.
-    # https://apify.com/igolaizola/idealista-scraper -> Try for free
+    # Idealista (igolaizola). Schema strutturato: country+location+operation, NON URL.
     @{
         Name    = "idealista"
         ActorId = "igolaizola~idealista-scraper"
         Input   = @{
-            search   = @("https://www.idealista.it/affitto-case/milano-milano/con-prezzo-fino_1700/")
-            maxItems = 30
+            operation     = "rent"
+            propertyType  = "homes"
+            country       = "it"
+            location      = "Milano"
+            maxItems      = 50
+            maxPrice      = "1700"
+            sortBy        = "mostRecent"
+            fetchDetails  = $false
+            fetchStats    = $false
         }
     }
 
-    # Subito (emastra/subito-it-immobili). Da APPROVARE su Apify prima di abilitare.
-    # https://apify.com/emastra/subito-it-immobili -> Try for free
+    # Subito (emastra/subito-it-immobili). Schema: startUrls array di STRINGHE,
+    # maxResultItems (non maxItems).
     @{
         Name    = "subito"
         ActorId = "emastra~subito-it-immobili"
         Input   = @{
-            startUrls = @(@{ url = "https://www.subito.it/annunci-lombardia/affitto/appartamenti/milano/?pe=1700" })
-            maxItems  = 30
+            startUrls       = @("https://www.subito.it/appartamenti-affitto/milano/")
+            maxResultItems  = 50
+            onlyPrivate     = $false
         }
     }
 
