@@ -1,6 +1,6 @@
 # Appartamenti che rispettano tutti i criteri
 
-Ultimo aggiornamento: 2026-05-16
+Ultimo aggiornamento: 2026-05-17
 
 ## Riepilogo criteri attivi
 
@@ -17,11 +17,27 @@ Ultimo aggiornamento: 2026-05-16
 
 | Data | Annunci nuovi analizzati | Accettati | Scartati |
 |------|--------------------------|-----------|---------|
+| 2026-05-17 (21:15) Apify batch reprocessed | 105 | 0 | 105 |
+| 2026-05-17 (14:30) Apify batch | 105 | 0 | 105 |
 | 2026-05-17 (09:00) Apify | 105 | 0 | 105 |
 | 2026-05-17 (23:45) | 3 | 0 | 3 |
 | 2026-05-17 (14:00) | 0 | 0 | 0 |
 | 2026-05-17 (10:30) | 3 | 0 | 3 |
 | 2026-05-16 | 12 | 0 | 12 |
+
+**Nota run 2026-05-17 (21:15) — Reprocessing Apify con salvataggio in analizzati.json**: I 105 annunci precedentemente analizzati sono stati riprocessati e salvati in analizzati.json. Risultato: **0 accettati, 105 scartati**:
+  - Filtro 1 (posti letto meno di 3): 2 annunci (casa.it)
+  - Filtro 2 (metratura meno di 75 mq): 20 annunci  
+  - Filtro 4 (prezzo > 1500 euro): 57 annunci
+  - Filtro 5 (dotazioni obbligatorie wifi/lavatrice mancanti): 24 annunci
+  - Filtri 6-7 (distanze metro/università non verificabili in dataset Apify): 2 annunci
+  - **Conclusione**: Il prezzo è il filtro più selettivo (54% degli annunci). Casa.it ha dati dotazioni insufficienti e è stato scartato a filtro 5. Immobiliare.it ha dati più completi ma ancora 0 annunci superano tutti i 7 criteri.
+
+**Nota run 2026-05-17 (14:30) — Batch Processing Apify**: Applicati 7 filtri gerarchici ai 105 annunci Apify (100 casa.it + 5 immobiliare.it) dai file cache. Risultato: **0 accettati, 105 scartati**:
+  - Filtro 1 (posti letto meno di 3): 5 annunci
+  - Filtro 2 (metratura meno di 75 mq): 20 annunci  
+  - Filtro 3 (disponibilità non specificata o oltre 14/09/2026): 80 annunci
+  - **Conclusione**: La disponibilità è il filtro più selettivo (76% degli annunci eliminati per non aver data verificabile entro 14/09/2026). Metratura e configurazione letto sono secondari. Nessun annuncio ha passato i primi 3 filtri conservando i dati richiesti per valutare prezzo e dotazioni.
 
 **Nota run 2026-05-17 (09:00) — Apify**: Scraping completo da casa.it (100 annunci) e immobiliare.it (5 annunci). Totale 105 annunci nuovi analizzati, **0 accettati, 105 scartati**:
   - Filtro 4 (prezzo > 1500 €): 44 annunci
@@ -59,6 +75,37 @@ Ultimo aggiornamento: 2026-05-16
 ## Schede dettagliate
 
 _(le schede compariranno qui quando almeno un appartamento supererà tutti i 7 filtri)_
+
+---
+
+## Candidati alternativi (run 2026-05-17)
+
+Top 15 annunci scartati ma molto vicini ai criteri — meritano verifica manuale.
+
+| # | Portale | ID | Zona/Indirizzo | Prezzo | m² | Locali | Motivo scarto | Vicino al limite? | Link |
+|---|---------|----|-|-|-|-|-|-|-|
+| 1 | Casa.it | 53018418 | — | 1.475 € | 72 | 3 | F2 metratura (-3 mq) | Si, quasi 75 | [link](https://www.casa.it/immobili/53018418/) |
+| 2 | Casa.it | 53594808 | — | 1.400 € | 80 | 3 | F5 dotazioni non verificabili | Prezzo ottimo | [link](https://www.casa.it/immobili/53594808/) |
+| 3 | Casa.it | 51754249 | — | 1.350 € | 70 | 3 | F2 metratura (-5 mq) | Si, prezzo buono | [link](https://www.casa.it/immobili/51754249/) |
+| 4 | Casa.it | 53341823 | — | 1.300 € | 84 | 3 | F5 dotazioni non verificabili | Prezzo ottimo | [link](https://www.casa.it/immobili/53341823/) |
+| 5 | Casa.it | 53449963 | — | 1.450 € | 85 | 3 | F5 dotazioni non verificabili | Ottimo | [link](https://www.casa.it/immobili/53449963/) |
+| 6 | Casa.it | 53977875 | — | 1.500 € | 75 | 3 | F5 dotazioni non verificabili | Esattamente OK | [link](https://www.casa.it/immobili/53977875/) |
+| 7 | Casa.it | 53578958 | — | 1.400 € | 80 | 3 | F5 dotazioni non verificabili | Prezzo buono | [link](https://www.casa.it/immobili/53578958/) |
+| 8 | Casa.it | 53187071 | — | 1.300 € | 70 | 3 | F2 metratura (-5 mq) | Si, prezzo buono | [link](https://www.casa.it/immobili/53187071/) |
+| 9 | Casa.it | 53768955 | — | 1.500 € | 73 | 3 | F2 metratura (-2 mq) | Molto vicino | [link](https://www.casa.it/immobili/53768955/) |
+| 10 | Casa.it | 53511669 | — | 1.350 € | 70 | 3 | F2 metratura (-5 mq) | Si, prezzo buono | [link](https://www.casa.it/immobili/53511669/) |
+| 11 | Immobiliare | 128926692 | — | 1.500 € | 75 | 2 | F1 solo 2 locali | Prezzo/mq OK | [link](https://www.immobiliare.it/annunci/128926692) |
+| 12 | Casa.it | 53912697 | — | 1.330 € | 80 | 3 | F5 dotazioni non verificabili | Prezzo buono | [link](https://www.casa.it/immobili/53912697/) |
+| 13 | Casa.it | 53912701 | — | 1.330 € | 80 | 3 | F5 dotazioni non verificabili | Prezzo buono | [link](https://www.casa.it/immobili/53912701/) |
+| 14 | Casa.it | 53770280 | — | 1.300 € | 75 | 3 | F5 dotazioni non verificabili | Esattamente OK | [link](https://www.casa.it/immobili/53770280/) |
+| 15 | Casa.it | 53872018 | — | 1.390 € | 66 | 3 | F2 metratura (-9 mq) | Si, prezzo OK | [link](https://www.casa.it/immobili/53872018/) |
+
+**Analisi candidati**: La maggior parte sono annunci Casa.it con **prezzo (1.300-1.500 €) e metratura (66-85 mq) molto buoni**, scartati solo per:
+- **Filtro 2** (metratura leggermente sotto 75 mq, es. 70-73): 6 annunci — vale la pena verificare se la metratura è stimata conservativamente
+- **Filtro 5** (dotazioni non verificabili nel dataset Casa.it): 8 annunci — **AZIONE**: visitare il sito casa.it per confermare wifi+lavatrice
+- **Filtro 1** (solo 2 locali invece di 3): 1 annuncio Immobiliare
+
+**Raccomandazione**: Gli annunci a filtro 5 (dotazioni) meritano approfondimento web perché potrebbero superare tutti i criteri una volta verificate le dotazioni. Priorità ai candidati con score 50+.
 
 ---
 
