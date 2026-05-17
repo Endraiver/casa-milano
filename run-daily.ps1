@@ -74,7 +74,9 @@ $ApifyJobs = @(
         }
     }
 
-    # Idealista (igolaizola). Schema strutturato: country+location+operation, NON URL.
+    # Idealista (igolaizola). Schema strutturato: country+location+operation+bedrooms.
+    # bedrooms=2,3,4 (in Italia un trilocale=2 camere, quadrilocale=3 camere).
+    # minSize 70 mq per scartare a monte microalloggi.
     @{
         Name    = "idealista"
         ActorId = "igolaizola~idealista-scraper"
@@ -83,28 +85,41 @@ $ApifyJobs = @(
             propertyType  = "homes"
             country       = "it"
             location      = "Milano"
-            maxItems      = 50
+            maxItems      = 100
             maxPrice      = "1700"
+            minSize       = "70"
+            bedrooms      = @("2","3","4")
             sortBy        = "mostRecent"
             fetchDetails  = $false
             fetchStats    = $false
         }
     }
 
-    # Subito (emastra/subito-it-immobili). Schema: startUrls array di STRINGHE,
-    # maxResultItems (non maxItems).
+    # Subito (emastra/subito-it-immobili). URL search Lombardia/affitto/appartamenti
+    # con filtri prezzo. Schema: startUrls array di STRINGHE, maxResultItems.
     @{
         Name    = "subito"
         ActorId = "emastra~subito-it-immobili"
         Input   = @{
-            startUrls       = @("https://www.subito.it/appartamenti-affitto/milano/")
-            maxResultItems  = 50
+            startUrls       = @("https://www.subito.it/annunci-lombardia/affitto/appartamenti/milano/?ps=&pe=1700")
+            maxResultItems  = 100
             onlyPrivate     = $false
         }
     }
 
-    # Casa.it: DISATTIVATO (attore piu' caro: $4/1.000 risultati).
-    # Riabilita scommentando il blocco se hai budget Apify per ~$12/mese in piu'.
+    # Casa.it riabilitato (modalita' spendi crediti). Costo $4/1.000 = ~$0.60/giorno.
+    @{
+        Name    = "casa-it"
+        ActorId = "stealth_mode~casa-property-search-scraper"
+        Input   = @{
+            urls                = @("https://www.casa.it/affitto/residenziale/trilocali/milano/")
+            max_items_per_url   = 150
+            ignore_url_failures = $true
+            proxy               = @{ useApifyProxy = $false }
+        }
+    }
+
+    # Blocco commentato di backup (placeholder per riferimento):
     # @{
     #     Name    = "casa-it"
     #     ActorId = "stealth_mode~casa-property-search-scraper"

@@ -1,6 +1,6 @@
 ﻿{
-    "last_run":  "2026-05-17T20:25:49.8705344+02:00",
-    "nota_infrastruttura":  "Sandbox Anthropic blocca connessioni HTTP verso api.apify.com e verso tutti i portali immobiliari. Lo scraping Apify non � stato possibile. I dati sono stati raccolti tramite WebSearch (risultati Google) e analizzati sulle informazioni disponibili negli snippet di ricerca. Per ogni annuncio � indicata la limitazione. Run 2026-05-17 14:00: Tentato accesso a Apify (bloccato da permessi account), curl diretto (HTTP 403), WebFetch (HTTP 403), WebSearch per snippet. Run 2026-05-17 23:45: Nuovi annunci trovati via WebSearch (Via Simone d\u0027Orsenigo, Piazza Aspromonte 51/43), ma dati insufficienti (prezzo/disponibilit�/dotazioni). Azione consigliata: configurare Apify con permessi approvati o richiedere accesso ai portali tramite VPN/proxy.",
+    "last_run":  "2026-05-17T21:05:57.815+02:00",
+    "nota_infrastruttura":  "Run 2026-05-17: Dataset Idealista contiene solo bilocali (26) e monolocali (23). Nessun trilocale/quadrilocale. Tutti gli annunci scartati al filtro 1 (posti letto insufficienti).",
     "annunci":  [
                     {
                         "id":  "zappyrent-via-lambrate-22589",
