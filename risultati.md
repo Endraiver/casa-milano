@@ -1,6 +1,6 @@
 # Appartamenti che rispettano tutti i criteri
 
-Ultimo aggiornamento: 2026-05-17 (21:21 - run Idealista/Subito)
+Ultimo aggiornamento: 2026-05-17 (full batch processing)
 
 ## Riepilogo criteri attivi
 
@@ -12,6 +12,21 @@ Ultimo aggiornamento: 2026-05-17 (21:21 - run Idealista/Subito)
 - Dotazioni: divano, wifi, riscaldamento, lavatrice
 - Trasporti: metro entro 7 min a piedi
 - Università: < 40 min da Bicocca **e** da Bovisa
+
+---
+
+## Nota run 2026-05-17 (23:50 - full reprocessing con filtri binari)
+
+**Reprocessing completo dei 355 annunci in cache** con script deterministico PowerShell:
+
+- **Casa.it** (150): 0 nuovi (150 già analizzati da run precedente) → tutti scartati al filtro 1
+- **Idealista** (100): 1 nuovo → scartato al filtro 1 (bilocale)
+- **Immobiliare** (5): 5 nuovi → tutti scartati al filtro 1 (bilocali/monolocali)
+- **Subito** (100): 1 nuovo → scartato al filtro 1
+
+**Totale run**: 7 annunci nuovi elaborati, **0 accettati, 7 scartati al filtro 1** (posti letto < 3).
+
+**Conclusione**: I filtri 1 e 2 (posti letto e metratura) rimangono i più selettivi. Nessun trilocale/quadrilocale nei nuovi annunci odierni. La dataset oggi contiene prevalentemente bilocali (2 camere).
 
 ---
 
@@ -43,6 +58,7 @@ Ultimo aggiornamento: 2026-05-17 (21:21 - run Idealista/Subito)
 
 | Data | Annunci nuovi analizzati | Accettati | Scartati |
 |------|--------------------------|-----------|---------|
+| 2026-05-17 (23:50 reprocessing) | 7 | 0 | 7 |
 | 2026-05-17 (batch completo cache) | 200 | 0 | 200 |
 | 2026-05-17 (21:21) Idealista/Subito | 2 | 0 | 2 |
 | 2026-05-17 (21:16) Casa.it + Subito reprocessing | 0 | 0 | 0 |

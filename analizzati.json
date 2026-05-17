@@ -3971,7 +3971,63 @@
                         "esito":  "scartato",
                         "portale":  "subito",
                         "url":  "https://www.subito.it/appartamenti/loft-m1-turro-tutto-incluso-milano-647296824.htm"
+                    },
+                    {
+                        "id":  "idealista-",
+                        "analizzato_il":  "2026-05-17",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
+                        "esito":  "scartato",
+                        "portale":  "idealista",
+                        "url":  ""
+                    },
+                    {
+                        "id":  "immobiliare-124721527",
+                        "analizzato_il":  "2026-05-17",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
+                        "esito":  "scartato",
+                        "portale":  "immobiliare",
+                        "url":  ""
+                    },
+                    {
+                        "id":  "immobiliare-126736869",
+                        "analizzato_il":  "2026-05-17",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
+                        "esito":  "scartato",
+                        "portale":  "immobiliare",
+                        "url":  ""
+                    },
+                    {
+                        "id":  "immobiliare-128262002",
+                        "analizzato_il":  "2026-05-17",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
+                        "esito":  "scartato",
+                        "portale":  "immobiliare",
+                        "url":  ""
+                    },
+                    {
+                        "id":  "immobiliare-128926692",
+                        "analizzato_il":  "2026-05-17",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
+                        "esito":  "scartato",
+                        "portale":  "immobiliare",
+                        "url":  ""
+                    },
+                    {
+                        "id":  "immobiliare-128495852",
+                        "analizzato_il":  "2026-05-17",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
+                        "esito":  "scartato",
+                        "portale":  "immobiliare",
+                        "url":  ""
+                    },
+                    {
+                        "id":  "subito-",
+                        "analizzato_il":  "2026-05-17",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
+                        "esito":  "scartato",
+                        "portale":  "subito",
+                        "url":  ""
                     }
                 ],
-    "last_run":  "2026-05-17T21:28:23.6935971+02:00"
+    "last_run":  "2026-05-17T21:38:16"
 }
