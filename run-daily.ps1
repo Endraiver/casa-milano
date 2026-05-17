@@ -61,43 +61,52 @@ git pull origin main 2>&1 | ForEach-Object { Add-Content -Path $LogFile -Value $
 #   3. Verifica che lo schema 'Input' corrisponda a quello richiesto dall'actor.
 # ===========================================================================
 $ApifyJobs = @(
+    # Immobiliare: URL allargata (no filtro server-side su locali/mq).
+    # Cosi' otteniamo piu' annunci nel dataset e Claude filtra a valle.
+    # Costo: $1 per 1.000 risultati.
     @{
         Name    = "immobiliare"
         ActorId = "azzouzana~immobiliare-it-listing-page-scraper-by-search-url"
         Input   = @{
-            startUrl = "https://www.immobiliare.it/affitto-case/milano/?prezzoMassimo=1500&superficieMinima=75&numeroLocali=3"
-            maxItems = 200
+            startUrl = "https://www.immobiliare.it/affitto-case/milano/?prezzoMassimo=1700"
+            maxItems = 100
         }
     }
 
-    # Idealista: l'actor axlymxp richiede locationId interno (non l'URL).
-    # Senza locationId valido per Milano restituisce sempre 0 annunci. Disabilitato
-    # in attesa di trovare il locationId Milano (es. via Idealista Location Scraper)
-    # oppure di sostituirlo con un actor URL-based.
-    # @{
-    #     Name    = "idealista"
-    #     ActorId = "axlymxp~idealista-scraper"
-    #     Input   = @{ country = "it"; locationName = "Milano"; locationId = "???"; propertyType = "homes"; operation = "rent"; maxItems = 50 }
-    # }
-
-    # Subito: l'actor propscout-scraper in test ha restituito annunci di tecnocasa in vendita,
-    # non affitti di subito. Disabilitato in attesa di trovare un actor migliore.
-    # @{
-    #     Name    = "subito"
-    #     ActorId = "ayrtondavoli97~propscout-scraper"
-    #     Input   = @{ searchUrl = "..."; maxItems = 100 }
-    # }
-
+    # Idealista URL-based (igolaizola). Da APPROVARE su Apify prima di abilitare.
+    # https://apify.com/igolaizola/idealista-scraper -> Try for free
     @{
-        Name    = "casa-it"
-        ActorId = "stealth_mode~casa-property-search-scraper"
+        Name    = "idealista"
+        ActorId = "igolaizola~idealista-scraper"
         Input   = @{
-            urls               = @("https://www.casa.it/affitto/residenziale/trilocali/milano/")
-            max_items_per_url  = 100
-            ignore_url_failures = $true
-            proxy              = @{ useApifyProxy = $false }
+            search   = @("https://www.idealista.it/affitto-case/milano-milano/con-prezzo-fino_1700/")
+            maxItems = 30
         }
     }
+
+    # Subito (emastra/subito-it-immobili). Da APPROVARE su Apify prima di abilitare.
+    # https://apify.com/emastra/subito-it-immobili -> Try for free
+    @{
+        Name    = "subito"
+        ActorId = "emastra~subito-it-immobili"
+        Input   = @{
+            startUrls = @(@{ url = "https://www.subito.it/annunci-lombardia/affitto/appartamenti/milano/?pe=1700" })
+            maxItems  = 30
+        }
+    }
+
+    # Casa.it: DISATTIVATO (attore piu' caro: $4/1.000 risultati).
+    # Riabilita scommentando il blocco se hai budget Apify per ~$12/mese in piu'.
+    # @{
+    #     Name    = "casa-it"
+    #     ActorId = "stealth_mode~casa-property-search-scraper"
+    #     Input   = @{
+    #         urls                = @("https://www.casa.it/affitto/residenziale/trilocali/milano/")
+    #         max_items_per_url   = 100
+    #         ignore_url_failures = $true
+    #         proxy               = @{ useApifyProxy = $false }
+    #     }
+    # }
 )
 
 # --- Esecuzione attori ---
