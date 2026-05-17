@@ -1,0 +1,35 @@
+﻿[
+    {
+        "id":  "idealista-21085214",
+        "address":  "Bilocale in Via dei Missaglia, 27, Chiesa Rossa, Milano",
+        "price":  1200,
+        "size":  70,
+        "rooms":  2,
+        "url":  "https://www.idealista.it/immobile/21085214/",
+        "district":  "Abbiategrasso - Chiesa Rossa",
+        "metro":  "non specificato",
+        "score":  405
+    },
+    {
+        "id":  "idealista-35741717",
+        "address":  "Bilocale in Via Sofonisba Anguissola, Bande Nere - Gambara, Milano",
+        "price":  1400,
+        "size":  70,
+        "rooms":  2,
+        "url":  "https://www.idealista.it/immobile/35741717/",
+        "district":  "Lorenteggio - Bande Nere",
+        "metro":  "non specificato",
+        "score":  471.66666666666669
+    },
+    {
+        "id":  "idealista-35741377",
+        "address":  "Bilocale in Via Guglielmo Pecori Giraldi, 5, Sulmona, Milano",
+        "price":  1420,
+        "size":  67,
+        "rooms":  2,
+        "url":  "https://www.idealista.it/immobile/35741377/",
+        "district":  "Corvetto - Rogoredo",
+        "metro":  "non specificato",
+        "score":  478.33333333333331
+    }
+]

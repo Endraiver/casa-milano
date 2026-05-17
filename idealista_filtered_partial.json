@@ -1,0 +1,802 @@
+﻿[
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via dei Missaglia, 27, Chiesa Rossa, Milano",
+                              "mq":  70,
+                              "prezzo":  1200,
+                              "price_by_area":  17
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-0-bilocale-in-via-dei-missaglia",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-14-002",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Valtorta, 22, Turro, Milano",
+                              "mq":  40,
+                              "prezzo":  850,
+                              "price_by_area":  21
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-1-monolocale-in-via-valtorta",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-09-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Vespri Siciliani, 21, Lorenteggio - Giambellino, Milano",
+                              "mq":  35,
+                              "prezzo":  800,
+                              "price_by_area":  23
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-2-bilocale-in-via-vespri-siciliani",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-16-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Comune Antico, 46, Cà Granda - Pratocentenaro, Milano",
+                              "mq":  40,
+                              "prezzo":  900,
+                              "price_by_area":  23
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-3-bilocale-in-via-comune-antico",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-08-003",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Galeazzo Alessi, Corso Genova, Milano",
+                              "mq":  40,
+                              "prezzo":  1000,
+                              "price_by_area":  25
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-4-monolocale-in-via-galeazzo-alessi",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-05-006",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Carlo Torre, 38, Navigli - Porta Genova, Milano",
+                              "mq":  40,
+                              "prezzo":  1000,
+                              "price_by_area":  25
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-5-bilocale-in-via-carlo-torre",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-05-002",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Giuseppe Compagnoni, 13, Indipendenza - Regina Giovanna, Milano",
+                              "mq":  65,
+                              "prezzo":  1650,
+                              "price_by_area":  25
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-6-bilocale-in-via-giuseppe-compagnoni",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-03-003",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Privata Treviso, 6, Cimiano, Milano",
+                              "mq":  50,
+                              "prezzo":  800,
+                              "price_by_area":  16
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-7-bilocale-in-via-privata-treviso",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-09-007",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Maffucci, 40, Dergano, Milano",
+                              "mq":  75,
+                              "prezzo":  1580,
+                              "price_by_area":  21
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-8-bilocale-in-maffucci",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-08-008",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Tortona, 26, Solari - Savona, Milano",
+                              "mq":  45,
+                              "prezzo":  1300,
+                              "price_by_area":  29
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-9-monolocale-in-tortona",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-05-001",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Privata Trasimeno, 40 /10, Crescenzago, Milano",
+                              "mq":  35,
+                              "prezzo":  930,
+                              "price_by_area":  27
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-10-monolocale-in-via-privata-trasimeno",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-09-006",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Viale Premuda, 17, Palestro - Monforte, Milano",
+                              "mq":  35,
+                              "prezzo":  1313,
+                              "price_by_area":  38
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-11-bilocale-in-viale-premuda",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-03-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Pietro Borsieri, 7, Isola, Milano",
+                              "mq":  33,
+                              "prezzo":  1110,
+                              "price_by_area":  34
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-12-monolocale-in-via-pietro-borsieri",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-03-008",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Nino Bixio, 33, Porta Venezia - Repubblica, Milano",
+                              "mq":  45,
+                              "prezzo":  1370,
+                              "price_by_area":  30
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-13-monolocale-in-via-nino-bixio",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-03-011",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Meloria, 10, Fiera, Milano",
+                              "mq":  50,
+                              "prezzo":  1270,
+                              "price_by_area":  25
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-14-bilocale-in-via-meloria",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-02-001",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Giorgio Washington, 92, San Vittore - Washington, Milano",
+                              "mq":  72,
+                              "prezzo":  1680,
+                              "price_by_area":  23
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-15-bilocale-in-via-giorgio-washington",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-02-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Viale Umbria, 54, Porta Vittoria - Calvairate, Milano",
+                              "mq":  40,
+                              "prezzo":  1200,
+                              "price_by_area":  30
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-16-monolocale-in-viale-umbria",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-04-003",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Paul Valery, 3, Famagosta, Milano",
+                              "mq":  55,
+                              "prezzo":  1150,
+                              "price_by_area":  21
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-17-bilocale-in-via-paul-valery",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-15-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Giulio Carcano, 32, Tibaldi - Pezzotti, Milano",
+                              "mq":  60,
+                              "prezzo":  1550,
+                              "price_by_area":  26
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-18-bilocale-in-via-giulio-carcano",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-14-001",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Empedocle, 16, Villa San Giovanni, Milano",
+                              "mq":  50,
+                              "prezzo":  940,
+                              "price_by_area":  19
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-19-monolocale-in-via-empedocle",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-09-009",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Privata Linda Malnati, 3, Morgantini - Segesta, Milano",
+                              "mq":  55,
+                              "prezzo":  1300,
+                              "price_by_area":  24
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-20-monolocale-in-via-privata-linda-malnati",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-18-006",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Franco Tosi, 11, Naviglio Grande - San Cristoforo, Milano",
+                              "mq":  64,
+                              "prezzo":  850,
+                              "price_by_area":  13
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-21-monolocale-in-via-franco-tosi",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-15-001",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Guglielmo Pecori Giraldi, 5, Sulmona, Milano",
+                              "mq":  67,
+                              "prezzo":  1300,
+                              "price_by_area":  19
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-22-bilocale-in-via-guglielmo-pecori-giraldi",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-12-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Generale Mac Mahon, 81, Ghisolfa, Milano",
+                              "mq":  53,
+                              "prezzo":  1000,
+                              "price_by_area":  19
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-23-monolocale-in-generale-mac-mahon",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-02-005",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Rosolino Pilo, Porta Venezia - Repubblica, Milano",
+                              "mq":  25,
+                              "prezzo":  1050,
+                              "price_by_area":  42
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-24-bilocale-in-via-rosolino-pilo",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-03-011",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Luigi Bianchi d\u0027Espinosa, Niguarda, Milano",
+                              "mq":  35,
+                              "prezzo":  750,
+                              "price_by_area":  21
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-25-monolocale-in-via-luigi-bianchi-d-espinosa",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-08-005",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Giacomo Zanella, Argonne - Corsica, Milano",
+                              "mq":  55,
+                              "prezzo":  1000,
+                              "price_by_area":  18
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-26-bilocale-in-via-giacomo-zanella",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-10-005",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Giuseppe Meda, Gottardo, Milano",
+                              "mq":  40,
+                              "prezzo":  950,
+                              "price_by_area":  24
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-27-monolocale-in-via-giuseppe-meda",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-05-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Sofonisba Anguissola, Bande Nere - Gambara, Milano",
+                              "mq":  70,
+                              "prezzo":  1400,
+                              "price_by_area":  20
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-28-bilocale-in-via-sofonisba-anguissola",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-16-002",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Bernardino Verro, Vigentino, Milano",
+                              "mq":  10,
+                              "prezzo":  1100,
+                              "price_by_area":  110
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-29-monolocale-in-via-bernardino-verro",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-13-002",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Francesco de Sanctis, Stadera - Abbiategrasso, Milano",
+                              "mq":  10,
+                              "prezzo":  900,
+                              "price_by_area":  90
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-30-monolocale-in-via-francesco-de-sanctis",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-14-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Bordighera, 16, Famagosta, Milano",
+                              "mq":  54,
+                              "prezzo":  900,
+                              "price_by_area":  17
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-31-bilocale-in-via-bordighera",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-15-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Corso Lodi, Porta Romana, Milano",
+                              "mq":  10,
+                              "prezzo":  950,
+                              "price_by_area":  95
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-32-bilocale-in-corso-lodi",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-04-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Lepontina, Isola, Milano",
+                              "mq":  70,
+                              "prezzo":  1400,
+                              "price_by_area":  20
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-33-bilocale-in-via-lepontina",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-03-008",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Palmanova, 34, Udine, Milano",
+                              "mq":  50,
+                              "prezzo":  850,
+                              "price_by_area":  17
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-34-bilocale-in-via-palmanova",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-10-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  0,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Gianfranco Zuretti, 23, Maggiolina - Villaggio dei Giornalisti, Milano",
+                              "mq":  25,
+                              "prezzo":  1700,
+                              "price_by_area":  68
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 0 camere",
+        "id":  "idealista-35-monolocale-in-via-gianfranco-zuretti",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-09-008",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Porretta, 12, Quarto Oggiaro, Milano",
+                              "mq":  42,
+                              "prezzo":  980,
+                              "price_by_area":  23
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-36-monolocale-in-via-porretta",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-07-003",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via L. Cagnola, 6, Sempione, Milano",
+                              "mq":  35,
+                              "prezzo":  920,
+                              "price_by_area":  26
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-37-monolocale-in-via-l--cagnola",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-02-006",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Giovanni Battista Cassinis, 1, Corvetto, Milano",
+                              "mq":  33,
+                              "prezzo":  950,
+                              "price_by_area":  29
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-38-monolocale-in-via-giovanni-battista-cassinis",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-12-002",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via San Benigno, 5, Argonne - Corsica, Milano",
+                              "mq":  50,
+                              "prezzo":  1600,
+                              "price_by_area":  32
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-39-bilocale-in-via-san-benigno",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-10-005",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale a Villapizzone - Varesina, Milano",
+                              "mq":  40,
+                              "prezzo":  1250,
+                              "price_by_area":  31
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-40-monolocale-a-villapizzone---varesina",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-06-003",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Viale Monza, 137, Turro, Milano",
+                              "mq":  28,
+                              "prezzo":  1460,
+                              "price_by_area":  52
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-41-monolocale-in-viale-monza",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-09-004",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale a Fondazione Prada - Scalo Romana, Milano",
+                              "mq":  29,
+                              "prezzo":  900,
+                              "price_by_area":  31
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-42-monolocale-a-fondazione-prada---scalo-romana",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-13-001",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Luigi Mercantini s.n.c, Bovisa, Milano",
+                              "mq":  55,
+                              "prezzo":  1350,
+                              "price_by_area":  25
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-43-bilocale-in-via-luigi-mercantini-s-n-c",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-08-002",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Riccardo Pitteri, 4, Lambrate, Milano",
+                              "mq":  60,
+                              "prezzo":  1100,
+                              "price_by_area":  18
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-44-bilocale-in-via-riccardo-pitteri",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-10-003",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Savona, 26, Solari - Savona, Milano",
+                              "mq":  40,
+                              "prezzo":  1250,
+                              "price_by_area":  31
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-45-monolocale-in-via-savona",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-05-001",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Privata Licurgo, 2, Precotto, Milano",
+                              "mq":  50,
+                              "prezzo":  1700,
+                              "price_by_area":  34
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-46-bilocale-in-via-privata-licurgo",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-09-005",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Giovanni Battista Sammartini, 49, Maggiolina - Villaggio dei Giornalisti, Milano",
+                              "mq":  45,
+                              "prezzo":  1350,
+                              "price_by_area":  30
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-47-bilocale-in-via-giovanni-battista-sammartini",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-09-008",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  1,
+                              "bagni":  1,
+                              "indirizzo":  "Monolocale in Via Monte Cengio, 10, Rogoredo - Santa Giulia, Milano",
+                              "mq":  60,
+                              "prezzo":  1400,
+                              "price_by_area":  23
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 1 camere",
+        "id":  "idealista-48-monolocale-in-via-monte-cengio",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-12-003",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    },
+    {
+        "portale":  "idealista.it",
+        "dati_raccolti":  {
+                              "camere":  2,
+                              "bagni":  1,
+                              "indirizzo":  "Bilocale in Via Nicola D\u0027Apulia, 2, NoLo - Brianza - Pasteur, Milano",
+                              "mq":  76,
+                              "prezzo":  1600,
+                              "price_by_area":  21
+                          },
+        "motivo_scarto":  "filtro 1 - posti letto insufficienti (\u003c3): 2 camere",
+        "id":  "idealista-49-bilocale-in-via-nicola-d-apulia",
+        "url":  "https://www.idealista.it/immobile/0-EU-IT-MI-01-001-135-09-003",
+        "esito":  "scartato",
+        "analizzato_il":  "2026-05-17"
+    }
+]

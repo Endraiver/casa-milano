@@ -232,7 +232,7 @@ Compito completo:
 5. Ordina la tabella accettati per score = prezzo_per_persona + max(minuti_bicocca, minuti_bovisa)*8.
 6. Commit + push:
      git add analizzati.json risultati.md
-     git commit -m "scan $DateStr: N nuovi analizzati, M accettati"
+     git commit -m "scan ${DateStr}: N nuovi analizzati, M accettati"
      git push origin main
 7. RIASSUNTO FINALE OBBLIGATORIO con NUMERI PRECISI:
    - "Cache totale: X items (Casa.it: A, Subito: B, Idealista: C, Immobiliare: D)"

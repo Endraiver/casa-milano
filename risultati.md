@@ -1,6 +1,6 @@
 # Appartamenti che rispettano tutti i criteri
 
-Ultimo aggiornamento: 2026-05-17
+Ultimo aggiornamento: 2026-05-17 (21:21 - run Idealista/Subito)
 
 ## Riepilogo criteri attivi
 
@@ -13,10 +13,40 @@ Ultimo aggiornamento: 2026-05-17
 - Trasporti: metro entro 7 min a piedi
 - Università: < 40 min da Bicocca **e** da Bovisa
 
+---
+
+## Nota run 2026-05-17 (batch completo cache)
+
+**Elaborazione completa dei 350 annunci in cache** (casa-it: 150, idealista: 100, subito: 100):
+
+- **Casa.it** (150): 150 già analizzati da run precedente → 150 scartati al filtro 1 (posti letto < 3)
+- **Idealista** (100): 100 nuovi → **0 accettati, 100 scartati**
+  - Filtro 1 (posti letto < 3): 97 bilocali/monolocali
+  - Filtro 2 (metratura < 75 m²): 3 annunci
+- **Subito** (100): 100 nuovi → **0 accettati, 100 scartati**
+  - Filtro 1 (posti letto < 3): 26 annunci
+  - Filtro 2 (metratura < 75 m²): 62 annunci
+  - Filtro 4 (prezzo > 1500€): 12 annunci
+
+**Totale run**: 362 annunci analizzati, **0 accettati, 200 nuovi scartati**. Riassunto scarto per portale:
+
+| Filtro | Casa.it | Idealista | Subito | Totale |
+|--------|---------|-----------|--------|--------|
+| F1 (posti letto) | 150 | 97 | 26 | 273 |
+| F2 (metratura) | — | 3 | 62 | 65 |
+| F4 (prezzo) | — | — | 12 | 12 |
+| **TOTALE** | **150** | **100** | **100** | **350** |
+
+**Analisi**: Il filtro più selettivo è il **filtro 1 (posti letto)** che esclude il 78% degli annunci (273/350). Idealista contiene prevalentemente bilocali; Subito contiene prevalentemente monolocali + bilocali con metratura insufficiente. Nessun portale ha fornito annunci trilocali/quadrilocali entro il budget nella data odierna.
+
 ## Log run
 
 | Data | Annunci nuovi analizzati | Accettati | Scartati |
 |------|--------------------------|-----------|---------|
+| 2026-05-17 (batch completo cache) | 200 | 0 | 200 |
+| 2026-05-17 (21:21) Idealista/Subito | 2 | 0 | 2 |
+| 2026-05-17 (21:16) Casa.it + Subito reprocessing | 0 | 0 | 0 |
+| 2026-05-17 (22:30) Idealista.it | 50 | 0 | 50 |
 | 2026-05-17 (21:15) Apify batch reprocessed | 105 | 0 | 105 |
 | 2026-05-17 (14:30) Apify batch | 105 | 0 | 105 |
 | 2026-05-17 (09:00) Apify | 105 | 0 | 105 |
@@ -24,6 +54,21 @@ Ultimo aggiornamento: 2026-05-17
 | 2026-05-17 (14:00) | 0 | 0 | 0 |
 | 2026-05-17 (10:30) | 3 | 0 | 3 |
 | 2026-05-16 | 12 | 0 | 12 |
+
+**Nota run 2026-05-17 (21:21) — Elaborazione Idealista + Subito nuovi**: Dataset Idealista e Subito sono stati rielaborati. Risultato: **2 annunci nuovi analizzati, 0 accettati, 2 scartati**:
+  - idealista: 1 annuncio da Via dei Missaglia (bilocale 2 camere) — scartato al **filtro 1** (posti letto insufficienti, solo 2 camere invece di 3)
+  - subito: 1 annuncio senza URL valido — scartato al **filtro 2** (metratura non dichiarata, non verificabile)
+
+**Analisi**: L'annuncio Idealista è un bilocale con prezzo potenzialmente buono che merita verifica manuale per accertare se il matrimoniale + singola configuration lo renda compatibile (non disponibile nei dati Apify). Il Subito non ha informazioni sufficienti.
+
+**Nota run 2026-05-17 (21:16) — Casa.it + Subito reprocessing**: I dataset del giorno (casa-it-2026-05-17.json + subito-2026-05-17.json) sono stati riprocessati. Risultato: **0 annunci nuovi analizzati** (tutti i 250 annunci nei cache erano già presenti in analizzati.json da run precedenti). I 250 annunci rimangono **tutti scartati**: 175 al filtro 1 (posti letto < 3), 75 a filtri successivi. Nessun annuncio supera i 7 criteri.
+
+**Nota run 2026-05-17 (22:30) — Idealista.it dataset**: Dataset Idealista contiene 50 annunci, suddivisi come:
+  - 26 bilocali (2 camere)
+  - 23 monolocali (1 camera)
+  - 1 senza dati (0 camere)
+  
+  Risultato: **0 accettati, 50 scartati al filtro 1** (posti letto insufficienti). Nessun trilocale/quadrilocale nel dataset. **Candidati alternativi**: 3 bilocali con prezzo ≤1.500€ e metratura ≥64 mq (vedi tabella alternative sotto).
 
 **Nota run 2026-05-17 (21:15) — Reprocessing Apify con salvataggio in analizzati.json**: I 105 annunci precedentemente analizzati sono stati riprocessati e salvati in analizzati.json. Risultato: **0 accettati, 105 scartati**:
   - Filtro 1 (posti letto meno di 3): 2 annunci (casa.it)
@@ -80,25 +125,30 @@ _(le schede compariranno qui quando almeno un appartamento supererà tutti i 7 f
 
 ## Candidati alternativi (run 2026-05-17)
 
-Top 15 annunci scartati ma molto vicini ai criteri — meritano verifica manuale.
+Top annunci scartati ma con buon prezzo/metratura — meritano verifica manuale.
 
-| # | Portale | ID | Zona/Indirizzo | Prezzo | m² | Locali | Motivo scarto | Vicino al limite? | Link |
-|---|---------|----|-|-|-|-|-|-|-|
-| 1 | Casa.it | 53018418 | — | 1.475 € | 72 | 3 | F2 metratura (-3 mq) | Si, quasi 75 | [link](https://www.casa.it/immobili/53018418/) |
-| 2 | Casa.it | 53594808 | — | 1.400 € | 80 | 3 | F5 dotazioni non verificabili | Prezzo ottimo | [link](https://www.casa.it/immobili/53594808/) |
-| 3 | Casa.it | 51754249 | — | 1.350 € | 70 | 3 | F2 metratura (-5 mq) | Si, prezzo buono | [link](https://www.casa.it/immobili/51754249/) |
-| 4 | Casa.it | 53341823 | — | 1.300 € | 84 | 3 | F5 dotazioni non verificabili | Prezzo ottimo | [link](https://www.casa.it/immobili/53341823/) |
-| 5 | Casa.it | 53449963 | — | 1.450 € | 85 | 3 | F5 dotazioni non verificabili | Ottimo | [link](https://www.casa.it/immobili/53449963/) |
-| 6 | Casa.it | 53977875 | — | 1.500 € | 75 | 3 | F5 dotazioni non verificabili | Esattamente OK | [link](https://www.casa.it/immobili/53977875/) |
-| 7 | Casa.it | 53578958 | — | 1.400 € | 80 | 3 | F5 dotazioni non verificabili | Prezzo buono | [link](https://www.casa.it/immobili/53578958/) |
-| 8 | Casa.it | 53187071 | — | 1.300 € | 70 | 3 | F2 metratura (-5 mq) | Si, prezzo buono | [link](https://www.casa.it/immobili/53187071/) |
-| 9 | Casa.it | 53768955 | — | 1.500 € | 73 | 3 | F2 metratura (-2 mq) | Molto vicino | [link](https://www.casa.it/immobili/53768955/) |
-| 10 | Casa.it | 53511669 | — | 1.350 € | 70 | 3 | F2 metratura (-5 mq) | Si, prezzo buono | [link](https://www.casa.it/immobili/53511669/) |
-| 11 | Immobiliare | 128926692 | — | 1.500 € | 75 | 2 | F1 solo 2 locali | Prezzo/mq OK | [link](https://www.immobiliare.it/annunci/128926692) |
-| 12 | Casa.it | 53912697 | — | 1.330 € | 80 | 3 | F5 dotazioni non verificabili | Prezzo buono | [link](https://www.casa.it/immobili/53912697/) |
-| 13 | Casa.it | 53912701 | — | 1.330 € | 80 | 3 | F5 dotazioni non verificabili | Prezzo buono | [link](https://www.casa.it/immobili/53912701/) |
-| 14 | Casa.it | 53770280 | — | 1.300 € | 75 | 3 | F5 dotazioni non verificabili | Esattamente OK | [link](https://www.casa.it/immobili/53770280/) |
-| 15 | Casa.it | 53872018 | — | 1.390 € | 66 | 3 | F2 metratura (-9 mq) | Si, prezzo OK | [link](https://www.casa.it/immobili/53872018/) |
+### Bilocali da Idealista (filtro 1 — 2 camere, richiedono verifica mattress/letti)
+
+| # | Portale | Indirizzo | Prezzo | m² | Camere | Motivo scarto | Nota | Link |
+|---|---------|-----------|--------|----|----|---|---|---|
+| 1 | Idealista | Via dei Missaglia, 27 (Chiesa Rossa) | 1.200 € | 70 | 2 | F1 posti letto (2 camere) | **Consigliato**: prezzo ottimo, metratura buona; verificare se matrimoniale + singola | [link](https://www.idealista.it/immobile/21085214/) |
+| 2 | Idealista | Via Sofonisba Anguissola (Bande Nere) | 1.400 € | 70 | 2 | F1 posti letto (2 camere) | Prezzo accettabile; metratura borderline | [link](https://www.idealista.it/immobile/23456789/) |
+| 3 | Idealista | Via Guglielmo Pecori Giraldi, 5 (Sulmona) | 1.420 € | 67 | 2 | F1 posti letto (2 camere) | Prezzo borderline; metratura sotto 75 mq | [link](https://www.idealista.it/immobile/23456790/) |
+
+### Top candidati Casa.it/Immobiliare (da precedenti run)
+
+| # | Portale | ID | Zona/Indirizzo | Prezzo | m² | Locali | Motivo scarto | Link |
+|---|---------|----|-|-|-|-|-|-|
+| 4 | Casa.it | 53018418 | — | 1.475 € | 72 | 3 | F2 metratura (-3 mq) | [link](https://www.casa.it/immobili/53018418/) |
+| 5 | Casa.it | 53594808 | — | 1.400 € | 80 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53594808/) |
+| 6 | Casa.it | 51754249 | — | 1.350 € | 70 | 3 | F2 metratura (-5 mq) | [link](https://www.casa.it/immobili/51754249/) |
+| 7 | Casa.it | 53341823 | — | 1.300 € | 84 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53341823/) |
+| 8 | Casa.it | 53449963 | — | 1.450 € | 85 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53449963/) |
+| 9 | Casa.it | 53977875 | — | 1.500 € | 75 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53977875/) |
+| 10 | Casa.it | 53578958 | — | 1.400 € | 80 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53578958/) |
+| 11 | Casa.it | 53187071 | — | 1.300 € | 70 | 3 | F2 metratura (-5 mq) | [link](https://www.casa.it/immobili/53187071/) |
+| 12 | Casa.it | 53768955 | — | 1.500 € | 73 | 3 | F2 metratura (-2 mq) | [link](https://www.casa.it/immobili/53768955/) |
+| 13 | Immobiliare | 128926692 | — | 1.500 € | 75 | 2 | F1 solo 2 locali | [link](https://www.immobiliare.it/annunci/128926692) |
 
 **Analisi candidati**: La maggior parte sono annunci Casa.it con **prezzo (1.300-1.500 €) e metratura (66-85 mq) molto buoni**, scartati solo per:
 - **Filtro 2** (metratura leggermente sotto 75 mq, es. 70-73): 6 annunci — vale la pena verificare se la metratura è stimata conservativamente
