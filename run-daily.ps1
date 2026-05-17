@@ -87,7 +87,6 @@ $ApifyJobs = @(
             location      = "Milano"
             maxItems      = 100
             maxPrice      = "1700"
-            minSize       = "70"
             bedrooms      = @("2","3","4")
             sortBy        = "mostRecent"
             fetchDetails  = $false
