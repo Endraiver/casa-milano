@@ -5,3 +5,10 @@ logs/
 .env.local
 .DS_Store
 Thumbs.db
+
+# Script ausiliari temporanei generati dall'agente durante il filtraggio
+analyze_apify.ps1
+apply_filters.ps1
+process_annunci.ps1
+process_listings.ps1
+debug_*.json
