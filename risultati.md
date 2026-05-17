@@ -17,10 +17,22 @@ Ultimo aggiornamento: 2026-05-16
 
 | Data | Annunci nuovi analizzati | Accettati | Scartati |
 |------|--------------------------|-----------|---------|
+| 2026-05-17 (09:00) Apify | 105 | 0 | 105 |
 | 2026-05-17 (23:45) | 3 | 0 | 3 |
 | 2026-05-17 (14:00) | 0 | 0 | 0 |
 | 2026-05-17 (10:30) | 3 | 0 | 3 |
 | 2026-05-16 | 12 | 0 | 12 |
+
+**Nota run 2026-05-17 (09:00) — Apify**: Scraping completo da casa.it (100 annunci) e immobiliare.it (5 annunci). Totale 105 annunci nuovi analizzati, **0 accettati, 105 scartati**:
+  - Filtro 4 (prezzo > 1500 €): 44 annunci
+  - Filtro 5 (dotazioni mancanti): 43 annunci
+  - Filtro 2 (metratura < 75 m²): 21 annunci
+  - Filtro 1 (posti letto < 3): 2 annunci
+  - Filtro 3 (disponibilità > 14/09/2026): 2 annunci
+  - Filtro 6 (metro > 7 min a piedi): 1 annuncio
+  - Dati insufficienti: 10 annunci
+
+**Conclusione**: La fascia di prezzo target (≤1500 €/mese tutto incluso) esclude il 42% degli annunci; le dotazioni obbligatorie (divano, wifi, riscaldamento, lavatrice) ne escludono il 41%. Nessun appartamento su 105 nelle cache odierne ha superato tutti i 7 criteri.
 
 **Nota run 2026-05-17 (23:45)**: WebSearch ha trovato 3 annunci nuovi (Via Simone d'Orsenigo, Piazza Aspromonte 51/43). Risultato: 3 annunci analizzati, 3 scartati:
   - immobiliare-115657565 (Via Simone d'Orsenigo, 90 mq, 01/09/2026) — scartato per **dati insufficienti** (prezzo non reperibile)
