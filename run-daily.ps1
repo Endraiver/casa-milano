@@ -61,15 +61,25 @@ git pull origin main 2>&1 | ForEach-Object { Add-Content -Path $LogFile -Value $
 #   3. Verifica che lo schema 'Input' corrisponda a quello richiesto dall'actor.
 # ===========================================================================
 $ApifyJobs = @(
-    # Immobiliare: URL allargata (no filtro server-side su locali/mq).
-    # Cosi' otteniamo piu' annunci nel dataset e Claude filtra a valle.
+    # Immobiliare URL #1: tutta Milano con filtro prezzo allargato.
     # Costo: $1 per 1.000 risultati.
     @{
         Name    = "immobiliare"
         ActorId = "azzouzana~immobiliare-it-listing-page-scraper-by-search-url"
         Input   = @{
             startUrl = "https://www.immobiliare.it/affitto-case/milano/?prezzoMassimo=1700"
-            maxItems = 100
+            maxItems = 150
+        }
+    }
+
+    # Immobiliare URL #2: zona Bicocca-Niguarda (corridoio nord vicino alle universita').
+    # Stesso attore, secondo call mirato per non perdere annunci della zona target.
+    @{
+        Name    = "immobiliare-nord"
+        ActorId = "azzouzana~immobiliare-it-listing-page-scraper-by-search-url"
+        Input   = @{
+            startUrl = "https://www.immobiliare.it/affitto-case/milano/bicocca-niguarda/?prezzoMassimo=1700"
+            maxItems = 80
         }
     }
 
