@@ -48,8 +48,17 @@ Vanno verificati **in quest'ordine**. Appena uno fallisce → scarta e passa ava
 2. **Metratura** — almeno **25 m² per persona** → minimo **75 m² totali** per 3
    persone. Se la metratura non è dichiarata, prova a stimarla dalle foto/planimetria;
    se resta incerta, **scarta** (meglio prudenti).
-3. **Disponibilità** — l'appartamento deve essere disponibile **entro la 2ª
-   settimana di settembre 2026** (ovvero entro il **14 settembre 2026**).
+3. **Disponibilità** — deadline **14 settembre 2026**. Regole esplicite:
+   - Se l'annuncio dichiara una data di disponibilità futura **oltre** il
+     14/09/2026 (es. "disponibile dal 01/10/2026") → **scarta**.
+   - Se l'annuncio dichiara stato "occupato" / "non disponibile" **senza data
+     futura** indicata → **scarta**.
+   - Se l'annuncio è attivo sul portale e **non specifica nulla** sulla
+     disponibilità (caso più comune nel mercato italiano) → **NON scartare**.
+     Assumi disponibilità immediata e annota `data_disponibilita: "non
+     dichiarata (assunta immediata)"`. Continua con i filtri successivi.
+   - Solo quando hai informazione esplicita di indisponibilità o data futura
+     oltre soglia, scarta. Il default per dato mancante è ACCETTARE.
 4. **Prezzo** — affitto mensile complessivo per tutti e tre **≤ 1500 €**,
    **bollette e spese condominiali incluse**. Se le bollette sono indicate
    "escluse", stima 100–150 €/mese e ricalcola; se il totale supera 1500 € → scarta.
@@ -186,10 +195,13 @@ Come scegliere i 10-15 alternativi (in ordine di priorità):
    verificato (7, 6, 5, 4) → priorità massima
 2. **Vicini al limite**: prezzo entro +20% (≤1800€), metratura entro -15% (≥64 m²),
    tempo università ≤45 min → priorità alta
-3. **Disponibilità incerta**: annunci scartati per filtro 3 (data non
-   specificata) ma con buoni altri parametri → segnala "verificare disponibilità"
-4. **Dotazioni non confermate**: scartati per filtro 5 ma con prezzo e metratura
-   ottimi → segnala cosa va verificato
+3. **Dotazioni non confermate**: scartati per filtro 5 ma con prezzo e metratura
+   ottimi → segnala cosa va verificato (es. "verificare wifi e lavatrice")
+
+**IMPORTANTE**: se durante il filtraggio risultano molti scarti per "dati non
+verificabili" (es. tempi metro, distanze università), allenta la regola per
+gli annunci con prezzo e metratura ottimi: includili in candidati alternativi
+con nota "tempi da verificare a mano".
 
 Mostra sempre la motivazione di scarto e quanto è "vicino" al passaggio.
 Aggiorna questa sezione ogni run (rimpiazzando i precedenti — non accumulare).
