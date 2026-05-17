@@ -70,20 +70,15 @@ $ApifyJobs = @(
         }
     }
 
-    @{
-        Name    = "idealista"
-        ActorId = "axlymxp~idealista-scraper"
-        Input   = @{
-            country      = "it"
-            locationName = "Milano"
-            propertyType = "homes"
-            operation    = "rent"
-            sort         = "asc"
-            order        = "price"
-            locale       = "it"
-            maxItems     = 50
-        }
-    }
+    # Idealista: l'actor axlymxp richiede locationId interno (non l'URL).
+    # Senza locationId valido per Milano restituisce sempre 0 annunci. Disabilitato
+    # in attesa di trovare il locationId Milano (es. via Idealista Location Scraper)
+    # oppure di sostituirlo con un actor URL-based.
+    # @{
+    #     Name    = "idealista"
+    #     ActorId = "axlymxp~idealista-scraper"
+    #     Input   = @{ country = "it"; locationName = "Milano"; locationId = "???"; propertyType = "homes"; operation = "rent"; maxItems = 50 }
+    # }
 
     # Subito: l'actor propscout-scraper in test ha restituito annunci di tecnocasa in vendita,
     # non affitti di subito. Disabilitato in attesa di trovare un actor migliore.
@@ -97,8 +92,8 @@ $ApifyJobs = @(
         Name    = "casa-it"
         ActorId = "stealth_mode~casa-property-search-scraper"
         Input   = @{
-            urls               = @("https://www.casa.it/affitto/residenziale/milano/")
-            max_items_per_url  = 50
+            urls               = @("https://www.casa.it/affitto/residenziale/trilocali/milano/")
+            max_items_per_url  = 100
             ignore_url_failures = $true
             proxy              = @{ useApifyProxy = $false }
         }
