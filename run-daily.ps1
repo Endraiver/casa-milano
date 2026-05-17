@@ -199,25 +199,54 @@ $cacheFilesToday = (Get-ChildItem $CacheDir -Filter "*-$DateStr.json" -ErrorActi
 $Prompt = @"
 Sei nella cartella casa-milano. Hai a disposizione dataset Apify GIA' SCARICATI per oggi $DateStr in: $cacheFilesToday
 
-Compito: applica i 7 filtri gerarchici di CLAUDE.md a OGNI annuncio NUOVO (non gia' in analizzati.json) e aggiorna lo stato.
+**REGOLA #1 NON NEGOZIABILE**: DEVI processare OGNI SINGOLO annuncio in OGNI file cache. Non saltare, non fermarti prima della fine. Se un cache file contiene 100 annunci, alla fine devi avere processato esattamente 100 annunci (o tutti quelli non gia' presenti in analizzati.json).
 
-Passi:
-1. Leggi CLAUDE.md per le regole.
-2. Leggi analizzati.json (lista annunci gia' esaminati, hanno campo id univoco).
-3. Per ogni file in cache/*-$DateStr.json, leggilo come lista di annunci. Per ciascun annuncio:
-   - Costruisci un id stabile (es. "immobiliare-<id-annuncio>" usando l'id presente nel dataset Apify).
-   - Se l'id e' gia' in analizzati.json, salta.
-   - Applica i filtri 1->7 IN ORDINE. Appena uno fallisce: aggiungi entry a analizzati.json con esito="scartato" e motivo_scarto, e passa al prossimo annuncio (NON valutare i filtri successivi).
-   - Se tutti i 7 filtri passano: aggiungi a analizzati.json esito="accettato" e aggiungi riga in risultati.md (tabella + scheda dettagliata).
-4. Per i filtri 6 (metro <=7min) e 7 (<40min Bicocca+Bovisa) usa WebFetch su Google Maps. Se la WebFetch e' bloccata, prova con Bash + curl + dangerouslyDisableSandbox=true verso https://www.google.com/maps/dir/?api=1&... Se proprio non riesci, scarta per prudenza (motivo: "tempi non verificabili").
-5. Ordina i risultati in risultati.md per score = prezzo_per_persona + minuti_universita_max * 8 (piu' basso = meglio).
+**APPROCCIO CONSIGLIATO PER GRANDI VOLUMI**: scrivi uno script PowerShell ausiliario (es. process_listings.ps1) che:
+  a) Carica analizzati.json e crea hashset degli id gia' presenti
+  b) Per ogni file cache di oggi, itera TUTTI gli annunci
+  c) Per ciascuno, applica i filtri 1->7 in modo DETERMINISTICO usando i campi del dataset
+  d) Accumula entry e scrive analizzati.json + risultati.md alla fine
+  e) Stampa conteggi precisi: cache=N1, gia_analizzati=N2, nuovi_processati=N3, accettati=N4, scartati=N5
+Esegui lo script, poi commit & push.
+
+Compito completo:
+
+1. Leggi CLAUDE.md per le regole esatte (i 7 filtri + la sezione "Candidati alternativi").
+2. Leggi analizzati.json. Estrai TUTTI gli id gia' presenti in un hashset/dictionary.
+3. Per ogni file cache/*-$DateStr.json (Casa.it, Subito, Idealista, Immobiliare a seconda di cosa esiste):
+   - Carica con ConvertFrom-Json.
+   - Itera OGNI elemento. Per ciascuno:
+     - Costruisci id stabile: "<portale>-<id-annuncio>" usando un identificatore univoco nel dataset (es. campo "id", "url", o slug dal URL).
+     - Se id gia' in hashset: skip.
+     - Altrimenti applica i 7 filtri IN ORDINE:
+       F1 - posti letto >=3 (3 singole o 1 matr + 1 singola). Stima da campi rooms, bedrooms, descrizione.
+       F2 - mq >= 75
+       F3 - disponibilita' entro 14/09/2026 (regola: se data esplicita futura > 14/09 scarta; se occupato senza data scarta; se nessuna info, accetta con nota "data non dichiarata")
+       F4 - prezzo + spese + bollette <= 1500 (se bollette non dichiarate, stima 100-150 EUR/mese)
+       F5 - obbligatori wifi+lavatrice (assenza esplicita = scarta; assenza dato = scarta per prudenza). Desiderabili divano+riscaldamento (assenza dato = non scartare).
+       F6 - metro <= 7 min a piedi (usa indirizzo se disponibile per stima di buon senso; se zona ignota scarta)
+       F7 - <40 min mezzi pubblici sia da Bicocca (P.zza Ateneo Nuovo 1) sia da Bovisa (V. Lambruschini 4)
+     - Appena un filtro fallisce: aggiungi entry a analizzati.json con esito="scartato", motivo_scarto="F<n> - <dettaglio>". STOP per quell'annuncio, passa al prossimo.
+     - Se tutti i 7 passano: esito="accettato", aggiungi a risultati.md tabella + scheda.
+4. Aggiorna la sezione "Candidati alternativi" in risultati.md (10-15 migliori scartati). Sostituisci la sezione precedente (non accumulare).
+5. Ordina la tabella accettati per score = prezzo_per_persona + max(minuti_bicocca, minuti_bovisa)*8.
 6. Commit + push:
-     git add analizzati.json risultati.md cache
-     git commit -m "daily scan $DateStr"
+     git add analizzati.json risultati.md
+     git commit -m "scan $DateStr: N nuovi analizzati, M accettati"
      git push origin main
-7. Stampa riassunto finale: N analizzati, N accettati, N scartati per filtro.
+7. RIASSUNTO FINALE OBBLIGATORIO con NUMERI PRECISI:
+   - "Cache totale: X items (Casa.it: A, Subito: B, Idealista: C, Immobiliare: D)"
+   - "Gia' in analizzati.json: Y"
+   - "Nuovi analizzati questo run: Z"
+   - "Accettati: W"
+   - "Scartati: V per filtro {F1: n1, F2: n2, ...}"
+   - Se Z != X - Y, c'e' un BUG e devi ri-processare quello che manca.
 
-Niente conferme, vai dritto. Gerarchia rigida. Idempotenza (mai duplicati). Prudenza (se dato non verificabile, scarta).
+VINCOLI:
+- Niente conferme intermedie, vai dritto.
+- Idempotenza: stessi id non vengono duplicati (controllo hashset).
+- Prudenza sui dati incerti, ma non per i campi marcati "desiderabili" in F5.
+- Devi processare TUTTI gli annunci nuovi, NON solo i primi. Se necessario itera in batch di 50 salvando in mezzo.
 "@
 
 Write-Log "Invoco Claude per il filtraggio..."
