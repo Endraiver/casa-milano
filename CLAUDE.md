@@ -53,8 +53,16 @@ Vanno verificati **in quest'ordine**. Appena uno fallisce → scarta e passa ava
 4. **Prezzo** — affitto mensile complessivo per tutti e tre **≤ 1500 €**,
    **bollette e spese condominiali incluse**. Se le bollette sono indicate
    "escluse", stima 100–150 €/mese e ricalcola; se il totale supera 1500 € → scarta.
-5. **Dotazioni obbligatorie** (tutte presenti): **divano**, **wifi**,
-   **riscaldamento**, **lavatrice**.
+5. **Dotazioni** — distinzione tra obbligatorie e desiderabili:
+   - **Obbligatorie (scarta se assenti)**: **wifi**, **lavatrice**. Se il dato
+     dice esplicitamente "no wifi" / "no lavatrice", scarta. Se il dato non
+     menziona affatto wifi o lavatrice, **scarta per prudenza** (non possiamo
+     dare per scontato che ci siano).
+   - **Desiderabili (NON scartare se assenti dal dato)**: **divano**,
+     **riscaldamento**. Se il dato non li menziona, dai loro il beneficio del
+     dubbio e segna `divano_confermato=false` / `riscaldamento_confermato=false`
+     nelle note, ma NON scartare. Se invece il dato dice esplicitamente
+     "no divano" o "no riscaldamento", scarta.
 6. **Mezzi pubblici** — **≤ 7 minuti a piedi** dalla fermata della metro più
    vicina. (Bus/tram da soli non bastano: serve la metro entro 7 minuti.)
 7. **Distanza dalle università** — **< 40 minuti** con mezzi pubblici
@@ -154,6 +162,37 @@ Ultimo aggiornamento: AAAA-MM-GG
 Per ogni nuovo accettato **aggiungi una riga in tabella** e una **scheda dettagliata**.
 Mai rimuovere annunci passati (servono da storico) — al massimo segnali "non più
 disponibile" se rilevi che il link è andato offline.
+
+### Sezione obbligatoria: "Candidati alternativi" (quando 0 accettati)
+
+Anche quando NESSUN annuncio supera tutti i 7 filtri, l'utente vuole comunque
+vedere **i 10-15 annunci più promettenti tra gli scartati** — quelli che vale
+la pena guardare a mano. Mantieni in `risultati.md` una sezione dedicata:
+
+```markdown
+## Candidati alternativi (run AAAA-MM-GG)
+
+Top N annunci scartati ma più vicini ai criteri — vale la pena considerarli a
+mano.
+
+| # | Zona | Prezzo | m² | Filtro fallito | Vicino al limite? | Link |
+|---|------|--------|----|----|-------------------|------|
+| 1 | NoLo | 1650 €  | 80 | F4 prezzo | sì (+150 €) | [link](...) |
+```
+
+Come scegliere i 10-15 alternativi (in ordine di priorità):
+
+1. **Quasi-accettati**: annunci che hanno fallito solo all'**ultimo** filtro
+   verificato (7, 6, 5, 4) → priorità massima
+2. **Vicini al limite**: prezzo entro +20% (≤1800€), metratura entro -15% (≥64 m²),
+   tempo università ≤45 min → priorità alta
+3. **Disponibilità incerta**: annunci scartati per filtro 3 (data non
+   specificata) ma con buoni altri parametri → segnala "verificare disponibilità"
+4. **Dotazioni non confermate**: scartati per filtro 5 ma con prezzo e metratura
+   ottimi → segnala cosa va verificato
+
+Mostra sempre la motivazione di scarto e quanto è "vicino" al passaggio.
+Aggiorna questa sezione ogni run (rimpiazzando i precedenti — non accumulare).
 
 ### Ordinamento
 

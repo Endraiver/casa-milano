@@ -1,6 +1,6 @@
-{
+ï»¿{
     "last_run":  "2026-05-17T09:00:55.234+02:00",
-    "nota_infrastruttura":  "Sandbox Anthropic blocca connessioni HTTP verso api.apify.com e verso tutti i portali immobiliari. Lo scraping Apify non è stato possibile. I dati sono stati raccolti tramite WebSearch (risultati Google) e analizzati sulle informazioni disponibili negli snippet di ricerca. Per ogni annuncio è indicata la limitazione. Run 2026-05-17 14:00: Tentato accesso a Apify (bloccato da permessi account), curl diretto (HTTP 403), WebFetch (HTTP 403), WebSearch per snippet. Run 2026-05-17 23:45: Nuovi annunci trovati via WebSearch (Via Simone d\u0027Orsenigo, Piazza Aspromonte 51/43), ma dati insufficienti (prezzo/disponibilità/dotazioni). Azione consigliata: configurare Apify con permessi approvati o richiedere accesso ai portali tramite VPN/proxy.",
+    "nota_infrastruttura":  "Sandbox Anthropic blocca connessioni HTTP verso api.apify.com e verso tutti i portali immobiliari. Lo scraping Apify non ï¿½ stato possibile. I dati sono stati raccolti tramite WebSearch (risultati Google) e analizzati sulle informazioni disponibili negli snippet di ricerca. Per ogni annuncio ï¿½ indicata la limitazione. Run 2026-05-17 14:00: Tentato accesso a Apify (bloccato da permessi account), curl diretto (HTTP 403), WebFetch (HTTP 403), WebSearch per snippet. Run 2026-05-17 23:45: Nuovi annunci trovati via WebSearch (Via Simone d\u0027Orsenigo, Piazza Aspromonte 51/43), ma dati insufficienti (prezzo/disponibilitï¿½/dotazioni). Azione consigliata: configurare Apify con permessi approvati o richiedere accesso ai portali tramite VPN/proxy.",
     "annunci":  [
                     {
                         "id":  "zappyrent-via-lambrate-22589",
@@ -8,7 +8,7 @@
                         "portale":  "zappyrent",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 6 — metro 10 minuti a piedi (supera il limite di 7 min); stazioni più vicine Pasteur/Loreto/Piola M1-M2 tutte a 10 min",
+                        "motivo_scarto":  "filtro 6 ï¿½ metro 10 minuti a piedi (supera il limite di 7 min); stazioni piï¿½ vicine Pasteur/Loreto/Piola M1-M2 tutte a 10 min",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Lambrate, Milano (zona Loreto-Casoretto)",
                                               "mq":  90,
@@ -27,16 +27,16 @@
                         "portale":  "zappyrent",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — prezzo non reperibile tramite ricerca; sito zappyrent.com inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per prezzo non verificabile",
+                        "motivo_scarto":  "dati insufficienti ï¿½ prezzo non reperibile tramite ricerca; sito zappyrent.com inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per prezzo non verificabile",
                         "dati_raccolti":  {
                                               "indirizzo":  "Piazza Emilia, Milano",
                                               "mq":  75,
                                               "camere":  "trilocale (soggiorno con cucina, camera, bagno, loggia, cantina)",
-                                              "piano":  "3° con ascensore",
+                                              "piano":  "3ï¿½ con ascensore",
                                               "prezzo":  "non reperibile",
                                               "disponibilita":  "attualmente occupato, data futura non nota",
                                               "metro_distanza_min":  "non verificata",
-                                              "note":  "da prenotare per futura disponibilità; sito inaccessibile"
+                                              "note":  "da prenotare per futura disponibilitï¿½; sito inaccessibile"
                                           }
                     },
                     {
@@ -45,19 +45,19 @@
                         "portale":  "zappyrent",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 3 — disponibilità non confermata entro 14/09/2026: annuncio listato dal 25/10/2024, attualmente occupato, nessuna data di liberazione futura indicata",
+                        "motivo_scarto":  "filtro 3 ï¿½ disponibilitï¿½ non confermata entro 14/09/2026: annuncio listato dal 25/10/2024, attualmente occupato, nessuna data di liberazione futura indicata",
                         "dati_raccolti":  {
                                               "indirizzo":  "Piazza dei Daini, Milano (zona Bicocca)",
                                               "mq":  87,
                                               "camere":  "trilocale (2 camere da letto + 2 bagni)",
-                                              "piano":  "6° di 11, con ascensore",
+                                              "piano":  "6ï¿½ di 11, con ascensore",
                                               "posti_letto":  "1 matrimoniale + 1 singola = 3 posti (filtro 1 ok)",
                                               "prezzo_affitto":  1200,
                                               "spese_condo":  200,
                                               "bollette":  "incluse nel totale dichiarato",
                                               "prezzo_totale_stimato":  1400,
                                               "disponibilita_originale":  "25/10/2024 (data annuncio originale)",
-                                              "stato_attuale":  "occupato — prenotabile per futura disponibilità, data non nota",
+                                              "stato_attuale":  "occupato ï¿½ prenotabile per futura disponibilitï¿½, data non nota",
                                               "metro_stazione":  "M5 Bignami",
                                               "metro_distanza_min":  2,
                                               "bicocca_distanza_min":  4,
@@ -77,7 +77,7 @@
                                                                                "divano",
                                                                                "riscaldamento invernale specifico"
                                                                            ],
-                                              "note":  "Candidato molto interessante — tutti i criteri di prezzo, mq e metro sembrano soddisfatti. Ricontrollare alla prossima run: se l\u0027appartamento risulta disponibile con data =14/09/2026, rivalutare. Bicocca a 4 min a piedi (295m). Bovisa via M5?Garibaldi?S-treno stimata ~35 min.",
+                                              "note":  "Candidato molto interessante ï¿½ tutti i criteri di prezzo, mq e metro sembrano soddisfatti. Ricontrollare alla prossima run: se l\u0027appartamento risulta disponibile con data =14/09/2026, rivalutare. Bicocca a 4 min a piedi (295m). Bovisa via M5?Garibaldi?S-treno stimata ~35 min.",
                                               "da_ricontrollare":  true
                                           }
                     },
@@ -87,14 +87,14 @@
                         "portale":  "spotahome",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — prezzo, metratura, distanza metro non verificabili; sito spotahome.com inaccessibile dalla sandbox (HTTP 403). Nota: snippet suggerisce \u002730 min al centro\u0027 con metro, quindi Bovisa potrebbe superare 40 min",
+                        "motivo_scarto":  "dati insufficienti ï¿½ prezzo, metratura, distanza metro non verificabili; sito spotahome.com inaccessibile dalla sandbox (HTTP 403). Nota: snippet suggerisce \u002730 min al centro\u0027 con metro, quindi Bovisa potrebbe superare 40 min",
                         "dati_raccolti":  {
                                               "indirizzo":  "Ex OM-Morivione, Milano (zona sud)",
                                               "camere":  "3 camere da letto",
                                               "cucina":  "attrezzata con lavastoviglie e forno",
                                               "prezzo":  "non reperibile",
                                               "mq":  "non reperibile",
-                                              "metro_distanza_min":  "non verificata — zona con 30 min al centro in metro",
+                                              "metro_distanza_min":  "non verificata ï¿½ zona con 30 min al centro in metro",
                                               "note":  "zona periferica sud Milano; rischio \u003e40 min verso Bovisa"
                                           }
                     },
@@ -104,7 +104,7 @@
                         "portale":  "spotahome",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 4 (stimato) — zona Duomo di Milano; trilocale in zona Duomo tipicamente \u003e2000 €/mese, ben oltre il limite di 1500 €. Prezzo non recuperabile da sito (HTTP 403) ma zona esclude la fascia di prezzo",
+                        "motivo_scarto":  "filtro 4 (stimato) ï¿½ zona Duomo di Milano; trilocale in zona Duomo tipicamente \u003e2000 ï¿½/mese, ben oltre il limite di 1500 ï¿½. Prezzo non recuperabile da sito (HTTP 403) ma zona esclude la fascia di prezzo",
                         "dati_raccolti":  {
                                               "indirizzo":  "zona Duomo, Milano (centro)",
                                               "camere":  "3 camere da letto",
@@ -116,7 +116,7 @@
                                                                            "tutte le bollette incluse",
                                                                            "terrace"
                                                                        ],
-                                              "prezzo":  "non reperibile direttamente; stimato \u003e2000 €/mese per zona",
+                                              "prezzo":  "non reperibile direttamente; stimato \u003e2000 ï¿½/mese per zona",
                                               "note":  "dotazioni eccellenti ma zona proibisce il range di prezzo"
                                           }
                     },
@@ -126,18 +126,18 @@
                         "portale":  "immobiliare.it",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 4 (stimato) — cauzione dichiarata €5.100; in Italia la cauzione è tipicamente 2-3 mesi di affitto. Stima: 5.100/3 = 1.700 €/mese o 5.100/2 = 2.550 €/mese. In entrambi i casi supera il limite di 1.500 €",
+                        "motivo_scarto":  "filtro 4 (stimato) ï¿½ cauzione dichiarata ï¿½5.100; in Italia la cauzione ï¿½ tipicamente 2-3 mesi di affitto. Stima: 5.100/3 = 1.700 ï¿½/mese o 5.100/2 = 2.550 ï¿½/mese. In entrambi i casi supera il limite di 1.500 ï¿½",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Carlo Farini 69, Milano (zona Farini-Isola)",
-                                              "camere":  "trilocale — ingresso + soggiorno open kitchen + camera matrimoniale + studio singolo (letto a scomparsa) + 2 bagni",
+                                              "camere":  "trilocale ï¿½ ingresso + soggiorno open kitchen + camera matrimoniale + studio singolo (letto a scomparsa) + 2 bagni",
                                               "posti_letto":  "1 matrimoniale + 1 singola (letto a scomparsa) = 3 posti (filtro 1 ok)",
-                                              "piano":  "2° piano, balconi",
+                                              "piano":  "2ï¿½ piano, balconi",
                                               "dotazioni_confermate":  [
-                                                                           "lavatrice (2° bagno)",
+                                                                           "lavatrice (2ï¿½ bagno)",
                                                                            "riscaldamento autonomo"
                                                                        ],
                                               "cauzione":  5100,
-                                              "prezzo_stimato":  "~1.700 €/mese (da cauzione ÷ 3)",
+                                              "prezzo_stimato":  "~1.700 ï¿½/mese (da cauzione ï¿½ 3)",
                                               "disponibilita":  "non verificata",
                                               "metro":  "MM3 Maciachini ~4-5 min a piedi (stimato per via)",
                                               "note":  "appartamento completamente ristrutturato con finiture pregiate; prezzo stimato sopra budget"
@@ -149,11 +149,11 @@
                         "portale":  "idealista.it",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — prezzo non reperibile (sito inaccessibile HTTP 403); semi-arredato (mancano divano e lavatrice non confermati); filtri 4 e 5 non verificabili",
+                        "motivo_scarto":  "dati insufficienti ï¿½ prezzo non reperibile (sito inaccessibile HTTP 403); semi-arredato (mancano divano e lavatrice non confermati); filtri 4 e 5 non verificabili",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Carlo Farini 57/a, Milano (zona Garibaldi-Isola)",
                                               "mq":  87,
-                                              "camere":  "trilocale — ingresso + soggiorno+cucina+patio 20mq + camera+bagno + piccola camera + 2° bagno",
+                                              "camere":  "trilocale ï¿½ ingresso + soggiorno+cucina+patio 20mq + camera+bagno + piccola camera + 2ï¿½ bagno",
                                               "posti_letto":  "1 matrimoniale (stima) + 1 singola = 3 posti (filtro 1 ok)",
                                               "piano":  "non specificato",
                                               "dotazioni_confermate":  [
@@ -171,8 +171,8 @@
                                               "arredamento":  "semi-arredato",
                                               "prezzo":  "non reperibile",
                                               "disponibilita":  "dal 1 maggio 2026 (stimato da snippet)",
-                                              "metro_zona":  "Garibaldi-Isola — M2/M5 Garibaldi stimata 5-8 min a piedi",
-                                              "note":  "garage 19mq in seminterrato incluso; finiture premium (Schüco, pavimento parquet, allarme). Prezzo probabilmente \u003e1500 €/mese per queste finiture"
+                                              "metro_zona":  "Garibaldi-Isola ï¿½ M2/M5 Garibaldi stimata 5-8 min a piedi",
+                                              "note":  "garage 19mq in seminterrato incluso; finiture premium (Schï¿½co, pavimento parquet, allarme). Prezzo probabilmente \u003e1500 ï¿½/mese per queste finiture"
                                           }
                     },
                     {
@@ -181,17 +181,17 @@
                         "portale":  "immobiliare.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 2 — metratura non confermata =75 mq; annuncio descritto esplicitamente come \u0027piccolo e silenzioso trilocale\u0027; stima da layout (ingresso+soggiorno+cucina+bagno+matrimoniale+singola+loggia) = circa 60-70 mq; prudenza impone scarto",
+                        "motivo_scarto":  "filtro 2 ï¿½ metratura non confermata =75 mq; annuncio descritto esplicitamente come \u0027piccolo e silenzioso trilocale\u0027; stima da layout (ingresso+soggiorno+cucina+bagno+matrimoniale+singola+loggia) = circa 60-70 mq; prudenza impone scarto",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Farini, Milano (zona Maciachini)",
-                                              "camere":  "trilocale piccolo — ingresso, soggiorno+cucina a vista, bagno doccia, camera matrimoniale, camera singola, loggia",
+                                              "camere":  "trilocale piccolo ï¿½ ingresso, soggiorno+cucina a vista, bagno doccia, camera matrimoniale, camera singola, loggia",
                                               "posti_letto":  "1 matrimoniale + 1 singola = 3 posti (filtro 1 ok)",
                                               "mq_stimati":  "60-70 (stima da layout; descritto \u0027piccolo\u0027)",
                                               "disponibilita":  "dal 15 maggio 2026",
                                               "metro_stazione":  "MM3 Maciachini",
                                               "metro_distanza_min":  4,
                                               "prezzo":  "non verificabile",
-                                              "note":  "edificio anni \u002770, 3 ascensori, portineria; disponibilità ottima ma mq insufficienti"
+                                              "note":  "edificio anni \u002770, 3 ascensori, portineria; disponibilitï¿½ ottima ma mq insufficienti"
                                           }
                     },
                     {
@@ -200,7 +200,7 @@
                         "portale":  "immobiliare.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — prezzo e dotazioni (divano/lavatrice/wifi/riscaldamento) non reperibili; sito inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per criteri non verificabili",
+                        "motivo_scarto":  "dati insufficienti ï¿½ prezzo e dotazioni (divano/lavatrice/wifi/riscaldamento) non reperibili; sito inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per criteri non verificabili",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Farini 33, Milano (zona Farini)",
                                               "mq":  89,
@@ -209,7 +209,7 @@
                                               "metro_stazione":  "MM3 Maciachini (stimata ~4 min a piedi per via)",
                                               "prezzo":  "non reperibile",
                                               "dotazioni":  "non verificabili",
-                                              "note":  "candidato interessante per mq e disponibilità; da riesaminare se sito diventa accessibile"
+                                              "note":  "candidato interessante per mq e disponibilitï¿½; da riesaminare se sito diventa accessibile"
                                           }
                     },
                     {
@@ -218,11 +218,11 @@
                         "portale":  "casa.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 4 — affitto 1.750 € + spese condominiali \u003e 1.500 €/mese",
+                        "motivo_scarto":  "filtro 4 ï¿½ affitto 1.750 ï¿½ + spese condominiali \u003e 1.500 ï¿½/mese",
                         "dati_raccolti":  {
                                               "indirizzo":  "Viale Stelvio 42, Milano (zona Farini-Isola)",
                                               "mq":  85,
-                                              "camere":  "trilocale — ingresso, soggiorno+cucina open, divano-letto+poltrone, 2 camere, bagno, ripostiglio",
+                                              "camere":  "trilocale ï¿½ ingresso, soggiorno+cucina open, divano-letto+poltrone, 2 camere, bagno, ripostiglio",
                                               "posti_letto":  "1 matrimoniale (stima) + 1 singola + divano-letto = 3+ posti (filtro 1 ok)",
                                               "dotazioni_confermate":  [
                                                                            "divano",
@@ -232,7 +232,7 @@
                                                                        ],
                                               "prezzo_affitto":  1750,
                                               "spese_condo":  "non specificate ma separate",
-                                              "prezzo_totale_stimato":  "\u003e1750 €",
+                                              "prezzo_totale_stimato":  "\u003e1750 ï¿½",
                                               "disponibilita":  "dal 6 febbraio 2026",
                                               "note":  "ottima dotazione ma prezzo fuori budget"
                                           }
@@ -243,14 +243,14 @@
                         "portale":  "casa.it / idealista.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — si tratta di quadrilocale (4 locali) non trilocale; prezzo, mq e dotazioni sconosciuti; sito inaccessibile",
+                        "motivo_scarto":  "dati insufficienti ï¿½ si tratta di quadrilocale (4 locali) non trilocale; prezzo, mq e dotazioni sconosciuti; sito inaccessibile",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Carlo Farini, Milano (zona Maciachini)",
                                               "camere":  "quadrilocale luminoso panoramico doppia esposizione",
                                               "disponibilita":  "dal 7 settembre 2026",
                                               "metro_stazione":  "MM3 Maciachini (stimata 4 min a piedi)",
                                               "prezzo":  "non reperibile",
-                                              "note":  "disponibilità borderline (7 sett 2026 \u003c 14 sett 2026 ?); ma prezzo e dotazioni sconosciuti"
+                                              "note":  "disponibilitï¿½ borderline (7 sett 2026 \u003c 14 sett 2026 ?); ma prezzo e dotazioni sconosciuti"
                                           }
                     },
                     {
@@ -259,7 +259,7 @@
                         "portale":  "trovacasa.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — indirizzo/zona, mq, prezzo e metro non identificabili; sito inaccessibile dalla sandbox; solo snippet di ricerca parziale disponibile",
+                        "motivo_scarto":  "dati insufficienti ï¿½ indirizzo/zona, mq, prezzo e metro non identificabili; sito inaccessibile dalla sandbox; solo snippet di ricerca parziale disponibile",
                         "dati_raccolti":  {
                                               "indirizzo":  "Milano (zona non specificata)",
                                               "camere":  "trilocale completamente nuovo",
@@ -271,991 +271,8 @@
                                               "disponibilita":  "dal 1 luglio 2026",
                                               "prezzo":  "non reperibile",
                                               "metro":  "non verificabile",
-                                              "note":  "appartamento nuovo, disponibilità buona; da recuperare se indirizzo specifico individuato"
+                                              "note":  "appartamento nuovo, disponibilitï¿½ buona; da recuperare se indirizzo specifico individuato"
                                           }
-                    },
-                    {
-                        "id":  "immobiliare-128809250",
-                        "url":  "https://www.immobiliare.it/annunci/128809250/",
-                        "portale":  "immobiliare.it",
-                        "analizzato_il":  "2026-05-17",
-                        "esito":  "scartato",
-                        "motivo_scarto":  "filtro 3 — disponibilità dal 15 ottobre 2026 \u003e deadline 14 settembre 2026",
-                        "dati_raccolti":  {
-                                              "indirizzo":  "Via Privata Rezia, Lodi/Romana, Milano",
-                                              "mq":  75,
-                                              "camere":  "trilocale",
-                                              "posti_letto":  "presumibilmente 2 matrimoniali (non confermati)",
-                                              "prezzo_affitto":  1100,
-                                              "spese_condo":  230,
-                                              "prezzo_totale":  1330,
-                                              "disponibilita":  "15 ottobre 2026",
-                                              "piano":  "1° con ascensore",
-                                              "metro_stazione":  "M3 Lodi",
-                                              "metro_distanza_min":  10,
-                                              "dotazioni_confermate":  [
-                                                                           "riscaldamento centralizzato"
-                                                                       ],
-                                              "dotazioni_non_confermate":  [
-                                                                               "divano",
-                                                                               "WiFi",
-                                                                               "lavatrice",
-                                                                               "AC"
-                                                                           ],
-                                              "note":  "affitto entro budget ma disponibilità oltre scadenza; massimo 2 persone"
-                                          }
-                    },
-                    {
-                        "id":  "zappyrent-via-garegnano-33983",
-                        "url":  "https://www.zappyrent.com/it/affitto/via-garegnano-milano-id-33983",
-                        "portale":  "zappyrent",
-                        "analizzato_il":  "2026-05-17",
-                        "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — prezzo, metratura, dotazioni, disponibilità e distanza metro non reperibili; sito zappyrent.com inaccessibile dalla sandbox (HTTP 403)",
-                        "dati_raccolti":  {
-                                              "indirizzo":  "Via Garegnano, Milano",
-                                              "zona":  "non specificata",
-                                              "mq":  "non reperibile",
-                                              "camere":  "trilocale",
-                                              "prezzo":  "non reperibile",
-                                              "disponibilita":  "non verificata",
-                                              "metro":  "non verificabile",
-                                              "note":  "candidato potenziale; da recuperare quando sito diventa accessibile"
-                                          }
-                    },
-                    {
-                        "id":  "zappyrent-piazza-filangieri-35270",
-                        "url":  "https://www.zappyrent.com/it/affitto/piazza-gaetano-filangieri-milano-id-35270",
-                        "portale":  "zappyrent",
-                        "analizzato_il":  "2026-05-17",
-                        "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — prezzo, metratura, dotazioni, disponibilità e distanza metro non reperibili; sito zappyrent.com inaccessibile dalla sandbox (HTTP 403)",
-                        "dati_raccolti":  {
-                                              "indirizzo":  "Piazza Gaetano Filangieri, Milano",
-                                              "zona":  "Magenta/San Vittore",
-                                              "mq":  "non reperibile",
-                                              "camere":  "trilocale",
-                                              "prezzo":  "non reperibile",
-                                              "disponibilita":  "non verificata",
-                                              "metro":  "non verificabile",
-                                              "note":  "candidato potenziale; da recuperare quando sito diventa accessibile"
-                                          }
-                    },
-                    {
-                        "id":  "immobiliare-115657565",
-                        "url":  "https://www.immobiliare.it/annunci/115657565/",
-                        "portale":  "immobiliare.it",
-                        "analizzato_il":  "2026-05-17",
-                        "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — prezzo non reperibile da WebSearch/WebFetch (sito inaccessibile HTTP 403); filtro 4 non verificabile",
-                        "dati_raccolti":  {
-                                              "indirizzo":  "Via Simone d\u0027Orsenigo 18, Cadore, Milano (zona Lodi)",
-                                              "mq":  90,
-                                              "camere":  "trilocale",
-                                              "piano":  "1° con ascensore",
-                                              "posti_letto":  "presumibilmente 3 (stima da trilocale: 1 matrimoniale + 1 singola)",
-                                              "prezzo":  "non reperibile",
-                                              "disponibilita":  "01/09/2026 ?",
-                                              "metro_stazione":  "non specificata negli snippet",
-                                              "metro_distanza_min":  "non verificabile",
-                                              "dotazioni":  "non verificabili",
-                                              "note":  "metratura e disponibilità buone, ma prezzo sconosciuto blocca l\u0027analisi"
-                                          }
-                    },
-                    {
-                        "id":  "casa-49534568",
-                        "url":  "https://www.casa.it/immobili/49534568/",
-                        "portale":  "casa.it",
-                        "analizzato_il":  "2026-05-17",
-                        "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti — disponibilità non specificata negli snippet; filtro 3 non verificabile",
-                        "dati_raccolti":  {
-                                              "indirizzo":  "Piazza Aspromonte 51, Milano (zona Loreto/Città Studi)",
-                                              "mq":  80,
-                                              "camere":  "trilocale — 2 camere (presumibilmente 1 matrimoniale + 1 singola = 3 posti)",
-                                              "prezzo_totale":  1300,
-                                              "prezzo_incluso":  "€1.300/mese (snippet suggerisce tutto incluso)",
-                                              "disponibilita":  "non specificata negli snippet",
-                                              "metro_stazione":  "Loreto (M1/M2) — a pochi minuti",
-                                              "metro_distanza_min":  "stimato 5-8 min a piedi",
-                                              "dotazioni_confermate":  [
-                                                                           "lavatrice",
-                                                                           "AC"
-                                                                       ],
-                                              "dotazioni_non_confermate":  [
-                                                                               "divano",
-                                                                               "WiFi",
-                                                                               "riscaldamento"
-                                                                           ],
-                                              "note":  "prezzo e metratura ottimi, ma disponibilità non verificabile; candidato interessante se disponibile entro 14/09/2026"
-                                          }
-                    },
-                    {
-                        "id":  "immobiliare-112663923",
-                        "url":  "https://www.immobiliare.it/en/annunci/112663923/",
-                        "portale":  "immobiliare.it",
-                        "analizzato_il":  "2026-05-17",
-                        "esito":  "scartato",
-                        "motivo_scarto":  "filtro 4 — prezzo €1.600 (incluso condominio e riscaldamento) \u003e budget massimo €1.500",
-                        "dati_raccolti":  {
-                                              "indirizzo":  "Piazza Aspromonte 43, Milano (zona Loreto/Città Studi)",
-                                              "mq":  90,
-                                              "camere":  "trilocale",
-                                              "prezzo_totale":  1600,
-                                              "prezzo_incluso":  "€1.600/mese (include condominio, acqua, riscaldamento centralizzato)",
-                                              "disponibilita":  "~agosto 2026 (da snippet)",
-                                              "metro_stazione":  "Loreto (M1/M2)",
-                                              "metro_distanza_min":  "stimato 5-8 min a piedi",
-                                              "dotazioni_confermate":  [
-                                                                           "riscaldamento centralizzato"
-                                                                       ],
-                                              "dotazioni_non_confermate":  [
-                                                                               "divano",
-                                                                               "lavatrice",
-                                                                               "WiFi"
-                                                                           ],
-                                              "note":  "metratura e zona ottimi, ma prezzo supera il budget di €100/mese"
-                                          }
-                    },
-                    {
-                        "id":  "immobiliare-128262002",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "immobiliare.it",
-                        "url":  "https://www.immobiliare.it/annunci/128262002"
-                    },
-                    {
-                        "id":  "immobiliare-128926692",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 1 - insufficient beds: 1 rooms, 2 locali",
-                        "esito":  "scartato",
-                        "portale":  "immobiliare.it",
-                        "url":  "https://www.immobiliare.it/annunci/128926692"
-                    },
-                    {
-                        "id":  "immobiliare-129135156",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 1 - insufficient beds: 1 rooms, 2 locali",
-                        "esito":  "scartato",
-                        "portale":  "immobiliare.it",
-                        "url":  "https://www.immobiliare.it/annunci/129135156"
-                    },
-                    {
-                        "id":  "immobiliare-128505454",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "immobiliare.it",
-                        "url":  "https://www.immobiliare.it/annunci/128505454"
-                    },
-                    {
-                        "id":  "immobiliare-126282105",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "immobiliare.it",
-                        "url":  "https://www.immobiliare.it/annunci/126282105"
-                    },
-                    {
-                        "id":  "casa-54005176",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.800 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/54005176/"
-                    },
-                    {
-                        "id":  "casa-53151354",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53151354/"
-                    },
-                    {
-                        "id":  "casa-53997652",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.300 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53997652/"
-                    },
-                    {
-                        "id":  "casa-53990562",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53990562/"
-                    },
-                    {
-                        "id":  "casa-53809654",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.000 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53809654/"
-                    },
-                    {
-                        "id":  "casa-53969605",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53969605/"
-                    },
-                    {
-                        "id":  "casa-53769478",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.300 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53769478/"
-                    },
-                    {
-                        "id":  "casa-53770280",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53770280/"
-                    },
-                    {
-                        "id":  "casa-53794539",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.250 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53794539/"
-                    },
-                    {
-                        "id":  "casa-53720206",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: wifi,riscaldamento",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53720206/"
-                    },
-                    {
-                        "id":  "casa-53565772",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 58",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53565772/"
-                    },
-                    {
-                        "id":  "casa-53985701",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.740 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53985701/"
-                    },
-                    {
-                        "id":  "casa-53756481",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.000 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53756481/"
-                    },
-                    {
-                        "id":  "casa-52615599",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52615599/"
-                    },
-                    {
-                        "id":  "casa-52457647",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.500 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52457647/"
-                    },
-                    {
-                        "id":  "casa-53987425",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 70",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53987425/"
-                    },
-                    {
-                        "id":  "casa-53593558",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.100 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53593558/"
-                    },
-                    {
-                        "id":  "casa-53984050",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 57",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53984050/"
-                    },
-                    {
-                        "id":  "casa-53531788",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53531788/"
-                    },
-                    {
-                        "id":  "casa-53848144",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.500 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53848144/"
-                    },
-                    {
-                        "id":  "casa-53544065",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.500 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53544065/"
-                    },
-                    {
-                        "id":  "casa-53744647",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 67",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53744647/"
-                    },
-                    {
-                        "id":  "casa-53863635",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 65",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53863635/"
-                    },
-                    {
-                        "id":  "casa-53578958",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53578958/"
-                    },
-                    {
-                        "id":  "casa-53524582",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.200 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53524582/"
-                    },
-                    {
-                        "id":  "casa-53755066",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53755066/"
-                    },
-                    {
-                        "id":  "casa-53449963",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53449963/"
-                    },
-                    {
-                        "id":  "casa-53400405",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53400405/"
-                    },
-                    {
-                        "id":  "casa-51509589",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/51509589/"
-                    },
-                    {
-                        "id":  "casa-53977875",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53977875/"
-                    },
-                    {
-                        "id":  "casa-52027528",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52027528/"
-                    },
-                    {
-                        "id":  "casa-53976689",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53976689/"
-                    },
-                    {
-                        "id":  "casa-53837230",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53837230/"
-                    },
-                    {
-                        "id":  "casa-50064309",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/50064309/"
-                    },
-                    {
-                        "id":  "casa-50061021",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/50061021/"
-                    },
-                    {
-                        "id":  "casa-53967906",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 70",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53967906/"
-                    },
-                    {
-                        "id":  "casa-53844170",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.916 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53844170/"
-                    },
-                    {
-                        "id":  "casa-53961185",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53961185/"
-                    },
-                    {
-                        "id":  "casa-53524925",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53524925/"
-                    },
-                    {
-                        "id":  "casa-51444234",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/51444234/"
-                    },
-                    {
-                        "id":  "casa-53282071",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53282071/"
-                    },
-                    {
-                        "id":  "casa-53341823",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53341823/"
-                    },
-                    {
-                        "id":  "casa-53945993",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.100 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53945993/"
-                    },
-                    {
-                        "id":  "casa-53585442",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.200 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53585442/"
-                    },
-                    {
-                        "id":  "casa-53498959",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.650 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53498959/"
-                    },
-                    {
-                        "id":  "casa-53375088",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.040 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53375088/"
-                    },
-                    {
-                        "id":  "casa-51754249",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 70",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/51754249/"
-                    },
-                    {
-                        "id":  "casa-53482737",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53482737/"
-                    },
-                    {
-                        "id":  "casa-53268722",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53268722/"
-                    },
-                    {
-                        "id":  "casa-52412324",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 9.167 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52412324/"
-                    },
-                    {
-                        "id":  "casa-52411889",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 5.834 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52411889/"
-                    },
-                    {
-                        "id":  "casa-53039675",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53039675/"
-                    },
-                    {
-                        "id":  "casa-52388301",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 70",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52388301/"
-                    },
-                    {
-                        "id":  "casa-53947302",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53947302/"
-                    },
-                    {
-                        "id":  "casa-53441524",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53441524/"
-                    },
-                    {
-                        "id":  "casa-53946628",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53946628/"
-                    },
-                    {
-                        "id":  "casa-53937029",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53937029/"
-                    },
-                    {
-                        "id":  "casa-53628314",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.200 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53628314/"
-                    },
-                    {
-                        "id":  "casa-53697790",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53697790/"
-                    },
-                    {
-                        "id":  "casa-53922437",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.200 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53922437/"
-                    },
-                    {
-                        "id":  "casa-52663961",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.335 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52663961/"
-                    },
-                    {
-                        "id":  "casa-53514761",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53514761/"
-                    },
-                    {
-                        "id":  "casa-53915485",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.600 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53915485/"
-                    },
-                    {
-                        "id":  "casa-53912701",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53912701/"
-                    },
-                    {
-                        "id":  "casa-53912697",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53912697/"
-                    },
-                    {
-                        "id":  "casa-52561679",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 70",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52561679/"
-                    },
-                    {
-                        "id":  "casa-53898170",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.000 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53898170/"
-                    },
-                    {
-                        "id":  "casa-53898105",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.200 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53898105/"
-                    },
-                    {
-                        "id":  "casa-52709502",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.950 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52709502/"
-                    },
-                    {
-                        "id":  "casa-53511669",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 70",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53511669/"
-                    },
-                    {
-                        "id":  "casa-53181447",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.500 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53181447/"
-                    },
-                    {
-                        "id":  "casa-53872018",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 66",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53872018/"
-                    },
-                    {
-                        "id":  "casa-53768955",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 73",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53768955/"
-                    },
-                    {
-                        "id":  "casa-53301074",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 70",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53301074/"
-                    },
-                    {
-                        "id":  "casa-53417249",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 59",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53417249/"
-                    },
-                    {
-                        "id":  "casa-53895401",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.000 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53895401/"
-                    },
-                    {
-                        "id":  "casa-51703865",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 60",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/51703865/"
-                    },
-                    {
-                        "id":  "casa-53986407",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.400 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53986407/"
-                    },
-                    {
-                        "id":  "casa-53669545",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.750 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53669545/"
-                    },
-                    {
-                        "id":  "casa-53594808",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53594808/"
-                    },
-                    {
-                        "id":  "casa-53107381",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.000 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53107381/"
-                    },
-                    {
-                        "id":  "casa-53442866",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53442866/"
-                    },
-                    {
-                        "id":  "casa-53187071",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 70",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53187071/"
-                    },
-                    {
-                        "id":  "casa-53785491",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53785491/"
-                    },
-                    {
-                        "id":  "casa-53858195",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53858195/"
-                    },
-                    {
-                        "id":  "casa-53647551",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53647551/"
-                    },
-                    {
-                        "id":  "casa-53459451",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 70",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53459451/"
-                    },
-                    {
-                        "id":  "casa-53122330",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 4.000 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53122330/"
-                    },
-                    {
-                        "id":  "casa-53590599",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.200 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53590599/"
-                    },
-                    {
-                        "id":  "casa-53347430",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.000 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53347430/"
-                    },
-                    {
-                        "id":  "casa-53005835",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.000 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53005835/"
-                    },
-                    {
-                        "id":  "casa-53005378",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 3.500 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53005378/"
-                    },
-                    {
-                        "id":  "casa-53376211",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.895 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53376211/"
-                    },
-                    {
-                        "id":  "casa-53577207",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 5 - missing: divano,wifi,riscaldamento,lavatrice",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53577207/"
-                    },
-                    {
-                        "id":  "casa-53618693",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.000 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53618693/"
-                    },
-                    {
-                        "id":  "casa-53482205",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.600 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53482205/"
-                    },
-                    {
-                        "id":  "casa-52842639",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 4 - price EUR 2.300 \u003e EUR 1500",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/52842639/"
-                    },
-                    {
-                        "id":  "casa-53018418",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 72",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/53018418/"
-                    },
-                    {
-                        "id":  "casa-42174786",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 74",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/42174786/"
-                    },
-                    {
-                        "id":  "casa-39669662",
-                        "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "filtro 2 - mq \u003c 75: 60",
-                        "esito":  "scartato",
-                        "portale":  "casa.it",
-                        "url":  "https://www.casa.it/immobili/39669662/"
                     }
                 ]
 }
