@@ -17,10 +17,21 @@ Ultimo aggiornamento: 2026-05-16
 
 | Data | Annunci nuovi analizzati | Accettati | Scartati |
 |------|--------------------------|-----------|---------|
+| 2026-05-17 (01:09) | 50 | 0 | 50 |
+| 2026-05-17 (23:50) | 15 | 0 | 15 |
 | 2026-05-17 (23:45) | 3 | 0 | 3 |
 | 2026-05-17 (14:00) | 0 | 0 | 0 |
 | 2026-05-17 (10:30) | 3 | 0 | 3 |
 | 2026-05-16 | 12 | 0 | 12 |
+
+**Nota run 2026-05-17 (01:09)**: Elaborazione dataset casa.it (cache/casa-it-2026-05-17.json). 50 annunci ricevuti da Apify. Risultato: **50 annunci analizzati, 0 accettati, 50 scartati**:
+  - 30 al filtro 1 (bilocali con 2 camere: servono ≥3 posti letto)
+  - 7 al filtro 1 (monolocali con 1 camera)
+  - 13 per dati insufficienti (campo `availability` non specificato)
+  
+Nessuno dei 50 ha raggiunto i filtri 6-7 (distanza metro/università). Il portale casa.it nel dataset odierno non contiene trilocali nelle fasce di prezzo e disponibilità richieste.
+
+**Nota run 2026-05-17 (23:50)**: Elaborazione dataset fallback da Subito.it (cache/subito-2026-05-17.json). Il file contiene 15 annunci da **tecnocasa.it**, non dal portale Subito: tutti hanno `contract_type='vendita'` (immobili in vendita, non in affitto). Risultato: **15 annunci analizzati, 15 scartati** tutti al **filtro 0 (implicito)** per tipo di contratto. Evidenza: il fallback tecnocasa non è pertinente al progetto (che cerca affitti studenteschi).
 
 **Nota run 2026-05-17 (23:45)**: WebSearch ha trovato 3 annunci nuovi (Via Simone d'Orsenigo, Piazza Aspromonte 51/43). Risultato: 3 annunci analizzati, 3 scartati:
   - immobiliare-115657565 (Via Simone d'Orsenigo, 90 mq, 01/09/2026) — scartato per **dati insufficienti** (prezzo non reperibile)
