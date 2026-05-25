@@ -1,4 +1,4 @@
-ï»¿{
+{
     "annunci":  [
                     {
                         "id":  "zappyrent-via-lambrate-22589",
@@ -6,7 +6,7 @@
                         "portale":  "zappyrent",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 6 ï¿½ metro 10 minuti a piedi (supera il limite di 7 min); stazioni piï¿½ vicine Pasteur/Loreto/Piola M1-M2 tutte a 10 min",
+                        "motivo_scarto":  "filtro 6 ? metro 10 minuti a piedi (supera il limite di 7 min); stazioni pi? vicine Pasteur/Loreto/Piola M1-M2 tutte a 10 min",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Lambrate, Milano (zona Loreto-Casoretto)",
                                               "mq":  90,
@@ -25,16 +25,16 @@
                         "portale":  "zappyrent",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti ï¿½ prezzo non reperibile tramite ricerca; sito zappyrent.com inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per prezzo non verificabile",
+                        "motivo_scarto":  "dati insufficienti ? prezzo non reperibile tramite ricerca; sito zappyrent.com inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per prezzo non verificabile",
                         "dati_raccolti":  {
                                               "indirizzo":  "Piazza Emilia, Milano",
                                               "mq":  75,
                                               "camere":  "trilocale (soggiorno con cucina, camera, bagno, loggia, cantina)",
-                                              "piano":  "3ï¿½ con ascensore",
+                                              "piano":  "3? con ascensore",
                                               "prezzo":  "non reperibile",
                                               "disponibilita":  "attualmente occupato, data futura non nota",
                                               "metro_distanza_min":  "non verificata",
-                                              "note":  "da prenotare per futura disponibilitï¿½; sito inaccessibile"
+                                              "note":  "da prenotare per futura disponibilit?; sito inaccessibile"
                                           }
                     },
                     {
@@ -43,19 +43,19 @@
                         "portale":  "zappyrent",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 3 ï¿½ disponibilitï¿½ non confermata entro 14/09/2026: annuncio listato dal 25/10/2024, attualmente occupato, nessuna data di liberazione futura indicata",
+                        "motivo_scarto":  "filtro 3 ? disponibilit? non confermata entro 14/09/2026: annuncio listato dal 25/10/2024, attualmente occupato, nessuna data di liberazione futura indicata",
                         "dati_raccolti":  {
                                               "indirizzo":  "Piazza dei Daini, Milano (zona Bicocca)",
                                               "mq":  87,
                                               "camere":  "trilocale (2 camere da letto + 2 bagni)",
-                                              "piano":  "6ï¿½ di 11, con ascensore",
+                                              "piano":  "6? di 11, con ascensore",
                                               "posti_letto":  "1 matrimoniale + 1 singola = 3 posti (filtro 1 ok)",
                                               "prezzo_affitto":  1200,
                                               "spese_condo":  200,
                                               "bollette":  "incluse nel totale dichiarato",
                                               "prezzo_totale_stimato":  1400,
                                               "disponibilita_originale":  "25/10/2024 (data annuncio originale)",
-                                              "stato_attuale":  "occupato ï¿½ prenotabile per futura disponibilitï¿½, data non nota",
+                                              "stato_attuale":  "occupato ? prenotabile per futura disponibilit?, data non nota",
                                               "metro_stazione":  "M5 Bignami",
                                               "metro_distanza_min":  2,
                                               "bicocca_distanza_min":  4,
@@ -75,7 +75,7 @@
                                                                                "divano",
                                                                                "riscaldamento invernale specifico"
                                                                            ],
-                                              "note":  "Candidato molto interessante ï¿½ tutti i criteri di prezzo, mq e metro sembrano soddisfatti. Ricontrollare alla prossima run: se l\u0027appartamento risulta disponibile con data =14/09/2026, rivalutare. Bicocca a 4 min a piedi (295m). Bovisa via M5?Garibaldi?S-treno stimata ~35 min.",
+                                              "note":  "Candidato molto interessante ? tutti i criteri di prezzo, mq e metro sembrano soddisfatti. Ricontrollare alla prossima run: se l\u0027appartamento risulta disponibile con data =14/09/2026, rivalutare. Bicocca a 4 min a piedi (295m). Bovisa via M5?Garibaldi?S-treno stimata ~35 min.",
                                               "da_ricontrollare":  true
                                           }
                     },
@@ -85,14 +85,14 @@
                         "portale":  "spotahome",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti ï¿½ prezzo, metratura, distanza metro non verificabili; sito spotahome.com inaccessibile dalla sandbox (HTTP 403). Nota: snippet suggerisce \u002730 min al centro\u0027 con metro, quindi Bovisa potrebbe superare 40 min",
+                        "motivo_scarto":  "dati insufficienti ? prezzo, metratura, distanza metro non verificabili; sito spotahome.com inaccessibile dalla sandbox (HTTP 403). Nota: snippet suggerisce \u002730 min al centro\u0027 con metro, quindi Bovisa potrebbe superare 40 min",
                         "dati_raccolti":  {
                                               "indirizzo":  "Ex OM-Morivione, Milano (zona sud)",
                                               "camere":  "3 camere da letto",
                                               "cucina":  "attrezzata con lavastoviglie e forno",
                                               "prezzo":  "non reperibile",
                                               "mq":  "non reperibile",
-                                              "metro_distanza_min":  "non verificata ï¿½ zona con 30 min al centro in metro",
+                                              "metro_distanza_min":  "non verificata ? zona con 30 min al centro in metro",
                                               "note":  "zona periferica sud Milano; rischio \u003e40 min verso Bovisa"
                                           }
                     },
@@ -102,7 +102,7 @@
                         "portale":  "spotahome",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 4 (stimato) ï¿½ zona Duomo di Milano; trilocale in zona Duomo tipicamente \u003e2000 ï¿½/mese, ben oltre il limite di 1500 ï¿½. Prezzo non recuperabile da sito (HTTP 403) ma zona esclude la fascia di prezzo",
+                        "motivo_scarto":  "filtro 4 (stimato) ? zona Duomo di Milano; trilocale in zona Duomo tipicamente \u003e2000 ?/mese, ben oltre il limite di 1500 ?. Prezzo non recuperabile da sito (HTTP 403) ma zona esclude la fascia di prezzo",
                         "dati_raccolti":  {
                                               "indirizzo":  "zona Duomo, Milano (centro)",
                                               "camere":  "3 camere da letto",
@@ -114,7 +114,7 @@
                                                                            "tutte le bollette incluse",
                                                                            "terrace"
                                                                        ],
-                                              "prezzo":  "non reperibile direttamente; stimato \u003e2000 ï¿½/mese per zona",
+                                              "prezzo":  "non reperibile direttamente; stimato \u003e2000 ?/mese per zona",
                                               "note":  "dotazioni eccellenti ma zona proibisce il range di prezzo"
                                           }
                     },
@@ -124,18 +124,18 @@
                         "portale":  "immobiliare.it",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 4 (stimato) ï¿½ cauzione dichiarata ï¿½5.100; in Italia la cauzione ï¿½ tipicamente 2-3 mesi di affitto. Stima: 5.100/3 = 1.700 ï¿½/mese o 5.100/2 = 2.550 ï¿½/mese. In entrambi i casi supera il limite di 1.500 ï¿½",
+                        "motivo_scarto":  "filtro 4 (stimato) ? cauzione dichiarata ?5.100; in Italia la cauzione ? tipicamente 2-3 mesi di affitto. Stima: 5.100/3 = 1.700 ?/mese o 5.100/2 = 2.550 ?/mese. In entrambi i casi supera il limite di 1.500 ?",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Carlo Farini 69, Milano (zona Farini-Isola)",
-                                              "camere":  "trilocale ï¿½ ingresso + soggiorno open kitchen + camera matrimoniale + studio singolo (letto a scomparsa) + 2 bagni",
+                                              "camere":  "trilocale ? ingresso + soggiorno open kitchen + camera matrimoniale + studio singolo (letto a scomparsa) + 2 bagni",
                                               "posti_letto":  "1 matrimoniale + 1 singola (letto a scomparsa) = 3 posti (filtro 1 ok)",
-                                              "piano":  "2ï¿½ piano, balconi",
+                                              "piano":  "2? piano, balconi",
                                               "dotazioni_confermate":  [
-                                                                           "lavatrice (2ï¿½ bagno)",
+                                                                           "lavatrice (2? bagno)",
                                                                            "riscaldamento autonomo"
                                                                        ],
                                               "cauzione":  5100,
-                                              "prezzo_stimato":  "~1.700 ï¿½/mese (da cauzione ï¿½ 3)",
+                                              "prezzo_stimato":  "~1.700 ?/mese (da cauzione ? 3)",
                                               "disponibilita":  "non verificata",
                                               "metro":  "MM3 Maciachini ~4-5 min a piedi (stimato per via)",
                                               "note":  "appartamento completamente ristrutturato con finiture pregiate; prezzo stimato sopra budget"
@@ -147,11 +147,11 @@
                         "portale":  "idealista.it",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti ï¿½ prezzo non reperibile (sito inaccessibile HTTP 403); semi-arredato (mancano divano e lavatrice non confermati); filtri 4 e 5 non verificabili",
+                        "motivo_scarto":  "dati insufficienti ? prezzo non reperibile (sito inaccessibile HTTP 403); semi-arredato (mancano divano e lavatrice non confermati); filtri 4 e 5 non verificabili",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Carlo Farini 57/a, Milano (zona Garibaldi-Isola)",
                                               "mq":  87,
-                                              "camere":  "trilocale ï¿½ ingresso + soggiorno+cucina+patio 20mq + camera+bagno + piccola camera + 2ï¿½ bagno",
+                                              "camere":  "trilocale ? ingresso + soggiorno+cucina+patio 20mq + camera+bagno + piccola camera + 2? bagno",
                                               "posti_letto":  "1 matrimoniale (stima) + 1 singola = 3 posti (filtro 1 ok)",
                                               "piano":  "non specificato",
                                               "dotazioni_confermate":  [
@@ -169,8 +169,8 @@
                                               "arredamento":  "semi-arredato",
                                               "prezzo":  "non reperibile",
                                               "disponibilita":  "dal 1 maggio 2026 (stimato da snippet)",
-                                              "metro_zona":  "Garibaldi-Isola ï¿½ M2/M5 Garibaldi stimata 5-8 min a piedi",
-                                              "note":  "garage 19mq in seminterrato incluso; finiture premium (Schï¿½co, pavimento parquet, allarme). Prezzo probabilmente \u003e1500 ï¿½/mese per queste finiture"
+                                              "metro_zona":  "Garibaldi-Isola ? M2/M5 Garibaldi stimata 5-8 min a piedi",
+                                              "note":  "garage 19mq in seminterrato incluso; finiture premium (Sch?co, pavimento parquet, allarme). Prezzo probabilmente \u003e1500 ?/mese per queste finiture"
                                           }
                     },
                     {
@@ -179,17 +179,17 @@
                         "portale":  "immobiliare.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 2 ï¿½ metratura non confermata =75 mq; annuncio descritto esplicitamente come \u0027piccolo e silenzioso trilocale\u0027; stima da layout (ingresso+soggiorno+cucina+bagno+matrimoniale+singola+loggia) = circa 60-70 mq; prudenza impone scarto",
+                        "motivo_scarto":  "filtro 2 ? metratura non confermata =75 mq; annuncio descritto esplicitamente come \u0027piccolo e silenzioso trilocale\u0027; stima da layout (ingresso+soggiorno+cucina+bagno+matrimoniale+singola+loggia) = circa 60-70 mq; prudenza impone scarto",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Farini, Milano (zona Maciachini)",
-                                              "camere":  "trilocale piccolo ï¿½ ingresso, soggiorno+cucina a vista, bagno doccia, camera matrimoniale, camera singola, loggia",
+                                              "camere":  "trilocale piccolo ? ingresso, soggiorno+cucina a vista, bagno doccia, camera matrimoniale, camera singola, loggia",
                                               "posti_letto":  "1 matrimoniale + 1 singola = 3 posti (filtro 1 ok)",
                                               "mq_stimati":  "60-70 (stima da layout; descritto \u0027piccolo\u0027)",
                                               "disponibilita":  "dal 15 maggio 2026",
                                               "metro_stazione":  "MM3 Maciachini",
                                               "metro_distanza_min":  4,
                                               "prezzo":  "non verificabile",
-                                              "note":  "edificio anni \u002770, 3 ascensori, portineria; disponibilitï¿½ ottima ma mq insufficienti"
+                                              "note":  "edificio anni \u002770, 3 ascensori, portineria; disponibilit? ottima ma mq insufficienti"
                                           }
                     },
                     {
@@ -198,7 +198,7 @@
                         "portale":  "immobiliare.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti ï¿½ prezzo e dotazioni (divano/lavatrice/wifi/riscaldamento) non reperibili; sito inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per criteri non verificabili",
+                        "motivo_scarto":  "dati insufficienti ? prezzo e dotazioni (divano/lavatrice/wifi/riscaldamento) non reperibili; sito inaccessibile dalla sandbox (HTTP 403); prudenza impone scarto per criteri non verificabili",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Farini 33, Milano (zona Farini)",
                                               "mq":  89,
@@ -207,7 +207,7 @@
                                               "metro_stazione":  "MM3 Maciachini (stimata ~4 min a piedi per via)",
                                               "prezzo":  "non reperibile",
                                               "dotazioni":  "non verificabili",
-                                              "note":  "candidato interessante per mq e disponibilitï¿½; da riesaminare se sito diventa accessibile"
+                                              "note":  "candidato interessante per mq e disponibilit?; da riesaminare se sito diventa accessibile"
                                           }
                     },
                     {
@@ -216,11 +216,11 @@
                         "portale":  "casa.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "filtro 4 ï¿½ affitto 1.750 ï¿½ + spese condominiali \u003e 1.500 ï¿½/mese",
+                        "motivo_scarto":  "filtro 4 ? affitto 1.750 ? + spese condominiali \u003e 1.500 ?/mese",
                         "dati_raccolti":  {
                                               "indirizzo":  "Viale Stelvio 42, Milano (zona Farini-Isola)",
                                               "mq":  85,
-                                              "camere":  "trilocale ï¿½ ingresso, soggiorno+cucina open, divano-letto+poltrone, 2 camere, bagno, ripostiglio",
+                                              "camere":  "trilocale ? ingresso, soggiorno+cucina open, divano-letto+poltrone, 2 camere, bagno, ripostiglio",
                                               "posti_letto":  "1 matrimoniale (stima) + 1 singola + divano-letto = 3+ posti (filtro 1 ok)",
                                               "dotazioni_confermate":  [
                                                                            "divano",
@@ -230,7 +230,7 @@
                                                                        ],
                                               "prezzo_affitto":  1750,
                                               "spese_condo":  "non specificate ma separate",
-                                              "prezzo_totale_stimato":  "\u003e1750 ï¿½",
+                                              "prezzo_totale_stimato":  "\u003e1750 ?",
                                               "disponibilita":  "dal 6 febbraio 2026",
                                               "note":  "ottima dotazione ma prezzo fuori budget"
                                           }
@@ -241,14 +241,14 @@
                         "portale":  "casa.it / idealista.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti ï¿½ si tratta di quadrilocale (4 locali) non trilocale; prezzo, mq e dotazioni sconosciuti; sito inaccessibile",
+                        "motivo_scarto":  "dati insufficienti ? si tratta di quadrilocale (4 locali) non trilocale; prezzo, mq e dotazioni sconosciuti; sito inaccessibile",
                         "dati_raccolti":  {
                                               "indirizzo":  "Via Carlo Farini, Milano (zona Maciachini)",
                                               "camere":  "quadrilocale luminoso panoramico doppia esposizione",
                                               "disponibilita":  "dal 7 settembre 2026",
                                               "metro_stazione":  "MM3 Maciachini (stimata 4 min a piedi)",
                                               "prezzo":  "non reperibile",
-                                              "note":  "disponibilitï¿½ borderline (7 sett 2026 \u003c 14 sett 2026 ?); ma prezzo e dotazioni sconosciuti"
+                                              "note":  "disponibilit? borderline (7 sett 2026 \u003c 14 sett 2026 ?); ma prezzo e dotazioni sconosciuti"
                                           }
                     },
                     {
@@ -257,7 +257,7 @@
                         "portale":  "trovacasa.it (snippet da WebSearch)",
                         "analizzato_il":  "2026-05-16",
                         "esito":  "scartato",
-                        "motivo_scarto":  "dati insufficienti ï¿½ indirizzo/zona, mq, prezzo e metro non identificabili; sito inaccessibile dalla sandbox; solo snippet di ricerca parziale disponibile",
+                        "motivo_scarto":  "dati insufficienti ? indirizzo/zona, mq, prezzo e metro non identificabili; sito inaccessibile dalla sandbox; solo snippet di ricerca parziale disponibile",
                         "dati_raccolti":  {
                                               "indirizzo":  "Milano (zona non specificata)",
                                               "camere":  "trilocale completamente nuovo",
@@ -269,7 +269,7 @@
                                               "disponibilita":  "dal 1 luglio 2026",
                                               "prezzo":  "non reperibile",
                                               "metro":  "non verificabile",
-                                              "note":  "appartamento nuovo, disponibilitï¿½ buona; da recuperare se indirizzo specifico individuato"
+                                              "note":  "appartamento nuovo, disponibilit? buona; da recuperare se indirizzo specifico individuato"
                                           }
                     },
                     {
@@ -337,7 +337,7 @@
                                               "price":  "2.000",
                                               "mq":  78,
                                               "rooms":  3,
-                                              "description":  "TRILOCALE RISTRUTTURATO IN LOCAZIONE â€“ VIA TIZIANO, MILANO In Via Tiziano 15, in uno stabile in otti..."
+                                              "description":  "TRILOCALE RISTRUTTURATO IN LOCAZIONE – VIA TIZIANO, MILANO In Via Tiziano 15, in uno stabile in otti..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53809654/"
@@ -379,7 +379,7 @@
                                               "price":  "1.300",
                                               "mq":  75,
                                               "rooms":  3,
-                                              "description":  "Trilocale ristrutturato in contesto tranquillo   In una delle aree residenziali piÃ¹ serene e ben ser..."
+                                              "description":  "Trilocale ristrutturato in contesto tranquillo   In una delle aree residenziali più serene e ben ser..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53770280/"
@@ -421,7 +421,7 @@
                                               "price":  "1.300",
                                               "mq":  58,
                                               "rooms":  3,
-                                              "description":  "Elegante trilocale di 58 metri quadrati situato al piano terra in zona strategica e centrale.  Lâ€™app..."
+                                              "description":  "Elegante trilocale di 58 metri quadrati situato al piano terra in zona strategica e centrale.  L’app..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53565772/"
@@ -491,7 +491,7 @@
                                               "price":  "1.100",
                                               "mq":  70,
                                               "rooms":  3,
-                                              "description":  "Affitto bilocale â€“ Via Laurana, primo piano Affittasi appartamento di 70 mq al primo piano senza asc..."
+                                              "description":  "Affitto bilocale – Via Laurana, primo piano Affittasi appartamento di 70 mq al primo piano senza asc..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53987425/"
@@ -547,7 +547,7 @@
                                               "price":  "2.500",
                                               "mq":  120,
                                               "rooms":  3,
-                                              "description":  "AMPIO TRILOCALE CON DUE BALCONI  LO STABILE  Lo stabile Ã¨ signorile, elegante e riservato, attualmen..."
+                                              "description":  "AMPIO TRILOCALE CON DUE BALCONI  LO STABILE  Lo stabile è signorile, elegante e riservato, attualmen..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53848144/"
@@ -561,7 +561,7 @@
                                               "price":  "3.500",
                                               "mq":  110,
                                               "rooms":  3,
-                                              "description":  "Porta Romana, Via Friuli, proponiamo in locazione soltanto per contratti con Banche e SocietÃ  multin..."
+                                              "description":  "Porta Romana, Via Friuli, proponiamo in locazione soltanto per contratti con Banche e Società multin..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53544065/"
@@ -575,7 +575,7 @@
                                               "price":  "3.000",
                                               "mq":  67,
                                               "rooms":  3,
-                                              "description":  "PIAZZA DEL CARMINE - BRERA In elegante stabile dâ€™epoca esclusivo appartamento IN OTTIMO STATO di 67 ..."
+                                              "description":  "PIAZZA DEL CARMINE - BRERA In elegante stabile d’epoca esclusivo appartamento IN OTTIMO STATO di 67 ..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53744647/"
@@ -659,7 +659,7 @@
                                               "price":  "1.300",
                                               "mq":  90,
                                               "rooms":  3,
-                                              "description":  "VIA CORSO LODI 130  Luminoso trilocale, recentemente ristrutturato, situato al 3Â° piano dello stabil..."
+                                              "description":  "VIA CORSO LODI 130  Luminoso trilocale, recentemente ristrutturato, situato al 3° piano dello stabil..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53400405/"
@@ -673,7 +673,7 @@
                                               "price":  "1.950",
                                               "mq":  96,
                                               "rooms":  3,
-                                              "description":  "In palazzo dâ€™epoca primi â€™900, appartamento di 96 mq, completamente ristrutturato e arredato con gus..."
+                                              "description":  "In palazzo d’epoca primi ’900, appartamento di 96 mq, completamente ristrutturato e arredato con gus..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/51509589/"
@@ -729,7 +729,7 @@
                                               "price":  "1.710",
                                               "mq":  103,
                                               "rooms":  3,
-                                              "description":  "Via Tolstoi 70 â€“ a due passi dalla zona Tortona/Savona e dalla fermata MM4 Tolstoi   Proponiamo in l..."
+                                              "description":  "Via Tolstoi 70 – a due passi dalla zona Tortona/Savona e dalla fermata MM4 Tolstoi   Proponiamo in l..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53837230/"
@@ -743,7 +743,7 @@
                                               "price":  "1.740",
                                               "mq":  103,
                                               "rooms":  3,
-                                              "description":  "Via Tolstoi 72 â€“ a due passi dalla zona Tortona/Savona e dalla fermata MM4 Tolstoi  Proponiamo in lo..."
+                                              "description":  "Via Tolstoi 72 – a due passi dalla zona Tortona/Savona e dalla fermata MM4 Tolstoi  Proponiamo in lo..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/50064309/"
@@ -757,7 +757,7 @@
                                               "price":  "1.750",
                                               "mq":  103,
                                               "rooms":  3,
-                                              "description":  "Via Tolstoi â€“ a due passi dalla zona Tortona/Savona e dalla MM4 fermata Tolstoi  Disponibile in loca..."
+                                              "description":  "Via Tolstoi – a due passi dalla zona Tortona/Savona e dalla MM4 fermata Tolstoi  Disponibile in loca..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/50061021/"
@@ -827,7 +827,7 @@
                                               "price":  "1.625",
                                               "mq":  92,
                                               "rooms":  3,
-                                              "description":  "Arco della Pace / Via Massena A pochi passi dal Parco Sempione e dallâ€™Arco della Pace, in una delle ..."
+                                              "description":  "Arco della Pace / Via Massena A pochi passi dal Parco Sempione e dall’Arco della Pace, in una delle ..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/51444234/"
@@ -855,7 +855,7 @@
                                               "price":  "1.300",
                                               "mq":  84,
                                               "rooms":  3,
-                                              "description":  "Il trilocale doppi servizi con terrazzo situato in Via Bengasi, al civico n. 2, Ã¨ adatto a lavorator..."
+                                              "description":  "Il trilocale doppi servizi con terrazzo situato in Via Bengasi, al civico n. 2, è adatto a lavorator..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53341823/"
@@ -897,7 +897,7 @@
                                               "price":  "3.650",
                                               "mq":  100,
                                               "rooms":  3,
-                                              "description":  "A pochi passi da Piazzale Libia, in via Tiraboschi, in elegante stabile dâ€™epoca, proponiamo in locaz..."
+                                              "description":  "A pochi passi da Piazzale Libia, in via Tiraboschi, in elegante stabile d’epoca, proponiamo in locaz..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53498959/"
@@ -1079,7 +1079,7 @@
                                               "price":  "2.200",
                                               "mq":  101,
                                               "rooms":  3,
-                                              "description":  "Nel cuore di una delle zone in piÃ¹ forte evoluzione di Milano, a pochi passi da Piazzale Maciachini,..."
+                                              "description":  "Nel cuore di una delle zone in più forte evoluzione di Milano, a pochi passi da Piazzale Maciachini,..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53628314/"
@@ -1093,7 +1093,7 @@
                                               "price":  "1.200",
                                               "mq":  90,
                                               "rooms":  3,
-                                              "description":  "Zappyrent propone, ampio e signorile trilocale di 90 mÂ² situato al 2Â° piano di uno stabile dotato di..."
+                                              "description":  "Zappyrent propone, ampio e signorile trilocale di 90 m² situato al 2° piano di uno stabile dotato di..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53697790/"
@@ -1163,7 +1163,7 @@
                                               "price":  "1.330",
                                               "mq":  80,
                                               "rooms":  3,
-                                              "description":  "Via Govone rif. (12). Locazione a referenziati e a societÃ  accreditate. In stabile con ascensore, se..."
+                                              "description":  "Via Govone rif. (12). Locazione a referenziati e a società accreditate. In stabile con ascensore, se..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53912701/"
@@ -1177,7 +1177,7 @@
                                               "price":  "1.330",
                                               "mq":  80,
                                               "rooms":  3,
-                                              "description":  "Via Govone rif. (32). Locazione a referenziati e a societÃ  accreditate. In stabile con ascensore, se..."
+                                              "description":  "Via Govone rif. (32). Locazione a referenziati e a società accreditate. In stabile con ascensore, se..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53912697/"
@@ -1205,7 +1205,7 @@
                                               "price":  "3.000",
                                               "mq":  112,
                                               "rooms":  3,
-                                              "description":  "Nel cuore piÃ¹ iconico di Milano, tra le vie simbolo del lusso e dello stile, all\u0027ultimo piano di un ..."
+                                              "description":  "Nel cuore più iconico di Milano, tra le vie simbolo del lusso e dello stile, all\u0027ultimo piano di un ..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53898170/"
@@ -1219,7 +1219,7 @@
                                               "price":  "3.200",
                                               "mq":  145,
                                               "rooms":  3,
-                                              "description":  "A pochi passi da Piazza Piemonte, in uno dei contesti residenziali piÃ¹ apprezzati dell\u0027area ovest mi..."
+                                              "description":  "A pochi passi da Piazza Piemonte, in uno dei contesti residenziali più apprezzati dell\u0027area ovest mi..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53898105/"
@@ -1275,7 +1275,7 @@
                                               "price":  "1.390",
                                               "mq":  66,
                                               "rooms":  3,
-                                              "description":  "**Appartamento Trilocale Arredato in Affitto in CittÃ  Studi** CALL US WE SPEAK: ENGLISH - SPANISH - ..."
+                                              "description":  "**Appartamento Trilocale Arredato in Affitto in Città Studi** CALL US WE SPEAK: ENGLISH - SPANISH - ..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53872018/"
@@ -1303,7 +1303,7 @@
                                               "price":  "2.950",
                                               "mq":  70,
                                               "rooms":  3,
-                                              "description":  "Canone  Il canone indicato Ã¨ all inclusive: comprende spese condominiali, utenze e assistenza dedica..."
+                                              "description":  "Canone  Il canone indicato è all inclusive: comprende spese condominiali, utenze e assistenza dedica..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53301074/"
@@ -1317,7 +1317,7 @@
                                               "price":  "1.350",
                                               "mq":  59,
                                               "rooms":  3,
-                                              "description":  "In via Farini, a 4 minuti a piedi dalla fermata della MM3 Maciachini, LIBERO DAL 1Â° GIUGNO 2026, in ..."
+                                              "description":  "In via Farini, a 4 minuti a piedi dalla fermata della MM3 Maciachini, LIBERO DAL 1° GIUGNO 2026, in ..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53417249/"
@@ -1415,7 +1415,7 @@
                                               "price":  "1.300",
                                               "mq":  90,
                                               "rooms":  3,
-                                              "description":  "Ampio trilocale in affitto situato in via Lattanzio, perfetto per chi cerca tranquillitÃ  e comoditÃ ...."
+                                              "description":  "Ampio trilocale in affitto situato in via Lattanzio, perfetto per chi cerca tranquillità e comodità...."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53442866/"
@@ -1429,7 +1429,7 @@
                                               "price":  "1.300",
                                               "mq":  70,
                                               "rooms":  3,
-                                              "description":  "In via Venezian 14, nel cuore di CittÃ  Studi, proponiamo trilocale luminoso in affitto inserito in u..."
+                                              "description":  "In via Venezian 14, nel cuore di Città Studi, proponiamo trilocale luminoso in affitto inserito in u..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53187071/"
@@ -1541,7 +1541,7 @@
                                               "price":  "2.000",
                                               "mq":  105,
                                               "rooms":  3,
-                                              "description":  "In uno dei contesti piÃ¹ ricercati e dinamici di Milano, a brevissima distanza dal prestigio dellâ€™Uni..."
+                                              "description":  "In uno dei contesti più ricercati e dinamici di Milano, a brevissima distanza dal prestigio dell’Uni..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53005835/"
@@ -1555,7 +1555,7 @@
                                               "price":  "3.500",
                                               "mq":  140,
                                               "rooms":  3,
-                                              "description":  "In una delle aree residenziali piÃ¹ eleganti e ricercate di Milano, nel cuore della zona Conciliazion..."
+                                              "description":  "In una delle aree residenziali più eleganti e ricercate di Milano, nel cuore della zona Conciliazion..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53005378/"
@@ -1597,7 +1597,7 @@
                                               "price":  "2.000",
                                               "mq":  96,
                                               "rooms":  3,
-                                              "description":  "Ampio trilocale ideale per studenti in Corso Vercelli, Milano  Nel cuore di una delle zone piÃ¹ richi..."
+                                              "description":  "Ampio trilocale ideale per studenti in Corso Vercelli, Milano  Nel cuore di una delle zone più richi..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53618693/"
@@ -1639,7 +1639,7 @@
                                               "price":  "1.475",
                                               "mq":  72,
                                               "rooms":  3,
-                                              "description":  "AMPIO TRILOCALE RISTRUTTURATO A DUE PASSI DALLA METRO! - OCCASIONE âŠ› Ideale per coppia o azienda âŠ› L..."
+                                              "description":  "AMPIO TRILOCALE RISTRUTTURATO A DUE PASSI DALLA METRO! - OCCASIONE ? Ideale per coppia o azienda ? L..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53018418/"
@@ -1653,7 +1653,7 @@
                                               "price":  "3.500",
                                               "mq":  74,
                                               "rooms":  3,
-                                              "description":  "La zona   Questo magnifico trilocale si trova a pochi passi dal centro ed Ã¨ ben collegato grazie ai ..."
+                                              "description":  "La zona   Questo magnifico trilocale si trova a pochi passi dal centro ed è ben collegato grazie ai ..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/42174786/"
@@ -1667,7 +1667,7 @@
                                               "price":  "2.800",
                                               "mq":  60,
                                               "rooms":  3,
-                                              "description":  "Canone  Il canone indicato Ã¨ all inclusive: comprende spese condominiali, utenze e assistenza dedica..."
+                                              "description":  "Canone  Il canone indicato è all inclusive: comprende spese condominiali, utenze e assistenza dedica..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/39669662/"
@@ -1723,7 +1723,7 @@
                                               "price":  "3.300",
                                               "mq":  90,
                                               "rooms":  3,
-                                              "description":  "Nel cuore di una delle zone piÃ¹ prestigiose e richieste di Milano, precisamente in Corso Magenta, pr..."
+                                              "description":  "Nel cuore di una delle zone più prestigiose e richieste di Milano, precisamente in Corso Magenta, pr..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53686888/"
@@ -1737,7 +1737,7 @@
                                               "price":  "2.500",
                                               "mq":  80,
                                               "rooms":  3,
-                                              "description":  "029020-Abitazione in Locazione: Luminoso e ben disposto appartamento di 70 mÂ² calpestabili, ultimo p..."
+                                              "description":  "029020-Abitazione in Locazione: Luminoso e ben disposto appartamento di 70 m² calpestabili, ultimo p..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53823123/"
@@ -1961,7 +1961,7 @@
                                               "price":  "2.399",
                                               "mq":  110,
                                               "rooms":  3,
-                                              "description":  "trilocale con due bagni luminoso e arredato, possibilitÃ  box. CityLife: Il fascino dellâ€™epoca incont..."
+                                              "description":  "trilocale con due bagni luminoso e arredato, possibilità box. CityLife: Il fascino dell’epoca incont..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53319052/"
@@ -1989,7 +1989,7 @@
                                               "price":  "2.400",
                                               "mq":  65,
                                               "rooms":  3,
-                                              "description":  "Via Varese, a pochi passi dalle metro verde \"Moscova\". La soluzione che vi proponiamo Ã¨ perfetta per..."
+                                              "description":  "Via Varese, a pochi passi dalle metro verde \"Moscova\". La soluzione che vi proponiamo è perfetta per..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53128486/"
@@ -2017,7 +2017,7 @@
                                               "price":  "1.950",
                                               "mq":  87,
                                               "rooms":  3,
-                                              "description":  "NUOVO TRILOCALE PIAZZA 5 GIORNATE/CADORE MONTENERO. **Appartamento in Affitto a Milano â€“ Piazza V Gi..."
+                                              "description":  "NUOVO TRILOCALE PIAZZA 5 GIORNATE/CADORE MONTENERO. **Appartamento in Affitto a Milano – Piazza V Gi..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53467345/"
@@ -2031,7 +2031,7 @@
                                               "price":  "5.500",
                                               "mq":  125,
                                               "rooms":  3,
-                                              "description":  "Nel cuore del Quadrilatero della moda, a pochi passi dalle boutique piÃ¹ esclusive della cittÃ , siamo..."
+                                              "description":  "Nel cuore del Quadrilatero della moda, a pochi passi dalle boutique più esclusive della città, siamo..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/52690788/"
@@ -2059,7 +2059,7 @@
                                               "price":  "2.333",
                                               "mq":  100,
                                               "rooms":  3,
-                                              "description":  "Nellâ€™area residenziale adiacente la comoda fermata MM Piola, proponiamo in locazione un arioso trilo..."
+                                              "description":  "Nell’area residenziale adiacente la comoda fermata MM Piola, proponiamo in locazione un arioso trilo..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/51149539/"
@@ -2087,7 +2087,7 @@
                                               "price":  "1.800",
                                               "mq":  100,
                                               "rooms":  3,
-                                              "description":  "Panoramico trilocale con esposizione angolare  Rif. A-637. CONTRATTO ANCHE A SOCIETAâ€™. Viale Tibaldi..."
+                                              "description":  "Panoramico trilocale con esposizione angolare  Rif. A-637. CONTRATTO ANCHE A SOCIETA’. Viale Tibaldi..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53106340/"
@@ -2115,7 +2115,7 @@
                                               "price":  "1.480",
                                               "mq":  65,
                                               "rooms":  3,
-                                              "description":  "AMPIO TRILOCALE RISTRUTTURATO A DUE PASSI DALLA METRO! - OCCASIONE âŠ› Ideale per coppia o azienda âŠ› L..."
+                                              "description":  "AMPIO TRILOCALE RISTRUTTURATO A DUE PASSI DALLA METRO! - OCCASIONE ? Ideale per coppia o azienda ? L..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53018477/"
@@ -2129,7 +2129,7 @@
                                               "price":  "1.410",
                                               "mq":  68,
                                               "rooms":  3,
-                                              "description":  "TRILOCALE RISTRUTTURATO A DUE PASSI DALLA METRO! - OCCASIONE âŠ› Ideale per lavoratori âŠ›  LIBERO DA SU..."
+                                              "description":  "TRILOCALE RISTRUTTURATO A DUE PASSI DALLA METRO! - OCCASIONE ? Ideale per lavoratori ?  LIBERO DA SU..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53018319/"
@@ -2143,7 +2143,7 @@
                                               "price":  "1.515",
                                               "mq":  65,
                                               "rooms":  3,
-                                              "description":  "AMPIO TRILOCALE RISTRUTTURATO IN GAMBARA - OCCASIONE LIBERO DA SUBITO  âŠ› Ideale per 2 lavoratori o s..."
+                                              "description":  "AMPIO TRILOCALE RISTRUTTURATO IN GAMBARA - OCCASIONE LIBERO DA SUBITO  ? Ideale per 2 lavoratori o s..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53014410/"
@@ -2157,7 +2157,7 @@
                                               "price":  "1.550",
                                               "mq":  70,
                                               "rooms":  3,
-                                              "description":  "LIBERO DA SUBITO - TRILOCALE PIANO ALTO CON BALCONE â—‰ Adatto per studenti Marangoni / Cattolica o pe..."
+                                              "description":  "LIBERO DA SUBITO - TRILOCALE PIANO ALTO CON BALCONE ? Adatto per studenti Marangoni / Cattolica o pe..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/52933951/"
@@ -2185,7 +2185,7 @@
                                               "price":  "2.290",
                                               "mq":  72,
                                               "rooms":  3,
-                                              "description":  "Casa Villoresi â€“ a 500 metri da MM Romolo (M2 Verde)  Lâ€™appartamento in classe energetica A+, comple..."
+                                              "description":  "Casa Villoresi – a 500 metri da MM Romolo (M2 Verde)  L’appartamento in classe energetica A+, comple..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/51888327/"
@@ -2199,7 +2199,7 @@
                                               "price":  "2.990",
                                               "mq":  74,
                                               "rooms":  3,
-                                              "description":  "Casa Villoresi â€“ a 500 metri da MM Romolo (M2 Verde)  Lâ€™appartamento in classe energetica A+, comple..."
+                                              "description":  "Casa Villoresi – a 500 metri da MM Romolo (M2 Verde)  L’appartamento in classe energetica A+, comple..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/51883118/"
@@ -2213,7 +2213,7 @@
                                               "price":  "2.790",
                                               "mq":  120,
                                               "rooms":  3,
-                                              "description":  "MILANO CENTRO â€“ PRESTIGIOSO ATTICO CON DOPPI TERRAZZI   Milano Centro â€“ Prestigioso Attico con Doppi..."
+                                              "description":  "MILANO CENTRO – PRESTIGIOSO ATTICO CON DOPPI TERRAZZI   Milano Centro – Prestigioso Attico con Doppi..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53462652/"
@@ -2227,7 +2227,7 @@
                                               "price":  "3.600",
                                               "mq":  126,
                                               "rooms":  3,
-                                              "description":  "Trilocale completamente arredato allâ€™interno dell\u0027elegantissimo sviluppo immobiliare AM19, composto ..."
+                                              "description":  "Trilocale completamente arredato all’interno dell\u0027elegantissimo sviluppo immobiliare AM19, composto ..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/52823579/"
@@ -2283,7 +2283,7 @@
                                               "price":  "2.000",
                                               "mq":  86,
                                               "rooms":  3,
-                                              "description":  "Ribbon Home 256 - Proponiamo trilocale finemente ristrutturato al 6Â° piano, caratterizzato da zona l..."
+                                              "description":  "Ribbon Home 256 - Proponiamo trilocale finemente ristrutturato al 6° piano, caratterizzato da zona l..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53718339/"
@@ -2297,7 +2297,7 @@
                                               "price":  "1.700",
                                               "mq":  73,
                                               "rooms":  3,
-                                              "description":  "Ribbon Home 254 - Proponiamo trilocale finemente ristrutturato al 4Â° piano, caratterizzato da zona l..."
+                                              "description":  "Ribbon Home 254 - Proponiamo trilocale finemente ristrutturato al 4° piano, caratterizzato da zona l..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53578104/"
@@ -2311,7 +2311,7 @@
                                               "price":  "1.600",
                                               "mq":  64,
                                               "rooms":  3,
-                                              "description":  "Appartamento - 2 camere - 7 min dal Politecnico CittÃ  Studi Milano - Via Andrea Maria AmpÃ¨re. Nelle ..."
+                                              "description":  "Appartamento - 2 camere - 7 min dal Politecnico Città Studi Milano - Via Andrea Maria Ampère. Nelle ..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53604156/"
@@ -2325,7 +2325,7 @@
                                               "price":  "1.900",
                                               "mq":  81,
                                               "rooms":  3,
-                                              "description":  "Ribbon Home 76D - Proponiamo trilocale finemente ristrutturato al 6Â° piano della scala interna, cara..."
+                                              "description":  "Ribbon Home 76D - Proponiamo trilocale finemente ristrutturato al 6° piano della scala interna, cara..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53344922/"
@@ -2353,7 +2353,7 @@
                                               "price":  "2.091",
                                               "mq":  80,
                                               "rooms":  3,
-                                              "description":  "Ideale per chi ama la tranquillitÃ  in una zona centralissima di Milano, vicina alla M3 Missori, a 50..."
+                                              "description":  "Ideale per chi ama la tranquillità in una zona centralissima di Milano, vicina alla M3 Missori, a 50..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53049832/"
@@ -2367,7 +2367,7 @@
                                               "price":  "1.500",
                                               "mq":  75,
                                               "rooms":  3,
-                                              "description":  "Buenos Aires-CittÃ  Studi, attiguo MM1 e MM2 Loreto, in Piazza Aspromonte, trilocale completamente ri..."
+                                              "description":  "Buenos Aires-Città Studi, attiguo MM1 e MM2 Loreto, in Piazza Aspromonte, trilocale completamente ri..."
                                           },
                         "portale":  "casa-it",
                         "url":  "https://www.casa.it/immobili/53980004/"
@@ -3975,7 +3975,7 @@
                     {
                         "id":  "idealista-",
                         "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "Filtro 1 â€” posti letto \u003c 3",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
                         "esito":  "scartato",
                         "portale":  "idealista",
                         "url":  ""
@@ -3983,7 +3983,7 @@
                     {
                         "id":  "immobiliare-124721527",
                         "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "Filtro 1 â€” posti letto \u003c 3",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
                         "esito":  "scartato",
                         "portale":  "immobiliare",
                         "url":  ""
@@ -3991,7 +3991,7 @@
                     {
                         "id":  "immobiliare-126736869",
                         "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "Filtro 1 â€” posti letto \u003c 3",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
                         "esito":  "scartato",
                         "portale":  "immobiliare",
                         "url":  ""
@@ -3999,7 +3999,7 @@
                     {
                         "id":  "immobiliare-128262002",
                         "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "Filtro 1 â€” posti letto \u003c 3",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
                         "esito":  "scartato",
                         "portale":  "immobiliare",
                         "url":  ""
@@ -4007,7 +4007,7 @@
                     {
                         "id":  "immobiliare-128926692",
                         "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "Filtro 1 â€” posti letto \u003c 3",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
                         "esito":  "scartato",
                         "portale":  "immobiliare",
                         "url":  ""
@@ -4015,7 +4015,7 @@
                     {
                         "id":  "immobiliare-128495852",
                         "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "Filtro 1 â€” posti letto \u003c 3",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
                         "esito":  "scartato",
                         "portale":  "immobiliare",
                         "url":  ""
@@ -4023,11 +4023,1584 @@
                     {
                         "id":  "subito-",
                         "analizzato_il":  "2026-05-17",
-                        "motivo_scarto":  "Filtro 1 â€” posti letto \u003c 3",
+                        "motivo_scarto":  "Filtro 1 — posti letto \u003c 3",
                         "esito":  "scartato",
                         "portale":  "subito",
                         "url":  ""
+                    },
+                    {
+                        "id":  "casa-it-53960593",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  85,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53960593/"
+                    },
+                    {
+                        "id":  "casa-it-53960058",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  95,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53960058/"
+                    },
+                    {
+                        "id":  "casa-it-53877051",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  138,
+                                              "camere":  3,
+                                              "prezzo":  4
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53877051/"
+                    },
+                    {
+                        "id":  "casa-it-53730414",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  79,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53730414/"
+                    },
+                    {
+                        "id":  "casa-it-53599076",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  109,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53599076/"
+                    },
+                    {
+                        "id":  "casa-it-53156209",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  120,
+                                              "camere":  3,
+                                              "prezzo":  3
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53156209/"
+                    },
+                    {
+                        "id":  "casa-it-54062020",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 2 — metratura \u003c 75 mq (dichiarato: 72 mq)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  72,
+                                              "camere":  3,
+                                              "prezzo":  1
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/54062020/"
+                    },
+                    {
+                        "id":  "casa-it-53886558",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  100,
+                                              "camere":  3,
+                                              "prezzo":  4
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53886558/"
+                    },
+                    {
+                        "id":  "casa-it-53837307",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  113,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53837307/"
+                    },
+                    {
+                        "id":  "casa-it-54060365",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  87,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/54060365/"
+                    },
+                    {
+                        "id":  "casa-it-54057833",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  75,
+                                              "camere":  3,
+                                              "prezzo":  1
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/54057833/"
+                    },
+                    {
+                        "id":  "casa-it-53608925",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 2 — metratura \u003c 75 mq (dichiarato: 71 mq)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  71,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53608925/"
+                    },
+                    {
+                        "id":  "casa-it-53900584",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  100,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53900584/"
+                    },
+                    {
+                        "id":  "casa-it-53820511",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  75,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/53820511/"
+                    },
+                    {
+                        "id":  "casa-it-54040054",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  104,
+                                              "camere":  3,
+                                              "prezzo":  1
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/54040054/"
+                    },
+                    {
+                        "id":  "casa-it-54049030",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  135,
+                                              "camere":  3,
+                                              "prezzo":  3
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/54049030/"
+                    },
+                    {
+                        "id":  "casa-it-54040200",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  85,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/54040200/"
+                    },
+                    {
+                        "id":  "casa-it-54038519",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 5 — dotazioni non verificabili: wifi, lavatrice",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  90,
+                                              "camere":  3,
+                                              "prezzo":  2
+                                          },
+                        "portale":  "casa-it",
+                        "url":  "https://www.casa.it/immobili/54038519/"
+                    },
+                    {
+                        "id":  "immobiliare-128928760",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  0
+                                          },
+                        "portale":  "immobiliare",
+                        "url":  "https://www.immobiliare.it/annunci/128928760/"
+                    },
+                    {
+                        "id":  "immobiliare-127947674",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  0
+                                          },
+                        "portale":  "immobiliare",
+                        "url":  "https://www.immobiliare.it/annunci/127947674/"
+                    },
+                    {
+                        "id":  "immobiliare-128291712",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  0
+                                          },
+                        "portale":  "immobiliare",
+                        "url":  "https://www.immobiliare.it/annunci/128291712/"
+                    },
+                    {
+                        "id":  "subito-1-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  750
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-arredato-a-segrate-milano-648371475.htm"
+                    },
+                    {
+                        "id":  "subito-2-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  800
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-ristrutturato-grazioso-milano-645163147.htm"
+                    },
+                    {
+                        "id":  "subito-3-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  950
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-mansardato-luminoso-zona-city-life-milano-643762149.htm"
+                    },
+                    {
+                        "id":  "subito-4-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  750
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-ristrutturato-certosa-milano-633034141.htm"
+                    },
+                    {
+                        "id":  "subito-5-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  750
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-zona-precotto-milano-647544377.htm"
+                    },
+                    {
+                        "id":  "subito-6-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1150
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-panoramico-zona-citta-studi-casoretto-milano-648394347.htm"
+                    },
+                    {
+                        "id":  "subito-7-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  700
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-30mq-a-pochi-passi-dal-duomo-700eu-milano-648404913.htm"
+                    },
+                    {
+                        "id":  "subito-8-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  900
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/open-space-ben-suddiviso-in-isola-milano-648404560.htm"
+                    },
+                    {
+                        "id":  "subito-9-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1000
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-55mq-con-due-balconi-15min-dalla-bocconi-milano-648401563.htm"
+                    },
+                    {
+                        "id":  "subito-10-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  500
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-a-san-giuliano-milanese-milano-648394360.htm"
+                    },
+                    {
+                        "id":  "subito-11-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  750
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-fronte-fermata-metropolitana-milano-648397477.htm"
+                    },
+                    {
+                        "id":  "subito-12-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  900
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-arredato-45mq-corso-sempione-900eu-milano-648395107.htm"
+                    },
+                    {
+                        "id":  "subito-13-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  580
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-ristrutturato-dergano-m3-milano-648389859.htm"
+                    },
+                    {
+                        "id":  "subito-14-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  950
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-bifocale-ristrutturato-milano-648388950.htm"
+                    },
+                    {
+                        "id":  "subito-15-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1100
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/2locali-ristrutturato-in-zona-lotto-m1-milano-648396144.htm"
+                    },
+                    {
+                        "id":  "subito-16-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  720
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/ampio-monolocale-piano-alto-milano-641015039.htm"
+                    },
+                    {
+                        "id":  "subito-17-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  850
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/libero-subito-anche-per-coppie-m1-precotto-milano-648385795.htm"
+                    },
+                    {
+                        "id":  "subito-18-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  520
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-completo-di-arredo-con-terrazzo-milano-648383788.htm"
+                    },
+                    {
+                        "id":  "subito-19-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1000
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/delizioso-e-ampio-bilocale-di-63-mq-milano-648382349.htm"
+                    },
+                    {
+                        "id":  "subito-20-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1000
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/grazioso-bilocale-con-box-auto-navigli-romolo-milano-645621744.htm"
+                    },
+                    {
+                        "id":  "subito-21-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  660
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-ristrutturato-bollate-milano-648373487.htm"
+                    },
+                    {
+                        "id":  "subito-22-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  550
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-arredato-con-balcone-magenta-milano-648375520.htm"
+                    },
+                    {
+                        "id":  "subito-23-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1000
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-appena-ristrutturato-con-terrazzo-milano-648370841.htm"
+                    },
+                    {
+                        "id":  "subito-24-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1000
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/mono-centrale-milano-648373016.htm"
+                    },
+                    {
+                        "id":  "subito-25-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  900
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/marche-m5-bilocale-arredato-milano-648372908.htm"
+                    },
+                    {
+                        "id":  "subito-26-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1200
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-mansardato-milano-647816874.htm"
+                    },
+                    {
+                        "id":  "subito-27-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  600
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/open-space-600-euro-milano-milano-648382063.htm"
+                    },
+                    {
+                        "id":  "subito-28-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  900
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-milano-cod-rif-3318697arg-milano-648157278.htm"
+                    },
+                    {
+                        "id":  "subito-29-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1500
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-63-m²-con-2-locali-a-milano-milano-648127183.htm"
+                    },
+                    {
+                        "id":  "subito-30-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  850
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-ben-arredato-e-funzionale-milano-635663742.htm"
+                    },
+                    {
+                        "id":  "subito-31-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  650
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-a-magenta-vicino-il-centro-e-la-stazione-milano-648158194.htm"
+                    },
+                    {
+                        "id":  "subito-32-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1150
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-60-m²-con-2-locali-a-milano-milano-648127228.htm"
+                    },
+                    {
+                        "id":  "subito-33-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  460
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-mm-rovereto-milano-648114785.htm"
+                    },
+                    {
+                        "id":  "subito-34-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  550
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-arredato-milano-646789058.htm"
+                    },
+                    {
+                        "id":  "subito-35-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1000
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-70-mq-ristrutturato-e-ammobiliato-milano-648156135.htm"
+                    },
+                    {
+                        "id":  "subito-36-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  850
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-libero-subito-850-euro-m4-milano-641842096.htm"
+                    },
+                    {
+                        "id":  "subito-37-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1130
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-zona-paolo-sarpi-no-agenzia-milano-645808602.htm"
+                    },
+                    {
+                        "id":  "subito-38-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  850
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-di-60mq-in-zona-citta-studi-850-euro-milano-648150636.htm"
+                    },
+                    {
+                        "id":  "subito-39-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  730
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/open-space-arredato-comodo-per-il-centro-turro-m1-milano-648147963.htm"
+                    },
+                    {
+                        "id":  "subito-40-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  650
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-arredato-p-zza-stazione-legnano-milano-648137256.htm"
+                    },
+                    {
+                        "id":  "subito-41-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  720
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-comodo-milano-567174023.htm"
+                    },
+                    {
+                        "id":  "subito-42-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  750
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-ristrutturato-con-balcone-a-rozzano-milano-648144394.htm"
+                    },
+                    {
+                        "id":  "subito-43-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1250
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-a-vimodrone-milano-643176740.htm"
+                    },
+                    {
+                        "id":  "subito-44-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  900
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-san-donato-milanese-milano-648128867.htm"
+                    },
+                    {
+                        "id":  "subito-45-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  950
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-60-m²-con-2-locali-a-san-giuliano-milano-648129068.htm"
+                    },
+                    {
+                        "id":  "subito-46-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1100
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-45-m²-con-2-locali-a-milano-milano-648128841.htm"
+                    },
+                    {
+                        "id":  "subito-47-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  700
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/ampio-bilocale-700-euro-tutto-incluso-milano-641697374.htm"
+                    },
+                    {
+                        "id":  "subito-48-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  880
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-completamente-arredato-in-centro-corsico-milano-644986317.htm"
+                    },
+                    {
+                        "id":  "subito-49-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1200
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-60-m²-con-2-locali-a-milano-milano-648128516.htm"
+                    },
+                    {
+                        "id":  "subito-50-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1300
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-45-m²-con-2-locali-a-milano-milano-648128501.htm"
+                    },
+                    {
+                        "id":  "subito-51-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1500
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-35-m²-con-2-locali-a-melegnano-milano-648128474.htm"
+                    },
+                    {
+                        "id":  "subito-52-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  680
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-58-m²-con-2-locali-e-box-auto-a-dr-milano-648127602.htm"
+                    },
+                    {
+                        "id":  "subito-53-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1050
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-viale-certosa-milano-647258935.htm"
+                    },
+                    {
+                        "id":  "subito-54-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1400
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-50-m²-con-2-locali-a-milano-milano-648127703.htm"
+                    },
+                    {
+                        "id":  "subito-55-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1000
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-65-m²-con-2-locali-a-milano-milano-648128349.htm"
+                    },
+                    {
+                        "id":  "subito-56-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1650
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-80-m²-con-3-locali-a-milano-milano-648127781.htm"
+                    },
+                    {
+                        "id":  "subito-57-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  650
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/open-space-con-balcone-a-650-euro-mi-milano-644999060.htm"
+                    },
+                    {
+                        "id":  "subito-58-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1000
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-45-m²-con-2-locali-a-milano-milano-648127435.htm"
+                    },
+                    {
+                        "id":  "subito-59-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  830
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-40-m²-con-1-locale-a-milano-milano-648127697.htm"
+                    },
+                    {
+                        "id":  "subito-60-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  750
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-a-inzago-milano-648351593.htm"
+                    },
+                    {
+                        "id":  "subito-61-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  850
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-a-milano-milano-642928481.htm"
+                    },
+                    {
+                        "id":  "subito-62-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1150
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/senza-agenzia-mm-pasteur-milano-648103783.htm"
+                    },
+                    {
+                        "id":  "subito-63-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1300
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-euro-1300-euro-200-spese-condominiali-milano-648291761.htm"
+                    },
+                    {
+                        "id":  "subito-64-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  850
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-maggiolina-milano-648304214.htm"
+                    },
+                    {
+                        "id":  "subito-65-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  750
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-milano-nord-est-servito-dalla-metro-m2-milano-648345098.htm"
+                    },
+                    {
+                        "id":  "subito-66-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  700
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trezzo-sull-adda-bilocale-ristrutturato-a-nuovo-milano-648347376.htm"
+                    },
+                    {
+                        "id":  "subito-67-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  850
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/ampio-bilocale-80mq-disp-immediata-prov-milano-milano-648358517.htm"
+                    },
+                    {
+                        "id":  "subito-68-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  900
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/splendido-appartamento-loft-in-bicocca-milano-647470185.htm"
+                    },
+                    {
+                        "id":  "subito-69-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  800
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-con-classe-ener-a3-tra-bergamo-e-milano-milano-648351165.htm"
+                    },
+                    {
+                        "id":  "subito-70-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1480
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/city-pop-l-deluxe-con-balcone-milano-643466608.htm"
+                    },
+                    {
+                        "id":  "subito-71-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1500
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-luminoso-milano-648345621.htm"
+                    },
+                    {
+                        "id":  "subito-72-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1200
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-corso-sempione-milano-milano-648341717.htm"
+                    },
+                    {
+                        "id":  "subito-73-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1400
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-arredato-spese-incluse-milano-602901722.htm"
+                    },
+                    {
+                        "id":  "subito-74-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1100
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-zona-bocconi-milano-606362699.htm"
+                    },
+                    {
+                        "id":  "subito-75-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  650
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-arredato-in-zona-certosa-45mq-milano-648343743.htm"
+                    },
+                    {
+                        "id":  "subito-76-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1700
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/indipendenza-bilocale-nuova-edificazione-milano-647774961.htm"
+                    },
+                    {
+                        "id":  "subito-77-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  530
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-mm-rovereto-milano-648329931.htm"
+                    },
+                    {
+                        "id":  "subito-78-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  940
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-maggiolina-milano-zona-centrale-milano-647418416.htm"
+                    },
+                    {
+                        "id":  "subito-79-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1520
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-vicino-universita-bocconi-milano-647910607.htm"
+                    },
+                    {
+                        "id":  "subito-80-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  800
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-50mq-arredato-con-wifi-metropolitana-milano-647627929.htm"
+                    },
+                    {
+                        "id":  "subito-81-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  850
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/si-affitta-bel-bilocale-zona-cologno-monzese-milano-648008857.htm"
+                    },
+                    {
+                        "id":  "subito-82-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  700
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/milano-via-spadolini-zona-bocconi-milano-648330604.htm"
+                    },
+                    {
+                        "id":  "subito-83-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1099
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/citylife-sempione-milano-648313400.htm"
+                    },
+                    {
+                        "id":  "subito-84-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1000
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-arredato-milano-647879214.htm"
+                    },
+                    {
+                        "id":  "subito-85-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  950
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-finemente-arredato-milano-647340413.htm"
+                    },
+                    {
+                        "id":  "subito-86-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  800
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-paderno-dugnano-milano-648321857.htm"
+                    },
+                    {
+                        "id":  "subito-87-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1300
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/porta-romana-bilocale-70-mq-milano-648164450.htm"
+                    },
+                    {
+                        "id":  "subito-88-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  700
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/open-space-30mq-in-centro-a-milano-vicino-il-duomo-milano-648163180.htm"
+                    },
+                    {
+                        "id":  "subito-89-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1500
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-a-milano-milano-642025724.htm"
+                    },
+                    {
+                        "id":  "subito-90-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1150
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-a-milano-milano-640761462.htm"
+                    },
+                    {
+                        "id":  "subito-91-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  750
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bovisa-monolocale-moderno-milano-647449642.htm"
+                    },
+                    {
+                        "id":  "subito-92-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  540
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-milano-61-26arg-milano-648251033.htm"
+                    },
+                    {
+                        "id":  "subito-93-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  650
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/splendido-appartamento-immerso-nel-verde-milano-648264557.htm"
+                    },
+                    {
+                        "id":  "subito-94-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1500
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-in-zona-san-cristoforo-al-naviglio-milano-633819925.htm"
+                    },
+                    {
+                        "id":  "subito-95-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  800
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-arredato-in-zona-novegro-milano-648161438.htm"
+                    },
+                    {
+                        "id":  "subito-96-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1100
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/ampio-trilocale-con-terrazzo-e-box-bovisa-milano-646040245.htm"
+                    },
+                    {
+                        "id":  "subito-97-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  1200
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/luminosissimo-bilocale-in-corso-lodi-milano-milano-648262207.htm"
+                    },
+                    {
+                        "id":  "subito-98-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  780
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-libero-subito-porta-vittoria-milano-641460994.htm"
+                    },
+                    {
+                        "id":  "subito-99-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  720
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/ampio-bilocale-luminoso-a-paderno-dugnano-milano-643551828.htm"
+                    },
+                    {
+                        "id":  "subito-100-",
+                        "analizzato_il":  "2026-05-25",
+                        "motivo_scarto":  "filtro 1 — posti letto \u003c 3 (dichiarato:  locali)",
+                        "esito":  "scartato",
+                        "dati_raccolti":  {
+                                              "mq":  null,
+                                              "camere":  null,
+                                              "prezzo":  660
+                                          },
+                        "portale":  "subito",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-79-m²-con-2-locali-a-sesto-san-gio-milano-648225065.htm"
                     }
                 ],
-    "last_run":  "2026-05-17T21:38:16"
+    "last_run":  "2026-05-25T20:25:58"
 }

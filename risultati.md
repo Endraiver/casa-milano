@@ -139,17 +139,33 @@ _(le schede compariranno qui quando almeno un appartamento supererà tutti i 7 f
 
 ---
 
-## Candidati alternativi (run 2026-05-17)
+## Candidati alternativi (run 2026-05-25)
 
-Top annunci scartati ma con buon prezzo/metratura — meritano verifica manuale.
+Run 2026-05-25: **121 annunci nuovi analizzati, 0 accettati, 121 scartati** (103 filtro 1, 2 filtro 2, 16 filtro 5).
 
-### Bilocali da Idealista (filtro 1 — 2 camere, richiedono verifica mattress/letti)
+**Profilo filtri**: Il filtro 1 (posti letto < 3) rimane il più selettivo. La maggior parte degli annunci è bilocale (2 camere). Tra gli scartati, i candidati con metratura ≥75 mq e prezzo ≤1500€ sono prioritari (potrebbero avere configurazione matrimoniale + singola).
 
-| # | Portale | Indirizzo | Prezzo | m² | Camere | Motivo scarto | Nota | Link |
-|---|---------|-----------|--------|----|----|---|---|---|
-| 1 | Idealista | Via dei Missaglia, 27 (Chiesa Rossa) | 1.200 € | 70 | 2 | F1 posti letto (2 camere) | **Consigliato**: prezzo ottimo, metratura buona; verificare se matrimoniale + singola | [link](https://www.idealista.it/immobile/21085214/) |
-| 2 | Idealista | Via Sofonisba Anguissola (Bande Nere) | 1.400 € | 70 | 2 | F1 posti letto (2 camere) | Prezzo accettabile; metratura borderline | [link](https://www.idealista.it/immobile/23456789/) |
-| 3 | Idealista | Via Guglielmo Pecori Giraldi, 5 (Sulmona) | 1.420 € | 67 | 2 | F1 posti letto (2 camere) | Prezzo borderline; metratura sotto 75 mq | [link](https://www.idealista.it/immobile/23456790/) |
+### Top 15 candidati — priorità per verifica manuale
+
+| # | Portale | Prezzo | m² | Camere | Motivo scarto | Link |
+|---|---------|--------|----|----|---|---|
+| 1 | Casa.it | 1.500+ € | 71 | 3 | F2 metratura -4 mq | [53608925](https://www.casa.it/immobili/53608925/) |
+| 2 | Casa.it | 1.500+ € | 100 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53900584](https://www.casa.it/immobili/53900584/) |
+| 3 | Casa.it | 1.500+ € | 87 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54060365](https://www.casa.it/immobili/54060365/) |
+| 4 | Casa.it | 1.500+ € | 75 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54057833](https://www.casa.it/immobili/54057833/) |
+| 5 | Casa.it | 1.500+ € | 75 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53820511](https://www.casa.it/immobili/53820511/) |
+| 6 | Casa.it | 1.500+ € | 85 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54040200](https://www.casa.it/immobili/54040200/) |
+| 7 | Casa.it | 1.500+ € | 90 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54038519](https://www.casa.it/immobili/54038519/) |
+| 8 | Casa.it | 1.500+ € | 104 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54040054](https://www.casa.it/immobili/54040054/) |
+| 9 | Casa.it | 1.500+ € | 135 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54049030](https://www.casa.it/immobili/54049030/) |
+| 10 | Casa.it | 1.500+ € | 138 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53877051](https://www.casa.it/immobili/53877051/) |
+| 11 | Casa.it | 1.500+ € | 79 | 3 | F5 wifi non verificata (lavatrice OK) | [53730414](https://www.casa.it/immobili/53730414/) |
+| 12 | Casa.it | 1.500+ € | 85 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53960593](https://www.casa.it/immobili/53960593/) |
+| 13 | Casa.it | 1.500+ € | 95 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53960058](https://www.casa.it/immobili/53960058/) |
+| 14 | Casa.it | 1.500+ € | 109 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53599076](https://www.casa.it/immobili/53599076/) |
+| 15 | Casa.it | 1.500+ € | 100 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53886558](https://www.casa.it/immobili/53886558/) |
+
+**Azione prioritaria**: Gli annunci a **filtro 5** (dotazioni) con metratura ≥75 mq e 3 camere meritano approfondimento diretto su casa.it per confermare disponibilità wifi e lavatrice. Se confermati, potrebbero superare tutti i 7 filtri.
 
 ### Top candidati Casa.it/Immobiliare (da precedenti run)
 
