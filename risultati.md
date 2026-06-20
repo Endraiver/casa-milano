@@ -1,6 +1,6 @@
 # Appartamenti che rispettano tutti i criteri
 
-Ultimo aggiornamento: 2026-05-17 (full batch processing)
+Ultimo aggiornamento: 2026-06-20 (full batch processing)
 
 ## Riepilogo criteri attivi
 
@@ -12,6 +12,35 @@ Ultimo aggiornamento: 2026-05-17 (full batch processing)
 - Dotazioni: divano, wifi, riscaldamento, lavatrice
 - Trasporti: metro entro 7 min a piedi
 - Università: < 40 min da Bicocca **e** da Bovisa
+
+---
+
+## Nota run 2026-06-20 (batch completo cache — script PowerShell deterministico)
+
+**Elaborazione completa dei 255 annunci in cache** (casa-it: 150, immobiliare: 5, subito: 100)
+tramite `process_listings.ps1` (filtri 1→7 deterministici, dedup su `analizzati.json`):
+
+- **cache totale**: 255 · **già analizzati** (run precedenti): 74 · **nuovi processati**: 181
+- **accettati: 0** · **scartati: 181**
+
+Riassunto scarto per filtro:
+
+| Filtro | Conteggio |
+|--------|-----------|
+| F1 (posti letto/locali < 3) | 83 |
+| F2 (metratura < 75 m²) | 17 |
+| F4 (prezzo > 1500 € o non dichiarato) | 46 |
+| F5 (dotazioni obbligatorie wifi/lavatrice non menzionate nel dataset) | 35 |
+| **TOTALE** | **181** |
+
+**Analisi**: nessun annuncio ha passato i filtri 1–5, quindi i filtri 6–7 (metro ≤7 min,
+università <40 min — non calcolabili dal dataset Apify) non sono stati raggiunti.
+Il filtro 1 (posti letto) resta il più selettivo (46% degli scarti). I 35 annunci
+fermati al **filtro 5** sono trilocali ≥75 m² entro budget la cui unica lacuna è la
+**mancata menzione di wifi/lavatrice nei dati Apify**: sono i candidati alternativi
+prioritari (verifica manuale delle dotazioni → vedi sezione in fondo). Diversi tra
+questi sono però in **comuni esterni** (Rho, Legnano, Cerro Maggiore, Opera, Cologno
+Monzese) che andranno comunque verificati anche sul **filtro 7** (tempi università).
 
 ---
 
@@ -58,6 +87,8 @@ Ultimo aggiornamento: 2026-05-17 (full batch processing)
 
 | Data | Annunci nuovi analizzati | Accettati | Scartati |
 |------|--------------------------|-----------|---------|
+| 2026-06-20 (batch completo cache) | 181 | 0 | 181 |
+| 2026-05-25 (batch completo cache) | 121 | 0 | 121 |
 | 2026-05-17 (23:50 reprocessing) | 7 | 0 | 7 |
 | 2026-05-17 (batch completo cache) | 200 | 0 | 200 |
 | 2026-05-17 (21:21) Idealista/Subito | 2 | 0 | 2 |
@@ -139,55 +170,44 @@ _(le schede compariranno qui quando almeno un appartamento supererà tutti i 7 f
 
 ---
 
-## Candidati alternativi (run 2026-05-25)
+## Candidati alternativi (run 2026-06-20)
 
-Run 2026-05-25: **121 annunci nuovi analizzati, 0 accettati, 121 scartati** (103 filtro 1, 2 filtro 2, 16 filtro 5).
+Run 2026-06-20: **181 annunci nuovi analizzati, 0 accettati, 181 scartati**
+(F1: 83 · F2: 17 · F4: 46 · F5: 35).
 
-**Profilo filtri**: Il filtro 1 (posti letto < 3) rimane il più selettivo. La maggior parte degli annunci è bilocale (2 camere). Tra gli scartati, i candidati con metratura ≥75 mq e prezzo ≤1500€ sono prioritari (potrebbero avere configurazione matrimoniale + singola).
+**Profilo filtri**: nessun annuncio supera i filtri 1–5, quindi i tempi metro/università
+(filtri 6–7) non sono stati raggiunti. I candidati prioritari qui sotto sono tutti
+**trilocali ≥75 m² entro budget** fermati al **filtro 5** solo perché il dataset Apify
+non menziona esplicitamente **wifi/lavatrice** — vanno verificati a mano. Per gli annunci
+in **comuni esterni** (Rho, Legnano, Cerro Maggiore, Opera, Cologno Monzese) va verificato
+anche il **filtro 7** (tempi verso Bicocca e Bovisa).
 
 ### Top 15 candidati — priorità per verifica manuale
 
-| # | Portale | Prezzo | m² | Camere | Motivo scarto | Link |
-|---|---------|--------|----|----|---|---|
-| 1 | Casa.it | 1.500+ € | 71 | 3 | F2 metratura -4 mq | [53608925](https://www.casa.it/immobili/53608925/) |
-| 2 | Casa.it | 1.500+ € | 100 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53900584](https://www.casa.it/immobili/53900584/) |
-| 3 | Casa.it | 1.500+ € | 87 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54060365](https://www.casa.it/immobili/54060365/) |
-| 4 | Casa.it | 1.500+ € | 75 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54057833](https://www.casa.it/immobili/54057833/) |
-| 5 | Casa.it | 1.500+ € | 75 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53820511](https://www.casa.it/immobili/53820511/) |
-| 6 | Casa.it | 1.500+ € | 85 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54040200](https://www.casa.it/immobili/54040200/) |
-| 7 | Casa.it | 1.500+ € | 90 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54038519](https://www.casa.it/immobili/54038519/) |
-| 8 | Casa.it | 1.500+ € | 104 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54040054](https://www.casa.it/immobili/54040054/) |
-| 9 | Casa.it | 1.500+ € | 135 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [54049030](https://www.casa.it/immobili/54049030/) |
-| 10 | Casa.it | 1.500+ € | 138 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53877051](https://www.casa.it/immobili/53877051/) |
-| 11 | Casa.it | 1.500+ € | 79 | 3 | F5 wifi non verificata (lavatrice OK) | [53730414](https://www.casa.it/immobili/53730414/) |
-| 12 | Casa.it | 1.500+ € | 85 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53960593](https://www.casa.it/immobili/53960593/) |
-| 13 | Casa.it | 1.500+ € | 95 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53960058](https://www.casa.it/immobili/53960058/) |
-| 14 | Casa.it | 1.500+ € | 109 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53599076](https://www.casa.it/immobili/53599076/) |
-| 15 | Casa.it | 1.500+ € | 100 | 3 | F5 dotazioni non confermate (verificare wifi+lavatrice) | [53886558](https://www.casa.it/immobili/53886558/) |
+| # | Portale | Zona | Prezzo | m² | Locali | Motivo scarto | Link |
+|---|---------|------|--------|----|----|---------------|------|
+| 1 | Subito | Rho (fuori Milano) | 1.000 € | 110 | 3 | F5: verificare wifi+lavatrice · F7 da verificare | [link](https://www.subito.it/appartamenti/appartamento-rho-cod-rif-3324954arg-milano-651411242.htm) |
+| 2 | Subito | Milano | 1.500 € | 110 | 3 | F5: verificare wifi | [link](https://www.subito.it/appartamenti/trilocale-arredato-e-corredato-con-doppi-servizi-milano-647284771.htm) |
+| 3 | Subito | Milano | 1.200 € | 105 | 3 | F5: verificare wifi+lavatrice | [link](https://www.subito.it/appartamenti/3-locali-a-milano-milano-651424491.htm) |
+| 4 | Casa.it | Arco della Pace, Sempione | 1.400 € | 101 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/53643902/) |
+| 5 | Subito | Legnano (fuori Milano) | 750 € | 100 | 3 | F5: verificare wifi+lavatrice · F7 da verificare | [link](https://www.subito.it/appartamenti/ampio-trilocale-legnano-centro-con-spese-comprese-milano-651351957.htm) |
+| 6 | Casa.it | Arco della Pace, Sempione | 1.500 € | 100 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54133180/) |
+| 7 | Subito | Cerro Maggiore (fuori Milano) | 970 € | 95 | 3 | F5: verificare wifi+lavatrice · F7 da verificare | [link](https://www.subito.it/appartamenti/trilocale-in-zona-cerro-maggiore-con-box-auto-milano-651030457.htm) |
+| 8 | Casa.it | Porta Romana, Risorgimento | 1.500 € | 95 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54218279/) |
+| 9 | Subito | Opera (fuori Milano) | 1.000 € | 90 | 3 | F5: verificare wifi+lavatrice · F7 da verificare | [link](https://www.subito.it/appartamenti/trilocale-90mq-adatto-anche-a-famiglie-opera-milano-651373424.htm) |
+| 10 | Casa.it | Gallaratese, QT8, Trenno | 1.100 € | 90 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54148739/) |
+| 11 | Casa.it | Ripamonti, Vigentino | 1.500 € | 90 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/53166309/) |
+| 12 | Casa.it | Lambrate | 1.200 € | 87 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54222727/) |
+| 13 | Subito | Cologno Monzese (fuori Milano) | 1.050 € | 85 | 3 | F5: verificare wifi · F7 da verificare | [link](https://www.subito.it/appartamenti/trilocale-a-cologno-monzese-milano-651073961.htm) |
+| 14 | Casa.it | Porta Romana, Risorgimento | 1.150 € | 85 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54228210/) |
+| 15 | Casa.it | Gallaratese, QT8, Trenno | 1.150 € | 85 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/53493926/) |
 
-**Azione prioritaria**: Gli annunci a **filtro 5** (dotazioni) con metratura ≥75 mq e 3 camere meritano approfondimento diretto su casa.it per confermare disponibilità wifi e lavatrice. Se confermati, potrebbero superare tutti i 7 filtri.
-
-### Top candidati Casa.it/Immobiliare (da precedenti run)
-
-| # | Portale | ID | Zona/Indirizzo | Prezzo | m² | Locali | Motivo scarto | Link |
-|---|---------|----|-|-|-|-|-|-|
-| 4 | Casa.it | 53018418 | — | 1.475 € | 72 | 3 | F2 metratura (-3 mq) | [link](https://www.casa.it/immobili/53018418/) |
-| 5 | Casa.it | 53594808 | — | 1.400 € | 80 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53594808/) |
-| 6 | Casa.it | 51754249 | — | 1.350 € | 70 | 3 | F2 metratura (-5 mq) | [link](https://www.casa.it/immobili/51754249/) |
-| 7 | Casa.it | 53341823 | — | 1.300 € | 84 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53341823/) |
-| 8 | Casa.it | 53449963 | — | 1.450 € | 85 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53449963/) |
-| 9 | Casa.it | 53977875 | — | 1.500 € | 75 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53977875/) |
-| 10 | Casa.it | 53578958 | — | 1.400 € | 80 | 3 | F5 dotazioni non verificabili | [link](https://www.casa.it/immobili/53578958/) |
-| 11 | Casa.it | 53187071 | — | 1.300 € | 70 | 3 | F2 metratura (-5 mq) | [link](https://www.casa.it/immobili/53187071/) |
-| 12 | Casa.it | 53768955 | — | 1.500 € | 73 | 3 | F2 metratura (-2 mq) | [link](https://www.casa.it/immobili/53768955/) |
-| 13 | Immobiliare | 128926692 | — | 1.500 € | 75 | 2 | F1 solo 2 locali | [link](https://www.immobiliare.it/annunci/128926692) |
-
-**Analisi candidati**: La maggior parte sono annunci Casa.it con **prezzo (1.300-1.500 €) e metratura (66-85 mq) molto buoni**, scartati solo per:
-- **Filtro 2** (metratura leggermente sotto 75 mq, es. 70-73): 6 annunci — vale la pena verificare se la metratura è stimata conservativamente
-- **Filtro 5** (dotazioni non verificabili nel dataset Casa.it): 8 annunci — **AZIONE**: visitare il sito casa.it per confermare wifi+lavatrice
-- **Filtro 1** (solo 2 locali invece di 3): 1 annuncio Immobiliare
-
-**Raccomandazione**: Gli annunci a filtro 5 (dotazioni) meritano approfondimento web perché potrebbero superare tutti i criteri una volta verificate le dotazioni. Priorità ai candidati con score 50+.
+**Azione prioritaria**: i candidati **in Milano città** (#2, #3, #4, #6, #8, #10, #11, #12,
+#14, #15) sono trilocali ≥85 m² entro 1.500 € fermati solo dalla mancata menzione di
+wifi/lavatrice nel dataset: vanno aperti direttamente sul portale per confermare le
+dotazioni e i tempi metro/università. Se confermati, possono superare tutti i 7 filtri.
+I candidati in comuni esterni (#1, #5, #7, #9, #13) hanno ottimo prezzo/metratura ma
+richiedono anche la verifica del filtro 7 (≤40 min da Bicocca **e** Bovisa).
 
 ---
 
