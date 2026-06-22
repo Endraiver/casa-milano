@@ -1,5 +1,5 @@
 ﻿{
-    "last_run":  "2026-06-20T10:24:53",
+    "last_run":  "2026-06-22T20:28:35",
     "annunci":  [
                     {
                         "id":  "zappyrent-via-lambrate-22589",
@@ -8677,6 +8677,1570 @@
                                               "locali":  3,
                                               "prezzo":  1000,
                                               "filtro":  "F5"
+                                          }
+                    },
+                    {
+                        "id":  "casa-it-54197396",
+                        "url":  "https://www.casa.it/immobili/54197396/",
+                        "portale":  "casa-it",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 4 - prezzo \u003e 1500 EUR (dichiarato: 1900 EUR/mese)",
+                        "dati_raccolti":  {
+                                              "zona":  "Solari-Tortona, Washington",
+                                              "indirizzo":  "Via Paolo Giovio 8",
+                                              "citta":  "Milano",
+                                              "mq":  85,
+                                              "locali":  3,
+                                              "prezzo":  1900,
+                                              "filtro":  "F4"
+                                          }
+                    },
+                    {
+                        "id":  "casa-it-53577181",
+                        "url":  "https://www.casa.it/immobili/53577181/",
+                        "portale":  "casa-it",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 4 - prezzo \u003e 1500 EUR (dichiarato: 1600 EUR/mese)",
+                        "dati_raccolti":  {
+                                              "zona":  "Porta Romana, Risorgimento",
+                                              "indirizzo":  "Via Lazzaro Papi",
+                                              "citta":  "Milano",
+                                              "mq":  85,
+                                              "locali":  3,
+                                              "prezzo":  1600,
+                                              "filtro":  "F4"
+                                          }
+                    },
+                    {
+                        "id":  "casa-it-54259791",
+                        "url":  "https://www.casa.it/immobili/54259791/",
+                        "portale":  "casa-it",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 4 - prezzo \u003e 1500 EUR (dichiarato: 3100 EUR/mese)",
+                        "dati_raccolti":  {
+                                              "zona":  "Centro, Duomo, Brera",
+                                              "indirizzo":  "Via Celestino IV",
+                                              "citta":  "Milano",
+                                              "mq":  121,
+                                              "locali":  3,
+                                              "prezzo":  3100,
+                                              "filtro":  "F4"
+                                          }
+                    },
+                    {
+                        "id":  "casa-it-54258935",
+                        "url":  "https://www.casa.it/immobili/54258935/",
+                        "portale":  "casa-it",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 4 - prezzo \u003e 1500 EUR (dichiarato: 2800 EUR/mese)",
+                        "dati_raccolti":  {
+                                              "zona":  "Città Studi, Corsica, Susa",
+                                              "indirizzo":  "Via Giovanni Pascoli 56",
+                                              "citta":  "Milano",
+                                              "mq":  150,
+                                              "locali":  3,
+                                              "prezzo":  2800,
+                                              "filtro":  "F4"
+                                          }
+                    },
+                    {
+                        "id":  "casa-it-54089005",
+                        "url":  "https://www.casa.it/immobili/54089005/",
+                        "portale":  "casa-it",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 2 - metratura \u003c 75 mq (dichiarato: 71 mq)",
+                        "dati_raccolti":  {
+                                              "zona":  "Gallaratese, QT8, Trenno",
+                                              "indirizzo":  "Via Giuseppe Pogatschnig 40",
+                                              "citta":  "Milano",
+                                              "mq":  71,
+                                              "locali":  3,
+                                              "prezzo":  1600,
+                                              "filtro":  "F2"
+                                          }
+                    },
+                    {
+                        "id":  "casa-it-54209047",
+                        "url":  "https://www.casa.it/immobili/54209047/",
+                        "portale":  "casa-it",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 4 - prezzo \u003e 1500 EUR (dichiarato: 2300 EUR/mese)",
+                        "dati_raccolti":  {
+                                              "zona":  "Porta Romana, Risorgimento",
+                                              "indirizzo":  "Viale Sabotino",
+                                              "citta":  "Milano",
+                                              "mq":  75,
+                                              "locali":  3,
+                                              "prezzo":  2300,
+                                              "filtro":  "F4"
+                                          }
+                    },
+                    {
+                        "id":  "casa-it-54258109",
+                        "url":  "https://www.casa.it/immobili/54258109/",
+                        "portale":  "casa-it",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 4 - prezzo \u003e 1500 EUR (dichiarato: 2250 EUR/mese)",
+                        "dati_raccolti":  {
+                                              "zona":  "Solari-Tortona, Washington",
+                                              "indirizzo":  "Via Marchesi de Taddei",
+                                              "citta":  "Milano",
+                                              "mq":  105,
+                                              "locali":  3,
+                                              "prezzo":  2250,
+                                              "filtro":  "F4"
+                                          }
+                    },
+                    {
+                        "id":  "casa-it-54257544",
+                        "url":  "https://www.casa.it/immobili/54257544/",
+                        "portale":  "casa-it",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 3 - disponibilita dichiarata oltre 14/09/2026",
+                        "dati_raccolti":  {
+                                              "zona":  "Porta Romana, Risorgimento",
+                                              "indirizzo":  "Via Maestri Campionesi",
+                                              "citta":  "Milano",
+                                              "mq":  75,
+                                              "locali":  3,
+                                              "prezzo":  1100,
+                                              "filtro":  "F3"
+                                          }
+                    },
+                    {
+                        "id":  "casa-it-54241405",
+                        "url":  "https://www.casa.it/immobili/54241405/",
+                        "portale":  "casa-it",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 4 - prezzo \u003e 1500 EUR (dichiarato: 2300 EUR/mese)",
+                        "dati_raccolti":  {
+                                              "zona":  "Porta Romana, Risorgimento",
+                                              "indirizzo":  "Viale Emilio Caldara 32",
+                                              "citta":  "Milano",
+                                              "mq":  81,
+                                              "locali":  3,
+                                              "prezzo":  2300,
+                                              "filtro":  "F4"
+                                          }
+                    },
+                    {
+                        "id":  "immobiliare-126705663",
+                        "url":  "https://www.immobiliare.it/annunci/126705663",
+                        "portale":  "immobiliare",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 5 - dotazioni obbligatorie non menzionate (verificare: lavatrice)",
+                        "dati_raccolti":  {
+                                              "zona":  "Napoli, Soderini",
+                                              "indirizzo":  "Viale Etiopia",
+                                              "citta":  "Milano",
+                                              "mq":  78,
+                                              "locali":  3,
+                                              "prezzo":  1150,
+                                              "filtro":  "F5"
+                                          }
+                    },
+                    {
+                        "id":  "immobiliare-126371749",
+                        "url":  "https://www.immobiliare.it/annunci/126371749",
+                        "portale":  "immobiliare",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 5 - dotazioni obbligatorie non menzionate (verificare: wifi+lavatrice)",
+                        "dati_raccolti":  {
+                                              "zona":  "Città Studi, Susa",
+                                              "indirizzo":  "via pacini 42",
+                                              "citta":  "Milano",
+                                              "mq":  78,
+                                              "locali":  3,
+                                              "prezzo":  950,
+                                              "filtro":  "F5"
+                                          }
+                    },
+                    {
+                        "id":  "immobiliare-130110578",
+                        "url":  "https://www.immobiliare.it/annunci/130110578",
+                        "portale":  "immobiliare",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Porta Romana, Cadore, Montenero",
+                                              "indirizzo":  "Via Carlo Botta",
+                                              "citta":  "Milano",
+                                              "mq":  65,
+                                              "locali":  2,
+                                              "prezzo":  1400,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651694993",
+                        "url":  "https://www.subito.it/appartamenti/splendido-bilocale-con-doppi-servizi-milano-651694993.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  75,
+                                              "locali":  2,
+                                              "prezzo":  1250,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-649253302",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-nuovo-ben-attrezzato-zona-viale-monza-milano-649253302.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  20,
+                                              "locali":  1,
+                                              "prezzo":  750,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651689250",
+                        "url":  "https://www.subito.it/appartamenti/ampio-trilocale-con-due-bagni-milano-651689250.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 5 - dotazioni obbligatorie non menzionate (verificare: wifi+lavatrice)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  85,
+                                              "locali":  3,
+                                              "prezzo":  1420,
+                                              "filtro":  "F5"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650215305",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-bicocca-milano-650215305.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 6/7 - passa filtri 1-5; tempi metro e distanza universita da verificare a mano",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  80,
+                                              "locali":  3,
+                                              "prezzo":  1400,
+                                              "filtro":  "F6_7"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651647026",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-lacchiarella-570-00-milano-651647026.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Lacchiarella",
+                                              "indirizzo":  "Lacchiarella",
+                                              "citta":  "Lacchiarella",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  570,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650810312",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-ristrutturato-con-balcone-piano-alto-milano-650810312.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato:  locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  54,
+                                              "locali":  null,
+                                              "prezzo":  980,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651684206",
+                        "url":  "https://www.subito.it/appartamenti/ampio-monolocale-con-cucina-abitabile-mm-pasteur-milano-651684206.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  45,
+                                              "locali":  2,
+                                              "prezzo":  800,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651682090",
+                        "url":  "https://www.subito.it/appartamenti/ampio-monolocale-a-pochi-minuti-da-city-life-milano-651682090.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  33,
+                                              "locali":  1,
+                                              "prezzo":  1150,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651645487",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-ristrutturato-a-15-min-dal-duomo-lodi-m3-milano-651645487.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  850,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651548722",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-a-corsico-690-milano-651548722.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Corsico",
+                                              "indirizzo":  "Corsico",
+                                              "citta":  "Corsico",
+                                              "mq":  32,
+                                              "locali":  1,
+                                              "prezzo":  690,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651644844",
+                        "url":  "https://www.subito.it/appartamenti/open-space-arredato-fronte-stazione-vanzago-mi-milano-651644844.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Vanzago",
+                                              "indirizzo":  "Vanzago",
+                                              "citta":  "Vanzago",
+                                              "mq":  40,
+                                              "locali":  1,
+                                              "prezzo":  600,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-649422267",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-finemente-ristrutturato-e-luminoso-milano-649422267.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  1500,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651679665",
+                        "url":  "https://www.subito.it/appartamenti/luminoso-e-ampio-bilocale-milano-651679665.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  64,
+                                              "locali":  2,
+                                              "prezzo":  1050,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-602901722",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-arredato-spese-incluse-milano-602901722.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  30,
+                                              "locali":  1,
+                                              "prezzo":  1400,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-633529211",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-zona-washington-metro-4-milano-633529211.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  55,
+                                              "locali":  2,
+                                              "prezzo":  1550,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651671188",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-ben-suddiviso-e-arredato-a-pasteur-milano-651671188.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  40,
+                                              "locali":  2,
+                                              "prezzo":  800,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-640184762",
+                        "url":  "https://www.subito.it/appartamenti/via-ripamonti-bilocale-arredato-milano-640184762.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  950,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651666730",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-in-zona-m2-gorgonzola-milano-651666730.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Gorgonzola",
+                                              "indirizzo":  "Gorgonzola",
+                                              "citta":  "Gorgonzola",
+                                              "mq":  55,
+                                              "locali":  2,
+                                              "prezzo":  850,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-644692492",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-pogliano-rho-milano-644692492.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Pogliano Milanese",
+                                              "indirizzo":  "Pogliano Milanese",
+                                              "citta":  "Pogliano Milanese",
+                                              "mq":  40,
+                                              "locali":  1,
+                                              "prezzo":  590,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651666709",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-luminoso-con-ampio-balcone-citta-studi-milano-651666709.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  30,
+                                              "locali":  2,
+                                              "prezzo":  800,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651665722",
+                        "url":  "https://www.subito.it/appartamenti/gorgonzola-trilocale-tutto-nuovo-milano-651665722.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 2 - metratura \u003c 75 mq (dichiarato: 70 mq)",
+                        "dati_raccolti":  {
+                                              "zona":  "Gorgonzola",
+                                              "indirizzo":  "Gorgonzola",
+                                              "citta":  "Gorgonzola",
+                                              "mq":  70,
+                                              "locali":  3,
+                                              "prezzo":  1000,
+                                              "filtro":  "F2"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651658822",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-milano-l597arg-milano-651658822.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  82,
+                                              "locali":  2,
+                                              "prezzo":  1700,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650665897",
+                        "url":  "https://www.subito.it/appartamenti/milano-monolocale-arredato-libero-subito-milano-650665897.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato:  locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  24,
+                                              "locali":  null,
+                                              "prezzo":  800,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651669516",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-rogoredo-santa-giulia-milano-651669516.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  45,
+                                              "locali":  2,
+                                              "prezzo":  800,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650938898",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-a-milano-milano-650938898.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  42,
+                                              "locali":  1,
+                                              "prezzo":  1050,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651659925",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-a-magenta-mi-in-contesto-tranquillo-milano-651659925.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Magenta",
+                                              "indirizzo":  "Magenta",
+                                              "citta":  "Magenta",
+                                              "mq":  30,
+                                              "locali":  1,
+                                              "prezzo":  650,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650880001",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-con-balcone-in-via-barrilli-libero-subito-milano-650880001.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  45,
+                                              "locali":  2,
+                                              "prezzo":  900,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650674791",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-in-corso-lodi-libero-subito-milano-650674791.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  27,
+                                              "locali":  1,
+                                              "prezzo":  400,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651521247",
+                        "url":  "https://www.subito.it/appartamenti/2-locali-a-milano-milano-651521247.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  60,
+                                              "locali":  2,
+                                              "prezzo":  1250,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651652917",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-di-60mq-ristrutturato-bisceglie-mm1-milano-651652917.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  60,
+                                              "locali":  2,
+                                              "prezzo":  950,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651521193",
+                        "url":  "https://www.subito.it/appartamenti/4-locali-a-milano-milano-651521193.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 5 - dotazioni obbligatorie non menzionate (verificare: wifi)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  129,
+                                              "locali":  4,
+                                              "prezzo":  700,
+                                              "filtro":  "F5"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650875524",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-in-zona-rho-con-giardinetto-milano-650875524.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Rho",
+                                              "indirizzo":  "Rho",
+                                              "citta":  "Rho",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  600,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651660247",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-590eu-vicino-piazzale-loreto-m1-m2-milano-651660247.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  30,
+                                              "locali":  1,
+                                              "prezzo":  590,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651521076",
+                        "url":  "https://www.subito.it/appartamenti/3-locali-a-milano-milano-651521076.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 2 - metratura \u003c 75 mq (dichiarato: 70 mq)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  70,
+                                              "locali":  3,
+                                              "prezzo":  620,
+                                              "filtro":  "F2"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651539933",
+                        "url":  "https://www.subito.it/appartamenti/milano-ampio-bilocale-via-sulmona-milano-651539933.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  60,
+                                              "locali":  2,
+                                              "prezzo":  1200,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651537074",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-arredato-nuova-costruzione-milano-651537074.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  70,
+                                              "locali":  2,
+                                              "prezzo":  1450,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651536383",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-arredato-a-liscate-in-residence-milano-651536383.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 2 - metratura \u003c 75 mq (dichiarato: 66 mq)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  66,
+                                              "locali":  3,
+                                              "prezzo":  775,
+                                              "filtro":  "F2"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650894322",
+                        "url":  "https://www.subito.it/appartamenti/trilocale-in-via-giramo-libero-da-subito-milano-650894322.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 2 - metratura \u003c 75 mq (dichiarato: 70 mq)",
+                        "dati_raccolti":  {
+                                              "zona":  "Abbiategrasso",
+                                              "indirizzo":  "Abbiategrasso",
+                                              "citta":  "Abbiategrasso",
+                                              "mq":  70,
+                                              "locali":  3,
+                                              "prezzo":  590,
+                                              "filtro":  "F2"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651516585",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-mm-amendola-45-mq-milano-651516585.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  45,
+                                              "locali":  1,
+                                              "prezzo":  1200,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650872640",
+                        "url":  "https://www.subito.it/appartamenti/cologno-bilocale-ristrutturato-vicino-metro-verde-milano-650872640.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Cologno Monzese",
+                                              "indirizzo":  "Cologno Monzese",
+                                              "citta":  "Cologno Monzese",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  800,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651534714",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-arredato-milano-651534714.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Legnano",
+                                              "indirizzo":  "Legnano",
+                                              "citta":  "Legnano",
+                                              "mq":  45,
+                                              "locali":  1,
+                                              "prezzo":  580,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651533711",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-50-m²-con-2-locali-a-pioltello-milano-651533711.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Pioltello",
+                                              "indirizzo":  "Pioltello",
+                                              "citta":  "Pioltello",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  700,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651533708",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-40-m²-con-1-locale-a-sesto-san-gio-milano-651533708.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Sesto San Giovanni",
+                                              "indirizzo":  "Sesto San Giovanni",
+                                              "citta":  "Sesto San Giovanni",
+                                              "mq":  40,
+                                              "locali":  1,
+                                              "prezzo":  800,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651533658",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-90-m²-con-3-locali-a-cologno-monze-milano-651533658.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 5 - dotazioni obbligatorie non menzionate (verificare: wifi+lavatrice)",
+                        "dati_raccolti":  {
+                                              "zona":  "Cologno Monzese",
+                                              "indirizzo":  "Cologno Monzese",
+                                              "citta":  "Cologno Monzese",
+                                              "mq":  90,
+                                              "locali":  3,
+                                              "prezzo":  1100,
+                                              "filtro":  "F5"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651533682",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-50-m²-con-2-locali-a-milano-milano-651533682.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  1000,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650881548",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-in-zona-pero-con-posto-auto-incluso-milano-650881548.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Pero",
+                                              "indirizzo":  "Pero",
+                                              "citta":  "Pero",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  700,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651521473",
+                        "url":  "https://www.subito.it/appartamenti/2-locali-a-milano-milano-651521473.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  65,
+                                              "locali":  2,
+                                              "prezzo":  995,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651525260",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-mm-piola-milano-651525260.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  22,
+                                              "locali":  1,
+                                              "prezzo":  550,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-638548418",
+                        "url":  "https://www.subito.it/appartamenti/ampio-bilocale-santa-giulia-piano-alto-milano-638548418.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  80,
+                                              "locali":  2,
+                                              "prezzo":  1000,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651521284",
+                        "url":  "https://www.subito.it/appartamenti/2-locali-a-milano-milano-651521284.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  58,
+                                              "locali":  2,
+                                              "prezzo":  1300,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651532473",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-arredato-zona-brenta-milano-651532473.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  850,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651521370",
+                        "url":  "https://www.subito.it/appartamenti/2-locali-a-milano-milano-651521370.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  53,
+                                              "locali":  2,
+                                              "prezzo":  1250,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651521304",
+                        "url":  "https://www.subito.it/appartamenti/2-locali-a-milano-milano-651521304.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  1250,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651643249",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-con-balcone-libero-da-subito-a-gessate-milano-651643249.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Gessate",
+                                              "indirizzo":  "Gessate",
+                                              "citta":  "Gessate",
+                                              "mq":  35,
+                                              "locali":  1,
+                                              "prezzo":  550,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651643073",
+                        "url":  "https://www.subito.it/appartamenti/4locali-95mq-con-cantina-e-due-camere-da-letto-milano-651643073.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 5 - dotazioni obbligatorie non menzionate (verificare: wifi+lavatrice)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  95,
+                                              "locali":  4,
+                                              "prezzo":  1350,
+                                              "filtro":  "F5"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651518351",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-zona-corso-genova-cantore-milano-651518351.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 2 - metratura \u003c 75 mq (dichiarato: 70 mq)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  70,
+                                              "locali":  3,
+                                              "prezzo":  1200,
+                                              "filtro":  "F2"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651639871",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-con-cantina-e-2-balconi-lotto-m1-m5-milano-651639871.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  60,
+                                              "locali":  2,
+                                              "prezzo":  1100,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651543724",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-adiacente-san-raffaele-milano-651543724.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  40,
+                                              "locali":  1,
+                                              "prezzo":  850,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651620172",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-via-paruta-mm-cimiano-milano-651620172.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato:  locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  33,
+                                              "locali":  null,
+                                              "prezzo":  650,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651638841",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-con-garage-e-letto-matrimoniale-milano-651638841.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  27,
+                                              "locali":  1,
+                                              "prezzo":  650,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651630832",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-arredato-libero-subito-milano-651630832.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  43,
+                                              "locali":  1,
+                                              "prezzo":  700,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651634944",
+                        "url":  "https://www.subito.it/appartamenti/ampio-bilocale-con-tre-balconi-piola-m2-milano-651634944.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  60,
+                                              "locali":  2,
+                                              "prezzo":  1400,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651634352",
+                        "url":  "https://www.subito.it/appartamenti/casa-trezzo-sull-adda-milano-651634352.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Trezzo sull\u0027Adda",
+                                              "indirizzo":  "Trezzo sull\u0027Adda",
+                                              "citta":  "Trezzo sull\u0027Adda",
+                                              "mq":  80,
+                                              "locali":  2,
+                                              "prezzo":  700,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651632819",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-ben-arredato-seminuovo-milano-651632819.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  1000,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651630655",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-ampio-vimodrone-milano-651630655.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Vimodrone",
+                                              "indirizzo":  "Vimodrone",
+                                              "citta":  "Vimodrone",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  660,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651626779",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-nuovo-a-sesto-san-giovanni-milano-651626779.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Sesto San Giovanni",
+                                              "indirizzo":  "Sesto San Giovanni",
+                                              "citta":  "Sesto San Giovanni",
+                                              "mq":  33,
+                                              "locali":  1,
+                                              "prezzo":  500,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-649991757",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-porta-romana-milano-milano-649991757.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  50,
+                                              "locali":  2,
+                                              "prezzo":  1200,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651623260",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-ampio-sesto-marelli-m1-milano-651623260.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Sesto San Giovanni",
+                                              "indirizzo":  "Sesto San Giovanni",
+                                              "citta":  "Sesto San Giovanni",
+                                              "mq":  30,
+                                              "locali":  1,
+                                              "prezzo":  520,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651625530",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-di-36-m²-con-1-locale-a-milano-milano-651625530.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  36,
+                                              "locali":  1,
+                                              "prezzo":  650,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651628029",
+                        "url":  "https://www.subito.it/appartamenti/panoramico-trilocale-di-80-mq-al-10-piano-milano-651628029.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 4 - prezzo \u003e 1500 EUR (dichiarato: 1600 EUR/mese)",
+                        "dati_raccolti":  {
+                                              "zona":  "Assago",
+                                              "indirizzo":  "Assago",
+                                              "citta":  "Assago",
+                                              "mq":  80,
+                                              "locali":  3,
+                                              "prezzo":  1600,
+                                              "filtro":  "F4"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651621002",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-libero-da-subito-zona-loreto-milano-651621002.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato:  locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  20,
+                                              "locali":  null,
+                                              "prezzo":  500,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-650329460",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-luminoso-a-670-euro-tutto-incluso-milano-650329460.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Cinisello Balsamo",
+                                              "indirizzo":  "Cinisello Balsamo",
+                                              "citta":  "Cinisello Balsamo",
+                                              "mq":  65,
+                                              "locali":  2,
+                                              "prezzo":  670,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651620709",
+                        "url":  "https://www.subito.it/appartamenti/appartamento-in-via-emo-mm-crescenzago-milano-651620709.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato:  locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  38,
+                                              "locali":  null,
+                                              "prezzo":  700,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-644999060",
+                        "url":  "https://www.subito.it/appartamenti/open-space-con-balcone-a-650-euro-mi-milano-644999060.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  45,
+                                              "locali":  1,
+                                              "prezzo":  650,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-647470185",
+                        "url":  "https://www.subito.it/appartamenti/tranquillo-e-luminoso-loft-con-giardino-in-bicocca-milano-647470185.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato:  locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  40,
+                                              "locali":  null,
+                                              "prezzo":  900,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651611966",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-55-mq-arredato-con-cucina-mm1-bisceglie-milano-651611966.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  55,
+                                              "locali":  1,
+                                              "prezzo":  800,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651549422",
+                        "url":  "https://www.subito.it/appartamenti/ampio-bilocale-zona-bocconi-milano-651549422.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  65,
+                                              "locali":  2,
+                                              "prezzo":  1200,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651609895",
+                        "url":  "https://www.subito.it/appartamenti/nuovo-bilocale-arredato-a-milano-citta-studi-milano-651609895.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 2 - metratura \u003c 75 mq (dichiarato: 53 mq)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  53,
+                                              "locali":  4,
+                                              "prezzo":  1300,
+                                              "filtro":  "F2"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651072716",
+                        "url":  "https://www.subito.it/appartamenti/monolocale-metro-zara-milano-651072716.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 1 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Milano",
+                                              "indirizzo":  "Milano",
+                                              "citta":  "Milano",
+                                              "mq":  28,
+                                              "locali":  1,
+                                              "prezzo":  850,
+                                              "filtro":  "F1"
+                                          }
+                    },
+                    {
+                        "id":  "subito-651588270",
+                        "url":  "https://www.subito.it/appartamenti/bilocale-bresso-milano-651588270.htm",
+                        "portale":  "subito",
+                        "analizzato_il":  "2026-06-22",
+                        "esito":  "scartato",
+                        "motivo_scarto":  "filtro 1 - posti letto/locali \u003c 3 (dichiarato: 2 locali)",
+                        "dati_raccolti":  {
+                                              "zona":  "Bresso",
+                                              "indirizzo":  "Bresso",
+                                              "citta":  "Bresso",
+                                              "mq":  61,
+                                              "locali":  2,
+                                              "prezzo":  850,
+                                              "filtro":  "F1"
                                           }
                     }
                 ]

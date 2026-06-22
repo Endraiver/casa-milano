@@ -1,6 +1,6 @@
 # Appartamenti che rispettano tutti i criteri
 
-Ultimo aggiornamento: 2026-06-20 (full batch processing)
+Ultimo aggiornamento: 2026-06-22 (full batch processing)
 
 ## Riepilogo criteri attivi
 
@@ -12,6 +12,37 @@ Ultimo aggiornamento: 2026-06-20 (full batch processing)
 - Dotazioni: divano, wifi, riscaldamento, lavatrice
 - Trasporti: metro entro 7 min a piedi
 - Università: < 40 min da Bicocca **e** da Bovisa
+
+---
+
+## Nota run 2026-06-22 (batch completo cache — script PowerShell deterministico)
+
+**Elaborazione completa dei 125 annunci in cache** (casa-it: 20, immobiliare: 5, subito: 100)
+tramite `process_listings.ps1` (filtri 1→7 deterministici, dedup su `analizzati.json`):
+
+- **cache totale**: 125 · **già analizzati** (run precedenti): 33 · **nuovi processati**: 92
+- **accettati: 0** · **scartati: 92**
+
+Riassunto scarto per filtro:
+
+| Filtro | Conteggio |
+|--------|-----------|
+| F1 (posti letto/locali < 3) | 69 |
+| F2 (metratura < 75 m²) | 7 |
+| F3 (disponibilità oltre 14/09/2026) | 1 |
+| F4 (prezzo > 1500 € o non dichiarato) | 8 |
+| F5 (dotazioni obbligatorie wifi/lavatrice non menzionate nel dataset) | 6 |
+| F6/7 (passa 1–5; tempi metro/università da verificare a mano) | 1 |
+| **TOTALE** | **92** |
+
+**Analisi**: il **filtro 1 (posti letto)** resta il più selettivo (75% degli scarti) —
+il dataset odierno è dominato da bilocali/monolocali. **Un solo annuncio** (subito-650215305,
+trilocale 80 m² a 1.400 € in zona Bicocca) ha superato i filtri 1–5 fermandosi a F6/7 (tempi
+metro e distanza università non calcolabili dal dataset Apify): è il candidato prioritario da
+verificare a mano. I 6 annunci fermati al **filtro 5** sono trilocali/quadrilocali ≥75 m²
+entro budget la cui unica lacuna è la **mancata menzione di wifi/lavatrice** nei dati Apify.
+Gli 8 scarti per F4 sono per lo più appartamenti centrali (Brera, Porta Romana, Solari) ben
+oltre 1.500 €.
 
 ---
 
@@ -87,6 +118,7 @@ Monzese) che andranno comunque verificati anche sul **filtro 7** (tempi universi
 
 | Data | Annunci nuovi analizzati | Accettati | Scartati |
 |------|--------------------------|-----------|---------|
+| 2026-06-22 (batch completo cache) | 92 | 0 | 92 |
 | 2026-06-20 (batch completo cache) | 181 | 0 | 181 |
 | 2026-05-25 (batch completo cache) | 121 | 0 | 121 |
 | 2026-05-17 (23:50 reprocessing) | 7 | 0 | 7 |
@@ -170,44 +202,48 @@ _(le schede compariranno qui quando almeno un appartamento supererà tutti i 7 f
 
 ---
 
-## Candidati alternativi (run 2026-06-20)
+## Candidati alternativi (run 2026-06-22)
 
-Run 2026-06-20: **181 annunci nuovi analizzati, 0 accettati, 181 scartati**
-(F1: 83 · F2: 17 · F4: 46 · F5: 35).
+Run 2026-06-22: **92 annunci nuovi analizzati, 0 accettati, 92 scartati**
+(F1: 69 · F2: 7 · F3: 1 · F4: 8 · F5: 6 · F6/7: 1).
 
-**Profilo filtri**: nessun annuncio supera i filtri 1–5, quindi i tempi metro/università
-(filtri 6–7) non sono stati raggiunti. I candidati prioritari qui sotto sono tutti
-**trilocali ≥75 m² entro budget** fermati al **filtro 5** solo perché il dataset Apify
-non menziona esplicitamente **wifi/lavatrice** — vanno verificati a mano. Per gli annunci
-in **comuni esterni** (Rho, Legnano, Cerro Maggiore, Opera, Cologno Monzese) va verificato
-anche il **filtro 7** (tempi verso Bicocca e Bovisa).
+**Profilo filtri**: il dataset odierno è dominato da bilocali/monolocali (F1 = 75% degli
+scarti). **Un solo annuncio** ha superato i filtri 1–5 (fermo a F6/7 — tempi non calcolabili
+dal dataset). I candidati prioritari qui sotto sono il quasi-accettato (F6/7) e i trilocali/
+quadrilocali ≥75 m² entro budget fermati al **filtro 5** solo perché il dataset Apify non
+menziona esplicitamente **wifi/lavatrice** — vanno verificati a mano. Seguono gli scarti F4
+(sopra budget) con buona metratura, utili solo se il prezzo è negoziabile. Per gli annunci
+in **comuni esterni** (Cologno Monzese, Assago) va verificato anche il **filtro 7** (tempi
+verso Bicocca e Bovisa).
 
-### Top 15 candidati — priorità per verifica manuale
+### Candidati — priorità per verifica manuale
 
 | # | Portale | Zona | Prezzo | m² | Locali | Motivo scarto | Link |
 |---|---------|------|--------|----|----|---------------|------|
-| 1 | Subito | Rho (fuori Milano) | 1.000 € | 110 | 3 | F5: verificare wifi+lavatrice · F7 da verificare | [link](https://www.subito.it/appartamenti/appartamento-rho-cod-rif-3324954arg-milano-651411242.htm) |
-| 2 | Subito | Milano | 1.500 € | 110 | 3 | F5: verificare wifi | [link](https://www.subito.it/appartamenti/trilocale-arredato-e-corredato-con-doppi-servizi-milano-647284771.htm) |
-| 3 | Subito | Milano | 1.200 € | 105 | 3 | F5: verificare wifi+lavatrice | [link](https://www.subito.it/appartamenti/3-locali-a-milano-milano-651424491.htm) |
-| 4 | Casa.it | Arco della Pace, Sempione | 1.400 € | 101 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/53643902/) |
-| 5 | Subito | Legnano (fuori Milano) | 750 € | 100 | 3 | F5: verificare wifi+lavatrice · F7 da verificare | [link](https://www.subito.it/appartamenti/ampio-trilocale-legnano-centro-con-spese-comprese-milano-651351957.htm) |
-| 6 | Casa.it | Arco della Pace, Sempione | 1.500 € | 100 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54133180/) |
-| 7 | Subito | Cerro Maggiore (fuori Milano) | 970 € | 95 | 3 | F5: verificare wifi+lavatrice · F7 da verificare | [link](https://www.subito.it/appartamenti/trilocale-in-zona-cerro-maggiore-con-box-auto-milano-651030457.htm) |
-| 8 | Casa.it | Porta Romana, Risorgimento | 1.500 € | 95 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54218279/) |
-| 9 | Subito | Opera (fuori Milano) | 1.000 € | 90 | 3 | F5: verificare wifi+lavatrice · F7 da verificare | [link](https://www.subito.it/appartamenti/trilocale-90mq-adatto-anche-a-famiglie-opera-milano-651373424.htm) |
-| 10 | Casa.it | Gallaratese, QT8, Trenno | 1.100 € | 90 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54148739/) |
-| 11 | Casa.it | Ripamonti, Vigentino | 1.500 € | 90 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/53166309/) |
-| 12 | Casa.it | Lambrate | 1.200 € | 87 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54222727/) |
-| 13 | Subito | Cologno Monzese (fuori Milano) | 1.050 € | 85 | 3 | F5: verificare wifi · F7 da verificare | [link](https://www.subito.it/appartamenti/trilocale-a-cologno-monzese-milano-651073961.htm) |
-| 14 | Casa.it | Porta Romana, Risorgimento | 1.150 € | 85 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/54228210/) |
-| 15 | Casa.it | Gallaratese, QT8, Trenno | 1.150 € | 85 | 3 | F5: verificare wifi+lavatrice | [link](https://www.casa.it/immobili/53493926/) |
+| 1 | Subito | Milano (Bicocca) | 1.400 € | 80 | 3 | **F6/7: passa 1–5** — verificare tempi metro/università | [link](https://www.subito.it/appartamenti/appartamento-bicocca-milano-650215305.htm) |
+| 2 | Subito | Milano | 700 € | 129 | 4 | F5: verificare wifi | [link](https://www.subito.it/appartamenti/4-locali-a-milano-milano-651521193.htm) |
+| 3 | Subito | Milano | 1.350 € | 95 | 4 | F5: verificare wifi+lavatrice | [link](https://www.subito.it/appartamenti/4locali-95mq-con-cantina-e-due-camere-da-letto-milano-651643073.htm) |
+| 4 | Subito | Cologno Monzese (fuori Milano) | 1.100 € | 90 | 3 | F5: verificare wifi+lavatrice · F7 da verificare | [link](https://www.subito.it/appartamenti/appartamento-di-90-m²-con-3-locali-a-cologno-monze-milano-651533658.htm) |
+| 5 | Subito | Milano | 1.420 € | 85 | 3 | F5: verificare wifi+lavatrice | [link](https://www.subito.it/appartamenti/ampio-trilocale-con-due-bagni-milano-651689250.htm) |
+| 6 | Immobiliare | Città Studi, Susa | 950 € | 78 | 3 | F5: verificare wifi+lavatrice | [link](https://www.immobiliare.it/annunci/126371749) |
+| 7 | Immobiliare | Napoli, Soderini | 1.150 € | 78 | 3 | F5: verificare lavatrice | [link](https://www.immobiliare.it/annunci/126705663) |
+| 8 | Casa.it | Porta Romana, Risorgimento | 1.600 € | 85 | 3 | F4: prezzo +100 € sopra limite | [link](https://www.casa.it/immobili/53577181/) |
+| 9 | Subito | Assago (fuori Milano) | 1.600 € | 80 | 3 | F4: prezzo +100 € · F7 da verificare | [link](https://www.subito.it/appartamenti/panoramico-trilocale-di-80-mq-al-10-piano-milano-651628029.htm) |
+| 10 | Casa.it | Solari-Tortona, Washington | 1.900 € | 85 | 3 | F4: prezzo ben sopra limite | [link](https://www.casa.it/immobili/54197396/) |
+| 11 | Casa.it | Porta Romana, Risorgimento | 2.300 € | 81 | 3 | F4: prezzo ben sopra limite | [link](https://www.casa.it/immobili/54241405/) |
+| 12 | Casa.it | Porta Romana, Risorgimento | 2.300 € | 75 | 3 | F4: prezzo ben sopra limite | [link](https://www.casa.it/immobili/54209047/) |
+| 13 | Casa.it | Solari-Tortona, Washington | 2.250 € | 105 | 3 | F4: prezzo ben sopra limite | [link](https://www.casa.it/immobili/54258109/) |
+| 14 | Casa.it | Città Studi, Corsica, Susa | 2.800 € | 150 | 3 | F4: prezzo ben sopra limite | [link](https://www.casa.it/immobili/54258935/) |
+| 15 | Casa.it | Centro, Duomo, Brera | 3.100 € | 121 | 3 | F4: prezzo ben sopra limite | [link](https://www.casa.it/immobili/54259791/) |
 
-**Azione prioritaria**: i candidati **in Milano città** (#2, #3, #4, #6, #8, #10, #11, #12,
-#14, #15) sono trilocali ≥85 m² entro 1.500 € fermati solo dalla mancata menzione di
-wifi/lavatrice nel dataset: vanno aperti direttamente sul portale per confermare le
-dotazioni e i tempi metro/università. Se confermati, possono superare tutti i 7 filtri.
-I candidati in comuni esterni (#1, #5, #7, #9, #13) hanno ottimo prezzo/metratura ma
-richiedono anche la verifica del filtro 7 (≤40 min da Bicocca **e** Bovisa).
+**Azione prioritaria**: il candidato **#1** (trilocale 80 m², 1.400 €, zona Bicocca) ha superato
+i filtri 1–5: aprirlo subito sul portale per verificare i tempi metro (≤7 min) e le distanze
+verso Bicocca e Bovisa (<40 min) — se confermati supera tutti i 7 filtri. I candidati **#2, #3,
+#5, #6, #7** sono trilocali/quadrilocali ≥75 m² **in Milano città** entro 1.500 € fermati solo
+dalla mancata menzione di wifi/lavatrice nel dataset: vanno aperti per confermare dotazioni e
+trasporti. I candidati **#4** e **#9** (comuni esterni) e gli scarti **#8–#15** (sopra budget,
+F4) restano marginali — utili solo se il prezzo è negoziabile o se le bollette non sono già
+incluse nel canone dichiarato.
 
 ---
 
